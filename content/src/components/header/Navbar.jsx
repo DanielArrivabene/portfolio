@@ -10,28 +10,33 @@ function Navbar() {
       <ul className='navbar-nav'>
         <li className='nav-item'>
           <a className='nav-link' href='#'>
-            teste
+            About
           </a>
+          <hr/>
+        </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='#'>
+            About
+          </a>
+          <hr/>
+        </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='#'>
+            About
+          </a>
+          <hr/>
         </li>
         <li className='nav-item'>
           <a className='nav-link' href='#'>
             teste
           </a>
+          <hr/>
         </li>
         <li className='nav-item'>
           <a className='nav-link' href='#'>
             teste
           </a>
-        </li>
-        <li className='nav-item'>
-          <a className='nav-link' href='#'>
-            teste
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a className='nav-link' href='#'>
-            teste
-          </a>
+          <hr/>
         </li>
       </ul>
       <button id='theme_toggler'>t</button>

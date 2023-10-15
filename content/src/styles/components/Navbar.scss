@@ -1,25 +1,55 @@
 @import '../variables.scss';
 
 #navbar {
-    background-blend-mode: difference;
+  background-blend-mode: difference;
 
-    .logo {
-        display: flex;
-        font-family: $destaque_font;
-        align-items: center;
+  .logo {
+    display: flex;
+    font-family: $destaque_font;
+    align-items: center;
+    margin: 0;
 
-        &::after {
-            content: ".";
-            color: red;
-        }
+    &::after {
+      content: '.';
+      color: red;
     }
+  }
 
-    #theme_toggler {
-        width: 50px;
-        height: 24px;
-        border: none;
-        border-radius: 30px;
-        box-shadow: inset 0px 0px 10px #00000053;
-        background-color: transparent;
+  ul {
+    gap: 2.5em;
+
+    li {
+      display: flex;
+      flex-direction: column-reverse;
+      width: fit-content;
+
+      &:hover > hr {
+        width: 100%;
+        opacity: 1;
+      }
+
+      a {
+        font-family: $secondary_font;
+        font-weight: bold;
+        padding: 0;
+      }
+
+      hr {
+        width: 0;
+        margin: 0;
+        transition: $transition_one;
+        border: 2px solid $destaque_color--secondary;
+        opacity: 0;
+      }
     }
+  }
+
+  #theme_toggler {
+    width: 50px;
+    height: 24px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 10px #00000053;
+    background-color: transparent;
+  }
 }
