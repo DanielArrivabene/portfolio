@@ -1,1 +1,21 @@
 @import '../variables.scss';
+
+#Apresentation {
+  h1 {
+    font-size: 4.5em;
+    text-align: center;
+    font-family: $destaque_font;
+
+    i {
+      font-family: $destaque_font;
+      font-style: normal;
+      text-shadow: 3px 0 0 $destaque_color--secondary;
+    }
+  }
+
+  h2 {
+    color: #353535;
+    padding: 0.25em 0.4em;
+    font-size: 1.8em;
+  }
+}
