@@ -1,7 +1,9 @@
 import { BiLogoLinkedin, BiLogoWhatsapp, BiLogoGithub } from 'react-icons/bi';
 
-export const contactsList = [
+const contactsList = [
   { name: 'LinkedIn', href: '#', icon: <BiLogoLinkedin /> },
   { name: 'Whatsapp', href: '#', icon: <BiLogoWhatsapp /> },
   { name: 'Github', href: '#', icon: <BiLogoGithub /> },
 ];
+
+export default contactsList;

@@ -1,6 +1,5 @@
 import '../../styles/components/Apresentation.scss';
 
-
 import { BiLogoLinkedin, BiLogoWhatsapp, BiLogoGithub } from 'react-icons/bi';
 
 const contactsList = [
@@ -23,14 +22,14 @@ function Apresentation() {
       </h1>
       <h2>Frontend Web Developer</h2>
 
-      {contactsList &
-        contactsList.map((contact) => (
-          <ul key={contact.name} className='list-group contacts-list'>
-            <li className='list-group-item'>
+      <ul className='contacts-list list-group'>
+        {contactsList &&
+          contactsList.map((contact) => (
+            <li key={contact.name} className="list-group-item">
               <a href={contact.href}>{contact.icon}</a>
             </li>
-          </ul>
-        ))}
+          ))}
+      </ul>
     </section>
   );
 }

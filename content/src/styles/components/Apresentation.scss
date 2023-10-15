@@ -27,5 +27,18 @@
     position: absolute;
     bottom: 3em;
     left: 0;
+
+    li {
+      border: none;
+      margin-top: 1em;
+
+      svg {
+        font-size: 1.9em;
+
+        path {
+          color: $text_color--secondary;
+        }
+      }
+    }
   }
 }
