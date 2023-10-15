@@ -1,26 +1,42 @@
 import '../../styles/components/Navbar.scss';
 
 function Navbar() {
-  return <nav>
-    <h2 className="logo">DGA</h2>
-    <ul>
-        <li>
-            <a href="#">teste</a>
+  return (
+    <nav
+      id='navbar'
+      className='navbar navbar-expand container py-4 d-flex justify-content-between'
+    >
+      <h2 className='logo'>DGA</h2>
+      <ul className='navbar-nav'>
+        <li className='nav-item'>
+          <a className='nav-link' href='#'>
+            teste
+          </a>
         </li>
-        <li>
-            <a href="#">teste</a>
+        <li className='nav-item'>
+          <a className='nav-link' href='#'>
+            teste
+          </a>
         </li>
-        <li>
-            <a href="#">teste</a>
+        <li className='nav-item'>
+          <a className='nav-link' href='#'>
+            teste
+          </a>
         </li>
-        <li>
-            <a href="#">teste</a>
+        <li className='nav-item'>
+          <a className='nav-link' href='#'>
+            teste
+          </a>
         </li>
-        <li>
-            <a href="#">teste</a>
+        <li className='nav-item'>
+          <a className='nav-link' href='#'>
+            teste
+          </a>
         </li>
-    </ul>
-  </nav>;
+      </ul>
+      <button id='theme_toggler'>t</button>
+    </nav>
+  );
 }
 
 export default Navbar;
