@@ -1,6 +1,8 @@
 @import '../variables.scss';
 
 #Apresentation {
+  position: relative;
+
   h1 {
     font-size: 4.5em;
     text-align: center;
@@ -14,8 +16,16 @@
   }
 
   h2 {
-    color: #353535;
-    padding: 0.25em 0.4em;
+    color: #1f1f1f;
+    font-family: $primary_font;
+    text-decoration: underline;
+    text-decoration-color: $destaque_color;
     font-size: 1.8em;
+  }
+
+  .contacts-list {
+    position: absolute;
+    bottom: 3em;
+    left: 0;
   }
 }
