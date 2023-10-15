@@ -1,13 +1,15 @@
 import './App.scss';
 
 import Navbar from './components/header/Navbar';
+import Apresentation from './components/main/Apresentation';
 
 function App() {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
+      <main>
+        <Apresentation />
+      </main>
     </>
   );
 }
