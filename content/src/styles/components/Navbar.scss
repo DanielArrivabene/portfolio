@@ -3,6 +3,17 @@
 #navbar {
     background-blend-mode: difference;
 
+    .logo {
+        display: flex;
+        font-family: $destaque_font;
+        align-items: center;
+
+        &::after {
+            content: ".";
+            color: red;
+        }
+    }
+
     #theme_toggler {
         width: 50px;
         height: 24px;
