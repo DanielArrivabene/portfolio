@@ -6,6 +6,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 999;
+  backdrop-filter: blur(4px);
 
   #navbar {
     background-blend-mode: difference;
