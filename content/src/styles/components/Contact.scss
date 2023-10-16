@@ -1,0 +1,22 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#contact {
+  .contacts__container {
+    gap: 1.2em;
+
+    p {
+        font-size: 1.15em;
+    }
+
+    .contact_label > strong {
+        font-family: $secondary_font;
+        font-weight: bold;
+
+        &::after {
+            content: ":";
+            color: $destaque_color;
+        }
+    }
+  }
+}

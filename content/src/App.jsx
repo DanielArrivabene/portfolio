@@ -1,8 +1,7 @@
-import './App.scss';
-
 import Navbar from './components/header/Navbar';
 import About from './components/main/About';
 import Apresentation from './components/main/Apresentation';
+import Contact from './components/main/Contact';
 import Projects from './components/main/Projects';
 import Technologies from './components/main/Technologies';
 
@@ -15,6 +14,7 @@ function App() {
         <About />
         <Technologies />
         <Projects />
+        <Contact />
       </main>
     </>
   );
