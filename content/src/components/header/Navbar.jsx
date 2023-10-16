@@ -1,6 +1,14 @@
 import '../../styles/components/Navbar.scss';
 
 function Navbar() {
+
+  const navLinks = [
+    {text: 'Sobre', href:'#about'},
+    {text: 'Skills', href:'#technologies'},
+    {text: 'Portfólio', href:'#projects'},
+    {text: 'Contatos', href:'#contact'},
+  ]
+
   return (
     <header>
       <nav
@@ -9,36 +17,14 @@ function Navbar() {
       >
         <h2 className='logo'>DGA</h2>
         <ul className='navbar-nav'>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              About
+          {navLinks.map((link, index) => (
+            <li key={index} className='nav-item'>
+            <a className='nav-link' href={link.href}>
+              {link.text}
             </a>
             <hr/>
           </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              About
-            </a>
-            <hr/>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              About
-            </a>
-            <hr/>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              teste
-            </a>
-            <hr/>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              teste
-            </a>
-            <hr/>
-          </li>
+          ))}
         </ul>
         <button id='theme_toggler'>t</button>
       </nav>
