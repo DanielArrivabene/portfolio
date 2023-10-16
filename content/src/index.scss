@@ -12,6 +12,11 @@ body {
   background-color: $bg_color !important;
 }
 
+h2 {
+  font-family: $secondary_font !important;
+  font-weight: bolder !important;
+}
+
 a {
   color: $text_color;
   text-decoration: none;
