@@ -1,2 +1,31 @@
 @import '../variables.scss';
 @import '../mixins.scss';
+
+#about {
+
+    .avatar__container {
+        .avatar {
+            width: fit-content;
+            height: 100%;
+        }
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+
+        .description__title {
+            font-family: $secondary_font;
+        }
+
+        .description__text {
+            font-size: 1.15em;
+        }
+
+        .description__link {
+            @include btn_destaque--secondary;
+            width: fit-content;
+        }
+    }
+}
