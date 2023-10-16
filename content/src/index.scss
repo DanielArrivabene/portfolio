@@ -33,3 +33,16 @@ html {
 .container {
   max-width: 1150px !important;
 }
+
+
+.logo {
+  display: flex;
+  font-family: $destaque_font !important;
+  align-items: center;
+  margin: 0;
+
+  &::after {
+    content: '.';
+    color: red;
+  }
+}

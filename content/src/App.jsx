@@ -1,3 +1,4 @@
+import Footer from './components/footer/Footer';
 import Navbar from './components/header/Navbar';
 import About from './components/main/About';
 import Apresentation from './components/main/Apresentation';
@@ -16,6 +17,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

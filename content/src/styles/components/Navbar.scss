@@ -11,18 +11,6 @@ header {
   #navbar {
     background-blend-mode: difference;
 
-    .logo {
-      display: flex;
-      font-family: $destaque_font !important;
-      align-items: center;
-      margin: 0;
-
-      &::after {
-        content: '.';
-        color: red;
-      }
-    }
-
     ul {
       gap: 2.5em;
 
