@@ -1,2 +1,95 @@
 @import '../variables.scss';
 @import '../mixins.scss';
+
+#technologies {
+  .tech__description {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+
+    h2 {
+      font-family: $secondary_font;
+    }
+
+    p {
+      font-size: 1.15em;
+    }
+
+    a {
+        text-wrap: nowrap;
+        color: $destaque_color;
+    }
+  }
+
+  .tech__items {
+
+    .tech__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.3em;
+
+        li {
+            border: none;
+            width: 6em;
+            height: 6em;
+            box-shadow: 10px 10px 40px #00000018;
+            border-radius: 15px;
+            background-color: #fff;
+
+            svg {
+                font-size: 3.5em;
+            }
+        }
+
+        .HTML > svg * {
+            color: #DD4B25;
+        }
+
+        .Bootstrap > svg * {
+            color: #8713F4;
+        }
+
+        .CSS > svg * {
+            color: #2862E9;
+        }
+
+        .Sass > svg * {
+            color: #C76494;
+        }
+        
+        .Javascript > svg * {
+            color: #EFD81D;
+        }
+
+        .Typescript > svg * {
+            color: #2F74C0;
+        }
+
+        .React > svg * {
+            color: #5ED3F3;
+        }
+
+        .Redux > svg * {
+            color: #6E41B3;
+        }
+
+        .Axios > svg * {
+            color: #5F30E5;
+        }
+
+        .Git > svg * {
+            color: #F05539;
+        }
+
+        .Wordpress > svg * {
+            color: #28799E;
+        }
+
+        .Framer > svg * {
+            color: #EE0BB2;
+        }
+    }
+  }
+}

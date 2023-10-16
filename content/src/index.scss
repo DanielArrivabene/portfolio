@@ -8,6 +8,10 @@
   color: $text_color;
 }
 
+body {
+  background-color: $bg_color !important;
+}
+
 a {
   color: $text_color;
   text-decoration: none;
@@ -17,3 +21,6 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  max-width: 1150px !important;
+}
