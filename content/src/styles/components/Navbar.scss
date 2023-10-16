@@ -13,7 +13,7 @@ header {
 
     .logo {
       display: flex;
-      font-family: $destaque_font;
+      font-family: $destaque_font !important;
       align-items: center;
       margin: 0;
 
