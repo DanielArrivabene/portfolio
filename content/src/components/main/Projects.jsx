@@ -12,7 +12,7 @@ function Projects() {
         </h2>
         <article className='projects__container'>
           <div className='row justify-content-center'>
-            <div className='col-5 project__image'>
+            <div className='col-6 project__image'>
               <img src={Repara} alt='Repara!' loading='lazy' />
             </div>
             <div className='col-6 project__description'>
@@ -28,7 +28,7 @@ function Projects() {
             </div>
           </div>
           <div className='row justify-content-center'>
-            <div className='col-5 project__image order-1'>
+            <div className='col-6 project__image order-1'>
               <img src={Mentalize} alt='Repara!' loading='lazy' />
             </div>
             <div className='col-6 project__description text-end'>
