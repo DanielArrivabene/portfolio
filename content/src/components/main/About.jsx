@@ -21,7 +21,7 @@ function About() {
               ideias em realidade usando soluções criativas, sempre em busca de
               novas habilidades, ferramentas e conceitos.{' '}
             </p>
-            <a className='description__link' href='#'>
+            <a className='description__link' href='#technologies'>
               Ver Skills
             </a>
           </div>

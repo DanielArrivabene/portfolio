@@ -21,7 +21,7 @@ function Apresentation() {
         <i>D</i>aniel <i>G</i>. <i>A</i>rrivabene
       </h1>
       <h2>Frontend Web Developer</h2>
-      <a href="#" className="apresentation_button">Faça um Orçamento!</a>
+      <a href="#contact" className="apresentation_button">Faça um Orçamento!</a>
 
       <ul className='contacts-list list-group'>
         {contactsList &&
@@ -32,7 +32,7 @@ function Apresentation() {
           ))}
       </ul>
 
-      <a href='#' className="scroll_link">Scroll Down <BiDownArrowAlt /></a>
+      <a href='#about' className="scroll_link">Scroll Down <BiDownArrowAlt /></a>
     </section>
   );
 }
