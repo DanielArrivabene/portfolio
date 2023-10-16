@@ -40,13 +40,9 @@ header {
       }
     }
 
-    #theme_toggler {
-      width: 50px;
-      height: 24px;
-      border: none;
-      border-radius: 30px;
-      box-shadow: inset 0px 0px 10px #00000053;
-      background-color: transparent;
+    svg {
+      font-size: 1.8em;
+      cursor: help;
     }
   }
 }

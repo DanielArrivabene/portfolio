@@ -1,5 +1,7 @@
 import '../../styles/components/Navbar.scss';
 
+import { GoVerified } from 'react-icons/go'
+
 function Navbar() {
 
   const navLinks = [
@@ -26,7 +28,7 @@ function Navbar() {
           </li>
           ))}
         </ul>
-        <button id='theme_toggler'>t</button>
+        <GoVerified />
       </nav>
     </header>
   );
