@@ -2,6 +2,19 @@ import '../../styles/components/Contact.scss';
 
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import {
+  BiLogoLinkedin,
+  BiLogoWhatsapp,
+  BiLogoGithub,
+} from 'react-icons/bi';
+
+import Form from './Form';
+
+const contactsList = [
+  { name: 'LinkedIn', href: '#', icon: <BiLogoLinkedin /> },
+  { name: 'Whatsapp', href: '#', icon: <BiLogoWhatsapp /> },
+  { name: 'Github', href: '#', icon: <BiLogoGithub /> },
+];
 
 function Contact() {
   return (
@@ -26,51 +39,17 @@ function Contact() {
               </p>
               <p>danielg.arrivabene@gmail.com</p>
             </div>
+            <ul className='list-group contacts_list d-flex flex-row'>
+              {contactsList &&
+                contactsList.map((contact) => (
+                  <li key={contact.name} className='list-group-item border-0'>
+                    <a href={contact.href}>{contact.icon}</a>
+                  </li>
+                ))}
+            </ul>
           </article>
           <article className='col-5 form__container'>
-            <form>
-              <div className='form-group'>
-                <label>Nome</label>
-                <input
-                  type='text'
-                  className='form-control'
-                  id='name_input'
-                  placeholder='ex. João Silva'
-                />
-              </div>
-              <div className='form-group'>
-                <label>E-mail</label>
-                <input
-                  type='email'
-                  className='form-control'
-                  id='exampleInputEmail1'
-                  placeholder='ex. seuemail@exemplo.com'
-                />
-              </div>
-              <div className='form-group'>
-                <label>Telefone</label>
-                <input
-                  type='tel'
-                  className='form-control'
-                  id='exampleInputEmail1'
-                  placeholder='ex. (99) 99999-9999'
-                />
-              </div>
-              <div className='form-group'>
-                <label>
-                  Mensagem
-                </label>
-                <textarea
-                  className='form-control'
-                  id='message_input'
-                  rows='2'
-                  placeholder='Digite aqui ...'
-                ></textarea>
-              </div>
-              <button type='submit' className='btn'>
-                Enviar
-              </button>
-            </form>
+            <Form />
           </article>
         </div>
       </div>

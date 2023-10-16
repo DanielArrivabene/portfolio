@@ -18,6 +18,30 @@
         color: $destaque_color;
       }
     }
+
+    .contacts_list {
+      gap: 1em;
+
+      li {
+        background-color: $text_color;
+        padding: 7px;
+        border-radius: 50%;
+
+        &:hover {
+          scale: 1.06;
+          transition: $transition_one;
+          background-color: $text_color--secondary;
+        }
+
+        svg {
+          font-size: 1.6em;
+
+          * {
+            color: $bg_color;
+          }
+        }
+      }
+    }
   }
 
   .form__container {
@@ -58,6 +82,10 @@
         color: $destaque_color;
         font-size: 1.2em;
         font-family: $destaque_font;
+
+        &:hover {
+          background-color: $text_color--secondary;
+        }
       }
     }
   }
