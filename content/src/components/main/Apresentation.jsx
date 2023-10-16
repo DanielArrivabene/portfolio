@@ -1,6 +1,6 @@
 import '../../styles/components/Apresentation.scss';
 
-import { BiLogoLinkedin, BiLogoWhatsapp, BiLogoGithub } from 'react-icons/bi';
+import { BiLogoLinkedin, BiLogoWhatsapp, BiLogoGithub, BiDownArrowAlt } from 'react-icons/bi';
 
 const contactsList = [
   { name: 'LinkedIn', href: '#', icon: <BiLogoLinkedin /> },
@@ -21,6 +21,7 @@ function Apresentation() {
         <i>D</i>aniel <i>G</i>. <i>A</i>rrivabene
       </h1>
       <h2>Frontend Web Developer</h2>
+      <a href="#" className="apresentation_button">Faça um Orçamento!</a>
 
       <ul className='contacts-list list-group'>
         {contactsList &&
@@ -30,6 +31,8 @@ function Apresentation() {
             </li>
           ))}
       </ul>
+
+      <a href='#' className="scroll_link">Scroll Down <BiDownArrowAlt /></a>
     </section>
   );
 }

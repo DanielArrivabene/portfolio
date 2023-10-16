@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixins.scss';
 
 #Apresentation {
   position: relative;
@@ -23,6 +24,11 @@
     font-size: 1.8em;
   }
 
+  .apresentation_button {
+    @include btn_destaque--secondary;
+    margin-top: 1em;
+  }
+
   .contacts-list {
     position: absolute;
     bottom: 3em;
@@ -30,7 +36,16 @@
 
     li {
       border: none;
-      margin-top: 1em;
+      margin-top: .8em;
+
+      &:hover {
+        scale: 1.1;
+        transition: $transition_one;
+
+        svg > path {
+          color: $text_color;
+        }
+      }
 
       svg {
         font-size: 1.9em;
@@ -39,6 +54,23 @@
           color: $text_color--secondary;
         }
       }
+    }
+  }
+
+  .scroll_link {
+    position: absolute;
+    bottom: 3em;
+    right: 0;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    color: $text_color--secondary;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .7em;
+
+    svg {
+      font-size: 1.4em;
     }
   }
 }
