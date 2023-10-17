@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import '../../styles/components/Navbar.scss';
 
@@ -19,8 +20,8 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleMenu = () => {
-    setShowMenu(!showMenu)
-  }
+    setShowMenu(!showMenu);
+  };
 
   return (
     <header>
@@ -31,19 +32,34 @@ function Navbar() {
         <h2 className='logo'>DGA</h2>
         <ul className='navbar-nav'>
           {navLinks.map((link, index) => (
-            <li key={index} className='nav-item'>
+            <motion.li
+              key={index}
+              className='nav-item'
+              initial={{
+                y: -40,
+                opacity: 0,
+              }}
+              animate={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 0.8,
+                delay: index / 4,
+              }}
+            >
               <a className='nav-link' href={link.href}>
                 {link.text}
               </a>
               <hr />
-            </li>
+            </motion.li>
           ))}
         </ul>
         <GoVerified />
         <button id='menu_toggler' onClick={handleMenu}>
           <AiOutlineMenu />
         </button>
-      {showMenu && <Menu event={handleMenu} />}
+        {showMenu && <Menu event={handleMenu} />}
       </nav>
     </header>
   );
