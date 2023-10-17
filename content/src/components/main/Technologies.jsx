@@ -61,17 +61,18 @@ function Technologies() {
               Para mais informações <a href='#contact'>entre em contato</a>.
             </p>
           </article>
-          <article className='col-md-7 tech__items' ref={ref}>
+          <article className='col-md-6 tech__items' ref={ref}>
             <ul className='list-group tech__list'>
               {technologiesList.map((tech, index) => (
                 <motion.li
                   key={tech.name}
                   className={`list-group-item d-flex
                  justify-content-center align-items-center ${tech.name}`}
-                  initial={{ opacity: 0, y: -40 }}
+                  initial={{ opacity: 0, y: -30 }}
                   animate={animation}
-                  transition={{ duration: 1.5, delay: index / 3 }}
+                  transition={{ duration: 1.4, delay: index / 3 }}
                 >
+                  <p className="tech__name">{tech.name}</p>
                   {tech.icon}
                 </motion.li>
               ))}

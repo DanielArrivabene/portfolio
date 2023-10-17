@@ -30,15 +30,38 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1.3em;
+        gap: 1em;
 
         li {
           border: none;
-          width: 6em;
-          height: 6em;
+          width: 5.5em;
+          height: 5.5em;
           box-shadow: 10px 10px 40px #00000018;
-          border-radius: 15px;
+          border-radius: 12px;
           background-color: $bg_color--card;
+          position: relative;
+          cursor: help;
+
+          &:hover .tech__name {
+            transform: translate(-50%, -40px);
+            opacity: 1;
+            transition: $transition_two;
+          }
+
+          .tech__name {
+            text-wrap: nowrap;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50px);
+            color: $bg_color--card;
+            background-color: $destaque_color;
+            font-family: $secondary_font;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: .3em .6em;
+            opacity: 0;
+          }
 
           svg {
             font-size: 3.5em;
