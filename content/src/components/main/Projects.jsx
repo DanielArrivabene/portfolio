@@ -15,7 +15,7 @@ function Projects() {
             <div className='col-6 project__image'>
               <img src={Repara} alt='Repara!' loading='lazy' />
             </div>
-            <div className='col-6 project__description'>
+            <div className='col-5 project__description'>
               <h3>Repara!</h3>
               <p>
                 Projeto construído em HTML, Bootstrap, CSS, Sass, Javascript e
@@ -31,7 +31,7 @@ function Projects() {
             <div className='col-6 project__image order-1'>
               <img src={Mentalize} alt='Repara!' loading='lazy' />
             </div>
-            <div className='col-6 project__description text-end'>
+            <div className='col-5 project__description text-end'>
               <h3>Mentalize</h3>
               <p>
                 Site da clínica médica Mentalize, desenvolvido com HTML, CSS,
