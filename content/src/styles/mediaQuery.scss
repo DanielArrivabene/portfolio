@@ -1,1 +1,17 @@
 @import './variables.scss';
+
+@media (width < 1000px) {
+    #navbar {
+        > .navbar-nav {
+            display: none;
+        }
+
+        > svg {
+            display: none;
+        }
+    
+        #menu_toggler {
+            display: block !important;
+        }
+    }
+}

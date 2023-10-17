@@ -1,15 +1,26 @@
+import { useState } from 'react';
+
 import '../../styles/components/Navbar.scss';
 
-import { GoVerified } from 'react-icons/go'
+import { GoVerified } from 'react-icons/go';
+import { AiOutlineMenu } from 'react-icons/ai';
+
+import Menu from './Menu';
 
 function Navbar() {
-
   const navLinks = [
-    {text: 'Sobre', href:'#about'},
-    {text: 'Skills', href:'#technologies'},
-    {text: 'Portfólio', href:'#projects'},
-    {text: 'Contatos', href:'#contact'},
-  ]
+    { text: 'Início', href: '#' },
+    { text: 'Sobre', href: '#about' },
+    { text: 'Skills', href: '#technologies' },
+    { text: 'Portfólio', href: '#projects' },
+    { text: 'Contatos', href: '#contact' },
+  ];
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenu = () => {
+    setShowMenu(!showMenu)
+  }
 
   return (
     <header>
@@ -21,14 +32,18 @@ function Navbar() {
         <ul className='navbar-nav'>
           {navLinks.map((link, index) => (
             <li key={index} className='nav-item'>
-            <a className='nav-link' href={link.href}>
-              {link.text}
-            </a>
-            <hr/>
-          </li>
+              <a className='nav-link' href={link.href}>
+                {link.text}
+              </a>
+              <hr />
+            </li>
           ))}
         </ul>
         <GoVerified />
+        <button id='menu_toggler' onClick={handleMenu}>
+          <AiOutlineMenu />
+        </button>
+      {showMenu && <Menu event={handleMenu} />}
       </nav>
     </header>
   );
