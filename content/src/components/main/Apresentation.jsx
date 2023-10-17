@@ -10,9 +10,21 @@ import {
 } from 'react-icons/bi';
 
 const contactsList = [
-  { name: 'LinkedIn', href: '#', icon: <BiLogoLinkedin /> },
-  { name: 'Whatsapp', href: '#', icon: <BiLogoWhatsapp /> },
-  { name: 'Github', href: '#', icon: <BiLogoGithub /> },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/daniel-goulart-arrivabene/',
+    icon: <BiLogoLinkedin />,
+  },
+  {
+    name: 'Whatsapp',
+    href: 'https://wa.me//5527996544482',
+    icon: <BiLogoWhatsapp />,
+  },
+  {
+    name: 'Github',
+    href: 'https://github.com/DanielArrivabene',
+    icon: <BiLogoGithub />,
+  },
 ];
 
 function Apresentation() {

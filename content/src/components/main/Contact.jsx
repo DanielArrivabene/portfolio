@@ -2,18 +2,26 @@ import '../../styles/components/Contact.scss';
 
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-import {
-  BiLogoLinkedin,
-  BiLogoWhatsapp,
-  BiLogoGithub,
-} from 'react-icons/bi';
+import { BiLogoLinkedin, BiLogoWhatsapp, BiLogoGithub } from 'react-icons/bi';
 
 import Form from './Form';
 
 const contactsList = [
-  { name: 'LinkedIn', href: '#', icon: <BiLogoLinkedin /> },
-  { name: 'Whatsapp', href: '#', icon: <BiLogoWhatsapp /> },
-  { name: 'Github', href: '#', icon: <BiLogoGithub /> },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/daniel-goulart-arrivabene/',
+    icon: <BiLogoLinkedin />,
+  },
+  {
+    name: 'Whatsapp',
+    href: 'https://wa.me//5527996544482',
+    icon: <BiLogoWhatsapp />,
+  },
+  {
+    name: 'Github',
+    href: 'https://github.com/DanielArrivabene',
+    icon: <BiLogoGithub />,
+  },
 ];
 
 function Contact() {
@@ -43,7 +51,13 @@ function Contact() {
               {contactsList &&
                 contactsList.map((contact) => (
                   <li key={contact.name} className='list-group-item border-0'>
-                    <a href={contact.href}>{contact.icon}</a>
+                    <a
+                      href={contact.href}
+                      target='_blank'
+                      rel='noreferrer noopener'
+                    >
+                      {contact.icon}
+                    </a>
                   </li>
                 ))}
             </ul>
