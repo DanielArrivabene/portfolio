@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -10,10 +10,31 @@ function Form() {
     if (inView) {
       animation.start({
         width: '100%',
-        opacity: 1
+        opacity: 1,
       });
     }
   }, [inView, animation]);
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [number, setNumber] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleNumberChange = (e) => {
+    setNumber(e.target.value);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
 
   return (
     <form ref={ref}>
@@ -27,6 +48,8 @@ function Form() {
           className='form-control'
           id='name_input'
           placeholder='ex. João Silva'
+          onChange={handleNameChange}
+          value={name}
         />
       </div>
       <div className='form-group'>
@@ -39,6 +62,8 @@ function Form() {
           className='form-control'
           id='exampleInputEmail1'
           placeholder='ex. seuemail@exemplo.com'
+          onChange={handleEmailChange}
+          value={email}
         />
       </div>
       <div className='form-group'>
@@ -51,6 +76,8 @@ function Form() {
           className='form-control'
           id='exampleInputEmail1'
           placeholder='ex. (99) 99999-9999'
+          onChange={handleNumberChange}
+          value={number}
         />
       </div>
       <div className='form-group'>
@@ -63,11 +90,19 @@ function Form() {
           id='message_input'
           rows='5'
           placeholder='Digite aqui ...'
+          onChange={handleMessageChange}
+          value={message}
         ></motion.textarea>
       </div>
-      <button type='submit' className='btn'>
+      <a
+        href={`https://wa.me//5527996544482?text=Olá,%20meus%20dados%20são:%20Nome:%20${name},%20E-mail:%20${email},%20Número:%20${number}.%20Mensagem:%20${message}`}
+        target='_blank'
+        rel='noreferrer noopener'
+        className='btn'
+        id='send'
+      >
         Enviar
-      </button>
+      </a>
     </form>
   );
 }
