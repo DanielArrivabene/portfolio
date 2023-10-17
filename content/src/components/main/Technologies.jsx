@@ -31,7 +31,7 @@ function Technologies() {
   return (
     <section id='technologies'>
       <div className='container'>
-        <div className='row justify-content-between'>
+        <div className='row justify-content-between gap-4'>
           <article className='col-md-5 tech__description'>
             <h2>Quais são as tecnologias que domino?</h2>
             <p>
@@ -42,7 +42,7 @@ function Technologies() {
               Para mais informações <a href='#contact'>entre em contato</a>.
             </p>
           </article>
-          <article className='col-md-7 tech__items'>
+          <article className='col-md-6 tech__items'>
             <ul className='list-group tech__list'>
               {technologiesList.map((tech) => (
                 <li
