@@ -1,5 +1,7 @@
 import '../../styles/components/Projects.scss';
 
+import { motion } from 'framer-motion';
+
 import Repara from '../../assets/repara.png';
 import Mentalize from '../../assets/mentalize.png';
 
@@ -13,7 +15,14 @@ function Projects() {
         <article className='projects__container'>
           <div className='row justify-content-center'>
             <div className='col-6 project__image'>
-              <img src={Repara} alt='Repara!' loading='lazy' />
+              <motion.img
+                src={Repara}
+                alt='Repara!'
+                loading='lazy'
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+              />
             </div>
             <div className='col-5 project__description'>
               <h3>Repara!</h3>
@@ -29,13 +38,24 @@ function Projects() {
           </div>
           <div className='row justify-content-center'>
             <div className='col-6 project__image order-1'>
-              <img src={Mentalize} alt='Repara!' loading='lazy' />
+              <motion.img
+                src={Mentalize}
+                alt='Repara!'
+                loading='lazy'
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+              />
             </div>
             <div className='col-5 project__description text-end'>
               <h3>Mentalize</h3>
               <p>
                 Site da clínica médica Mentalize, desenvolvido com HTML, CSS,
-                Sass, Javascript e React, tendo uma área integrada com os posts do Instagram da clínica. O objetivo do projeto é informar aos pacientes sobre as atividades oferecidas e horários de funcionamento da clínica. Verifique a conclusão desse objetivo <a href='#'>visitando o site</a> e{' '}
+                Sass, Javascript e React, tendo uma área integrada com os posts
+                do Instagram da clínica. O objetivo do projeto é informar aos
+                pacientes sobre as atividades oferecidas e horários de
+                funcionamento da clínica. Verifique a conclusão desse objetivo{' '}
+                <a href='#'>visitando o site</a> e{' '}
                 <a href='#'>analisando o código</a>.
               </p>
             </div>
