@@ -45,8 +45,11 @@ function Technologies() {
   }, [inView, animation]);
 
   return (
-    <section id='technologies' ref={ref}>
-      <div className='container'>
+    <section
+      id='technologies'
+      className='d-flex align-items-center justify-content-around'
+    >
+      <div className='container d-flex align-items-center'>
         <div className='row justify-content-between'>
           <article className='col-md-5 mb-5 tech__description'>
             <h2>Quais são as tecnologias que domino?</h2>
@@ -58,7 +61,7 @@ function Technologies() {
               Para mais informações <a href='#contact'>entre em contato</a>.
             </p>
           </article>
-          <article className='col-md-7 tech__items'>
+          <article className='col-md-7 tech__items' ref={ref}>
             <ul className='list-group tech__list'>
               {technologiesList.map((tech, index) => (
                 <motion.li

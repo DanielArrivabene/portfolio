@@ -26,7 +26,7 @@ function Navbar() {
     <header>
       <nav
         id='navbar'
-        className='navbar navbar-expand container py-4 d-flex justify-content-between'
+        className='navbar navbar-expand container py-3 d-flex justify-content-between'
       >
         <h2 className='logo'>DGA</h2>
         <ul className='navbar-nav'>
