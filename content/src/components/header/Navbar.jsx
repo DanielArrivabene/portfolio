@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 
 import '../../styles/components/Navbar.scss';
 
@@ -32,27 +31,16 @@ function Navbar() {
         <h2 className='logo'>DGA</h2>
         <ul className='navbar-nav'>
           {navLinks.map((link, index) => (
-            <motion.li
+            <li
               key={index}
               className='nav-item'
-              initial={{
-                y: -40,
-                opacity: 0,
-              }}
-              animate={{
-                y: 0,
-                opacity: 1,
-              }}
-              transition={{
-                duration: 0.8,
-                delay: index / 4,
-              }}
+              
             >
               <a className='nav-link' href={link.href}>
                 {link.text}
               </a>
               <hr />
-            </motion.li>
+            </li>
           ))}
         </ul>
         <GoVerified />
