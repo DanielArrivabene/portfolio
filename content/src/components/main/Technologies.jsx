@@ -1,6 +1,8 @@
 import '../../styles/components/Technologies.scss';
 
-import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import {
   TbBrandHtml5,
@@ -30,8 +32,20 @@ function Technologies() {
     { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
   ];
 
+  const { ref, inView } = useInView(false);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        y: 0,
+      });
+    }
+  }, [inView, animation]);
+
   return (
-    <section id='technologies'>
+    <section id='technologies' ref={ref}>
       <div className='container'>
         <div className='row justify-content-between'>
           <article className='col-md-5 mb-5 tech__description'>
@@ -52,7 +66,7 @@ function Technologies() {
                   className={`list-group-item d-flex
                  justify-content-center align-items-center ${tech.name}`}
                   initial={{ opacity: 0, y: -40 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  animate={animation}
                   transition={{ duration: 1.5, delay: index / 3 }}
                 >
                   {tech.icon}

@@ -1,13 +1,26 @@
 import '../../styles/components/Projects.scss';
 
-import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import Repara from '../../assets/repara.png';
 import Mentalize from '../../assets/mentalize.png';
 
 function Projects() {
+  const { ref, inView } = useInView(false);
+  const animation = useAnimation();
+  
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0, opacity: 1
+      });
+    }
+  }, [inView, animation]);
+
   return (
-    <section id='projects' className='min-vh-100 d-flex align-items-center'>
+    <section id='projects' className='min-vh-100 d-flex align-items-center' ref={ref}>
       <div className='container'>
         <h2 className='text-center'>
           Confira alguns dos projetos já realizados
@@ -20,7 +33,7 @@ function Projects() {
                 alt='Repara!'
                 loading='lazy'
                 initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                animate={animation}
                 transition={{ duration: 1, delay: 0.5 }}
               />
             </div>
@@ -43,7 +56,7 @@ function Projects() {
                 alt='Repara!'
                 loading='lazy'
                 initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                animate={animation}
                 transition={{ duration: 1, delay: 0.5 }}
               />
             </div>
