@@ -17,7 +17,7 @@ function Menu(props) {
       <ul className='menu__nav d-flex flex-column justify-content-center align-items-center p-0 w-100 h-100'>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <a className='nav-link' href={link.href}>
+            <a className='nav-link' href={link.href} onClick={props.event}>
               {link.text}
             </a>
             <hr />
