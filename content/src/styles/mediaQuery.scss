@@ -1,17 +1,29 @@
 @import './variables.scss';
 
-@media (width < 1000px) {
-    #navbar {
-        > .navbar-nav {
-            display: none;
-        }
-
-        > svg {
-            display: none;
-        }
-    
-        #menu_toggler {
-            display: block !important;
-        }
+@media (width < 700px) {
+  #navbar {
+    > .navbar-nav {
+      display: none;
     }
+
+    > svg {
+      display: none;
+    }
+
+    #menu_toggler {
+      display: block !important;
+    }
+  }
+
+  #Apresentation {
+    font-size: 0.8em;
+  }
+
+  #about {
+    .row {
+      .description .description__link {
+        margin: auto;
+      }
+    }
+  }
 }

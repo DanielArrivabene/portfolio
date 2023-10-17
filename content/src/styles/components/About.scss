@@ -2,30 +2,33 @@
 @import '../mixins.scss';
 
 #about {
+  .row {
+    gap: 2em;
 
     .avatar__container {
-        .avatar {
-            width: 300px;
-            height: 100%;
-        }
+      .avatar {
+        width: 300px;
+        height: 100%;
+      }
     }
-    
+
     .description {
-        display: flex;
-        flex-direction: column;
-        gap: .2em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
 
-        .description__title {
-            font-family: $secondary_font;
-        }
+      .description__title {
+        font-family: $secondary_font;
+      }
 
-        .description__text {
-            font-size: 1.15em;
-        }
+      .description__text {
+        font-size: 1.15em;
+      }
 
-        .description__link {
-            @include btn_destaque--secondary;
-            width: fit-content;
-        }
+      .description__link {
+        @include btn_destaque--secondary;
+        width: fit-content;
+      }
     }
+  }
 }

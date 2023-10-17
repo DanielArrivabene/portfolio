@@ -4,10 +4,10 @@ import Avatar from '../../assets/eu6.jpg';
 
 function About() {
   return (
-    <section id='about' className='vh-100 d-flex justify-content-around'>
+    <section id='about' className='min-vh-100 mt-5 d-flex justify-content-around'>
       <article className='container d-flex align-items-center'>
         <div className='row'>
-          <div className='col-md-7 text-center avatar__container'>
+          <div className='col-md-6 text-center avatar__container'>
             <img className="avatar" src={Avatar} alt='Daniel Goulart Arrivabene' />
           </div>
           <div className='col-md-5 description'>
