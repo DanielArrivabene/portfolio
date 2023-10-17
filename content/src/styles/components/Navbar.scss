@@ -6,7 +6,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 2;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
 
   #navbar {
     background-blend-mode: difference;
@@ -28,6 +28,7 @@ header {
           font-family: $secondary_font;
           font-weight: bold;
           padding: 0;
+          text-shadow: 0 0 40px #fff;
         }
 
         hr {
