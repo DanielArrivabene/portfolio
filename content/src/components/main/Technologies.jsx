@@ -1,5 +1,7 @@
 import '../../styles/components/Technologies.scss';
 
+import { motion } from 'framer-motion';
+
 import {
   TbBrandHtml5,
   TbBrandCss3,
@@ -44,14 +46,17 @@ function Technologies() {
           </article>
           <article className='col-md-7 tech__items'>
             <ul className='list-group tech__list'>
-              {technologiesList.map((tech) => (
-                <li
+              {technologiesList.map((tech, index) => (
+                <motion.li
                   key={tech.name}
                   className={`list-group-item d-flex
                  justify-content-center align-items-center ${tech.name}`}
+                  initial={{ opacity: 0, y: -40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1.5, delay: index / 3 }}
                 >
                   {tech.icon}
-                </li>
+                </motion.li>
               ))}
             </ul>
           </article>
