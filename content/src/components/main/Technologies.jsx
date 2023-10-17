@@ -68,7 +68,7 @@ function Technologies() {
                   key={tech.name}
                   className={`list-group-item d-flex
                  justify-content-center align-items-center ${tech.name}`}
-                  initial={{ opacity: 0, y: -30 }}
+                  initial={{ opacity: 0, y: -25 }}
                   animate={animation}
                   transition={{ duration: 1.4, delay: index / 3 }}
                 >
