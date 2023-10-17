@@ -18,10 +18,10 @@ const contactsList = [
 
 function Contact() {
   return (
-    <section id='contact' className='min-vh-100 d-flex align-items-center'>
+    <section id='contact' className='min-vh-100 d-flex align-items-center mb-5'>
       <div className='container'>
-        <div className='row justify-content-center'>
-          <article className='col-6 contacts__container d-flex flex-column '>
+        <div className='row justify-content-center flex-wrap gap-5'>
+          <article className='col-md-5 contacts__container d-flex flex-column '>
             <h2>Você tem algum projeto em mente? Me envie uma mensagem</h2>
             <p>
               Entre em contato comigo preenchendo o formulário, para iniciarmos
@@ -48,7 +48,7 @@ function Contact() {
                 ))}
             </ul>
           </article>
-          <article className='col-5 form__container'>
+          <article className='col-md-5 form__container'>
             <Form />
           </article>
         </div>
