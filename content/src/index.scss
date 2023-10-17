@@ -30,6 +30,16 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  background-color: $bg_color;
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: $text_color--secondary;
+  border-radius: 3px;
+}
+
 .container {
   max-width: 1150px !important;
   padding: 4.5em 2em 0 2em !important;
