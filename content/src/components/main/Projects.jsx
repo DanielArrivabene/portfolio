@@ -10,17 +10,22 @@ import Mentalize from '../../assets/mentalize.png';
 function Projects() {
   const { ref, inView } = useInView(false);
   const animation = useAnimation();
-  
+
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0, opacity: 1
+        x: 0,
+        opacity: 1,
       });
     }
   }, [inView, animation]);
 
   return (
-    <section id='projects' className='min-vh-100 d-flex align-items-center' ref={ref}>
+    <section
+      id='projects'
+      className='min-vh-100 d-flex align-items-center'
+      ref={ref}
+    >
       <div className='container'>
         <h2 className='text-center'>
           Confira alguns dos projetos já realizados
@@ -44,8 +49,16 @@ function Projects() {
                 React. Com foco em apresentar a empresa ao público alvo e atrair
                 clientes, Repara! conta com uma identidade visual única,
                 intuitiva e dinâmica. Fique por dentro dos detalhes{' '}
-                <a href='#'>visitando o site</a> e{' '}
-                <a href='#'>analisando o código</a>.
+                <a
+                  href='https://repara-tec.vercel.app/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  visitando o site
+                </a>{' '}
+                e <a href='https://github.com/DanielArrivabene/repara'
+                  target='_blank'
+                  rel='noreferrer'>analisando o código</a>.
               </p>
             </div>
           </div>
