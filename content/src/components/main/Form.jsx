@@ -36,11 +36,24 @@ function Form() {
     setMessage(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !number || !message) {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+      return;
+    } else {
+      const url = `https://wa.me//5527996544482?text=Olá,%20meus%20dados%20são:%20Nome:%20${name},%20E-mail:%20${email},%20Número:%20${number}.%20Mensagem:%20${message}`;
+      window.open(url, '_blank');
+    }
+  };
+
   return (
     <form ref={ref}>
       <div className='form-group'>
         <label>Nome</label>
         <motion.input
+          required
           initial={{ width: 0, opacity: 0 }}
           animate={animation}
           transition={{ duration: 1, delay: 0.3 }}
@@ -55,6 +68,7 @@ function Form() {
       <div className='form-group'>
         <label>E-mail</label>
         <motion.input
+          required
           initial={{ width: 0, opacity: 0 }}
           animate={animation}
           transition={{ duration: 1, delay: 0.5 }}
@@ -69,6 +83,7 @@ function Form() {
       <div className='form-group'>
         <label>Telefone</label>
         <motion.input
+          required
           initial={{ width: 0, opacity: 0 }}
           animate={animation}
           transition={{ duration: 1, delay: 0.7 }}
@@ -95,11 +110,13 @@ function Form() {
         ></motion.textarea>
       </div>
       <a
+        type='submit'
         href={`https://wa.me//5527996544482?text=Olá,%20meus%20dados%20são:%20Nome:%20${name},%20E-mail:%20${email},%20Número:%20${number}.%20Mensagem:%20${message}`}
         target='_blank'
         rel='noreferrer noopener'
         className='btn'
         id='send'
+        onClick={handleSubmit}
       >
         Enviar
       </a>
