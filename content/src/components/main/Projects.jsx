@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import Repara from '../../assets/repara.png';
-import Mentalize from '../../assets/mentalize.png';
+/*import Mentalize from '../../assets/mentalize.png';*/
 
 function Projects() {
   const { ref, inView } = useInView(false);
