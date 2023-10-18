@@ -40,7 +40,7 @@ function Form() {
     e.preventDefault();
 
     if (!name || !email || !number || !message) {
-      alert('Por favor, preencha todos os campos obrigatórios.');
+      alert('Por favor, preencha todos os campos.');
       return;
     } else {
       const url = `https://wa.me//5527996544482?text=Olá,%20meus%20dados%20são:%20Nome:%20${name},%20E-mail:%20${email},%20Número:%20${number}.%20Mensagem:%20${message}`;
@@ -110,10 +110,6 @@ function Form() {
         ></motion.textarea>
       </div>
       <a
-        type='submit'
-        href={`https://wa.me//5527996544482?text=Olá,%20meus%20dados%20são:%20Nome:%20${name},%20E-mail:%20${email},%20Número:%20${number}.%20Mensagem:%20${message}`}
-        target='_blank'
-        rel='noreferrer noopener'
         className='btn'
         id='send'
         onClick={handleSubmit}
