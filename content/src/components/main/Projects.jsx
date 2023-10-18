@@ -56,12 +56,19 @@ function Projects() {
                 >
                   visitando o site
                 </a>{' '}
-                e <a href='https://github.com/DanielArrivabene/repara'
+                e{' '}
+                <a
+                  href='https://github.com/DanielArrivabene/repara'
                   target='_blank'
-                  rel='noreferrer'>analisando o código</a>.
+                  rel='noreferrer'
+                >
+                  analisando o código
+                </a>
+                .
               </p>
             </div>
           </div>
+          {/*
           <div className='row justify-content-center'>
             <div className='col-6 project__image order-1'>
               <motion.img
@@ -86,6 +93,7 @@ function Projects() {
               </p>
             </div>
           </div>
+          */}
         </article>
       </div>
     </section>
