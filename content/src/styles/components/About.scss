@@ -25,7 +25,7 @@
       }
 
       .description__link {
-        @include btn_destaque--secondary;
+        @include btn_destaque--primary;
         width: fit-content;
       }
     }
