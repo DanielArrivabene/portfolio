@@ -18,8 +18,13 @@
   #Apresentation {
     font-size: 0.8em;
 
+    .contacts-list,
     .scroll_link {
-      display: none !important;
+      bottom: 5em !important;
+    }
+
+    .scroll_link {
+      padding: 1em;
     }
   }
 
