@@ -1,6 +1,6 @@
 import '../../styles/components/About.scss';
 
-import Avatar from '../../assets/eu6.jpg';
+import Avatar from '../../assets/my_picture.png';
 
 function About() {
   return (
