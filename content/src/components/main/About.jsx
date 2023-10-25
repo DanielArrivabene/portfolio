@@ -1,16 +1,14 @@
 import '../../styles/components/About.scss';
 
-import Avatar from '../../assets/my_picture.png';
-
 function About() {
   return (
     <section id='about' className='min-vh-100 d-flex justify-content-around'>
       <article className='container d-flex align-items-center'>
         <div className='row justify-content-center gap-3'>
-          <div className='col-md-5 text-center avatar__container'>
-            <img className="avatar" src={Avatar} alt='Daniel Goulart Arrivabene' loading='lazy' />
+          <div className='col-lg-5 text-center avatar__container'>
+            <div className="avatar"></div>
           </div>
-          <div className='col-md-5 description'>
+          <div className='col-lg-5 description'>
             <h2 className='description__title'>
               Buscando por serviços de desenvolvimento web? Eu posso te ajudar!
             </h2>

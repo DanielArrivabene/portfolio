@@ -4,10 +4,17 @@
 #about {
   .row {
     .avatar__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       .avatar {
         width: 100%;
-        aspect-ratio: 20 / 15 ;
+        aspect-ratio: 5 / 4 ;
         border-radius: 10px;
+        box-shadow: inset 0px -10px 7px $bg_color;
+        background-image: url('../../assets//my_picture.jpg');
+        background-size: contain;
       }
     }
 
