@@ -42,10 +42,10 @@
           background-color: $bg_color--card;
           position: relative;
           cursor: help;
-          z-index: 1;
+          z-index: 2;
 
           &:hover .tech__name {
-            transform: translate(-50%, -40px);
+            transform: translate(-50%, -38px);
             opacity: 1;
             transition: $transition_two;
           }
@@ -55,7 +55,7 @@
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translate(-50%, -50px);
+            transform: translate(-50%, -20px);
             color: $bg_color--card;
             background-color: $destaque_color;
             font-family: $secondary_font;
