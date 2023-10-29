@@ -1,0 +1,11 @@
+#footer {
+  background-color: #fafafa;
+  height: 90px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1529411765);
+}
+#footer .container {
+  padding: 0 2em !important;
+}
+#footer .container span {
+  color: #ff7112;
+}/*# sourceMappingURL=Footer.css.map */

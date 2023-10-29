@@ -1,0 +1,41 @@
+#about .row .avatar__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .row .avatar__container .avatar {
+  width: 100%;
+  aspect-ratio: 5/4;
+  border-radius: 10px;
+  box-shadow: inset 0px -10px 7px #efeded;
+  background-image: url("../../assets//my_picture.jpg");
+  background-size: contain;
+}
+#about .row .description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+#about .row .description .description__title {
+  font-family: "Poppins", sans-serif;
+}
+#about .row .description .description__text {
+  font-size: 1.15em;
+}
+#about .row .description .description__link {
+  text-decoration: none;
+  color: #ff7112;
+  border: 2px solid #ff7112;
+  padding: 0.5em 1.3em;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#about .row .description .description__link:hover {
+  color: #efeded;
+  border: 2px solid #ff7112;
+  background-color: #ff7112;
+  transition: 0.3s ease-in-out;
+}/*# sourceMappingURL=About.css.map */

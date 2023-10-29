@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #2b2b2b;
+}
+
+body {
+  background-color: #efeded !important;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: bolder !important;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif !important;
+}
+
+a {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  background-color: #efeded;
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  border-radius: 3px;
+}
+
+.container {
+  max-width: 1150px !important;
+  padding: 4.5em 2em 0 2em !important;
+}
+
+.logo {
+  display: flex;
+  font-family: "Saira Stencil One", sans-serif !important;
+  align-items: center;
+  margin: 0;
+}
+.logo::after {
+  content: ".";
+  color: red;
+}/*# sourceMappingURL=index.css.map */

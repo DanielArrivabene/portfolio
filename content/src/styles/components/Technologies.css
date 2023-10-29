@@ -1,0 +1,97 @@
+#technologies {
+  scroll-margin-top: 4.5em;
+  min-height: 70vh;
+  display: flex;
+  align-items: end;
+}
+#technologies .container {
+  padding: 3em 2em !important;
+}
+#technologies .container .tech__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+#technologies .container .tech__description p {
+  font-size: 1.15em;
+}
+#technologies .container .tech__description a {
+  text-wrap: nowrap;
+  color: #ff7112;
+}
+#technologies .container .tech__items .tech__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+#technologies .container .tech__items .tech__list li {
+  border: none;
+  width: 5.5em;
+  height: 5.5em;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.0941176471);
+  border-radius: 12px;
+  background-color: #fafafa;
+  position: relative;
+  cursor: help;
+  z-index: 2;
+}
+#technologies .container .tech__items .tech__list li:hover .tech__name {
+  transform: translate(-50%, -38px);
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+#technologies .container .tech__items .tech__list li .tech__name {
+  text-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -20px);
+  color: #fafafa;
+  background-color: #ff7112;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.3em 0.6em;
+  opacity: 0;
+}
+#technologies .container .tech__items .tech__list li svg {
+  font-size: 3.5em;
+}
+#technologies .container .tech__items .tech__list .HTML > svg * {
+  color: #dd4b25;
+}
+#technologies .container .tech__items .tech__list .Bootstrap > svg * {
+  color: #8713f4;
+}
+#technologies .container .tech__items .tech__list .CSS > svg * {
+  color: #2862e9;
+}
+#technologies .container .tech__items .tech__list .Sass > svg * {
+  color: #c76494;
+}
+#technologies .container .tech__items .tech__list .Javascript > svg * {
+  color: #efd81d;
+}
+#technologies .container .tech__items .tech__list .Typescript > svg * {
+  color: #2f74c0;
+}
+#technologies .container .tech__items .tech__list .React > svg * {
+  color: #5ed3f3;
+}
+#technologies .container .tech__items .tech__list .Redux > svg * {
+  color: #6e41b3;
+}
+#technologies .container .tech__items .tech__list .Axios > svg * {
+  color: #5f30e5;
+}
+#technologies .container .tech__items .tech__list .Git > svg * {
+  color: #f05539;
+}
+#technologies .container .tech__items .tech__list .Wordpress > svg * {
+  color: #28799e;
+}
+#technologies .container .tech__items .tech__list .Framer > svg * {
+  color: #ee0bb2;
+}/*# sourceMappingURL=Technologies.css.map */
