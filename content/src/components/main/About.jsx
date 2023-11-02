@@ -13,8 +13,8 @@ function About() {
               Buscando por serviços de desenvolvimento web? Eu posso te ajudar!
             </h2>
             <p className='description__text'>
-              Olá, Meu nome é <strong>Daniel Goulart Arrivabene</strong> e sou
-              um desenvolvedor apaixonado por construir aplicativos da web de
+              Olá! Meu nome é <strong>Daniel Goulart Arrivabene</strong> e sou
+              um desenvolvedor apaixonado por construir sites da web de
               alto nível e com funcionalidades intuitivas. Atuo transformando
               ideias em realidade usando soluções criativas, sempre em busca de
               novas habilidades, ferramentas e conceitos.{' '}
