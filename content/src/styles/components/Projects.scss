@@ -29,15 +29,16 @@
       img {
         width: 100%;
         aspect-ratio: 10 / 6 ;
-        border-radius: 0px 10px;
-        box-shadow: -8px 5px 15px #00000021;
+        border-radius: 5px;
+        box-shadow: -8px 5px 10px #00000024;
+        transform: perspective(800px) rotateY(4deg) !important;
       }
     }
 
     .order-1 {
       img {
-        border-radius: 10px 0px;
-        box-shadow: 8px 5px 15px #00000023;
+        box-shadow: 8px 5px 10px #0000002b;
+        transform: perspective(800px) rotateY(-15deg) !important;
       }
     }
 
