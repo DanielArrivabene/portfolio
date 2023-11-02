@@ -7,14 +7,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: 2em;
 
       .avatar {
         width: 100%;
         aspect-ratio: 5 / 4 ;
         border-radius: 10px;
-        box-shadow: inset 0px -10px 7px $bg_color;
         background-image: url('../../assets//my_picture.jpg');
         background-size: contain;
+        -webkit-box-reflect: below 0px linear-gradient(transparent 25%, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
       }
     }
 

@@ -81,3 +81,9 @@
     }
   }
 }
+
+@media (width < 990px) {
+  #about .avatar {
+    -webkit-box-reflect: below 0px linear-gradient(transparent 80%, rgba(0,0,0,0.4)) !important;
+  }
+}
