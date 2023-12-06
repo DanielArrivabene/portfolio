@@ -5,7 +5,25 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import Repara from '../../assets/repara.png';
-/*import Mentalize from '../../assets/mentalize.png';*/
+import Kateli from '../../assets/Kateli.png';
+
+const projectsList = [
+  {
+    name: 'Repara!',
+    description:
+      'Projeto construído em HTML, Bootstrap, CSS, Sass, Javascript e React. Com foco em apresentar a empresa ao público alvo e atrair clientes, Repara! conta com uma identidade visual única, intuitiva e dinâmica. Fique por dentro dos detalhes',
+    image: Repara,
+    urlGithub: 'https://github.com/DanielArrivabene/repara',
+    urlSite: 'https://repara-tec.vercel.app/',
+  },
+  {
+    name: 'Clínica Kateli',
+    description:
+      'Projeto construído em WordPress, HTML, CSS e Javascript. Este site conta com um design elegante e refinado, atendendo aos mais altos padrões e gostos. Fique por dentro dos detalhes',
+    image: Kateli,
+    urlSite: 'http://katelisaude.com.br/',
+  },
+];
 
 function Projects() {
   const { ref, inView } = useInView(false);
@@ -32,68 +50,37 @@ function Projects() {
         </h2>
         <article className='projects__container'>
           <div className='row justify-content-center'>
-            <div className='col-6 project__image'>
-              <motion.img
-                src={Repara}
-                alt='Repara!'
-                loading='lazy'
-                initial={{ x: -100, opacity: 0 }}
-                animate={animation}
-                transition={{ duration: 1, delay: 0.5 }}
-              />
-            </div>
-            <div className='col-5 project__description'>
-              <h3>Repara!</h3>
-              <p>
-                Projeto construído em HTML, Bootstrap, CSS, Sass, Javascript e
-                React. Com foco em apresentar a empresa ao público alvo e atrair
-                clientes, Repara! conta com uma identidade visual única,
-                intuitiva e dinâmica. Fique por dentro dos detalhes{' '}
-                <a
-                  href='https://repara-tec.vercel.app/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  visitando o site
-                </a>{' '}
-                e{' '}
-                <a
-                  href='https://github.com/DanielArrivabene/repara'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  analisando o código
-                </a>
-                .
-              </p>
-            </div>
+            {projectsList.map((project) => (
+              <div className='project col-5' key={project.name}>
+                <img src={project.image} alt='' className='thefront' />
+                <div className='theback'>
+                  <h3>{project.name}</h3>
+                  <p>
+                    {project.description}{' '}
+                    <a href={project.urlSite} target='_blank' rel='noreferrer'>
+                      visitando o site
+                    </a>
+                    {project.urlGithub ? (
+                      <>
+                        {' '}
+                        e{' '}
+                        <a
+                          href={project.urlGithub}
+                          target='_blank'
+                          rel='noreferrer'
+                        >
+                          analisando o código
+                        </a>
+                        .
+                      </>
+                    ) : (
+                      <>.</>
+                    )}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-          {/*
-          <div className='row justify-content-center'>
-            <div className='col-6 project__image order-1'>
-              <motion.img
-                src={Mentalize}
-                alt='Repara!'
-                loading='lazy'
-                initial={{ x: 100, opacity: 0 }}
-                animate={animation}
-                transition={{ duration: 1, delay: 0.5 }}
-              />
-            </div>
-            <div className='col-5 project__description text-end'>
-              <h3>Mentalize</h3>
-              <p>
-                Site da clínica médica Mentalize, desenvolvido com HTML, CSS,
-                Sass, Javascript e React, tendo uma área integrada com os posts
-                do Instagram da clínica. O objetivo do projeto é informar aos
-                pacientes sobre as atividades oferecidas e horários de
-                funcionamento da clínica. Verifique a conclusão desse objetivo{' '}
-                <a href='#'>visitando o site</a> e{' '}
-                <a href='#'>analisando o código</a>.
-              </p>
-            </div>
-          </div>
-          */}
         </article>
       </div>
     </section>
