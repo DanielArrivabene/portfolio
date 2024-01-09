@@ -13,14 +13,14 @@ const contactsList = [
     icon: <BiLogoLinkedin />,
   },
   {
-    name: 'Whatsapp',
-    href: 'https://wa.me//5527996544482',
-    icon: <BiLogoWhatsapp />,
-  },
-  {
     name: 'Github',
     href: 'https://github.com/DanielArrivabene',
     icon: <BiLogoGithub />,
+  },
+  {
+    name: 'Whatsapp',
+    href: 'https://wa.me//5527996544482',
+    icon: <BiLogoWhatsapp />,
   },
 ];
 
@@ -54,7 +54,7 @@ function Contact() {
                     <a
                       href={contact.href}
                       target='_blank'
-                      rel='noreferrer noopener'
+                      rel='noreferrer noopener' className={contact.name}
                     >
                       {contact.icon}
                     </a>

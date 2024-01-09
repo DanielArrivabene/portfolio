@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+import { BiLogoGithub, BiLinkExternal } from 'react-icons/bi';
+
 import Repara from '../../assets/repara.png';
 import Kateli from '../../assets/Kateli.png';
 
@@ -51,45 +53,23 @@ function Projects() {
                 ref={ref}
                 className='project col-sm-5'
                 key={project.name}
-                whileHover={{
-                  scale: 1.2,
-                  rotateY: '180deg',
-                }}
+                initial={{ y: 80, opacity: 0 }}
+                animate={animation}
+                transition={{ duration: 1, delay: 0.5 }}
               >
-                <motion.img
+                <i></i>
+                <img
                   src={project.image}
                   alt='project image'
-                  className='thefront'
+                  className='project__image'
                   loading='lazy'
-                  initial={{ y: -80, opacity: 0 }}
-                  animate={animation}
-                  transition={{ duration: 1, delay: 0.5 }}
                 />
-                <div className='theback'>
-                  <h3>{project.name}</h3>
-                  <p>
-                    {project.description}{' '}
-                    <a href={project.urlSite} target='_blank' rel='noreferrer'>
-                      visitando o site
-                    </a>
-                    {project.urlGithub ? (
-                      <>
-                        {' '}
-                        e{' '}
-                        <a
-                          href={project.urlGithub}
-                          target='_blank'
-                          rel='noreferrer'
-                        >
-                          analisando o código
-                        </a>
-                        .
-                      </>
-                    ) : (
-                      <>.</>
-                    )}
-                  </p>
-                </div>
+                <a href='#' className='project__link_code'>
+                  <BiLogoGithub />
+                </a>
+                <a href='#' className='project__link_site'>
+                  <BiLinkExternal />
+                </a>
               </motion.div>
             ))}
           </div>

@@ -27,14 +27,16 @@
         background-color: $text_color;
         padding: 7px;
         border-radius: 50%;
-        -webkit-box-reflect: below 5px linear-gradient(transparent 1%, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.418));
+        -webkit-box-reflect: below 5px
+          linear-gradient(transparent 1%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.26));
 
         &:hover {
-          scale: 1.06;
+          scale: 1.05;
           transition: $transition_one;
-          background-color: $text_color--secondary;
+          background-color: #151515;
         }
 
+        
         svg {
           font-size: 1.6em;
 
@@ -42,6 +44,22 @@
             color: $bg_color;
           }
         }
+
+        a.Whatsapp svg {
+            font-size: 1.6em;
+
+            * {
+              color: rgb(0, 255, 0);
+            }
+        }
+
+        a.LinkedIn svg {
+          font-size: 1.6em;
+
+          * {
+            color: rgb(62, 125, 253);
+          }
+      }
       }
     }
   }
@@ -55,7 +73,8 @@
       display: flex;
       flex-direction: column;
       gap: 1em;
-      -webkit-box-reflect: below 7px linear-gradient(transparent 96%, rgb(0, 0, 0));
+      -webkit-box-reflect: below 7px
+        linear-gradient(transparent 96%, rgb(0, 0, 0));
 
       .form-group {
         label {
