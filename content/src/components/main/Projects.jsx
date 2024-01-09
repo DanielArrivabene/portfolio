@@ -32,18 +32,14 @@ function Projects() {
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0,
+        y: 0,
         opacity: 1,
       });
     }
   }, [inView, animation]);
 
   return (
-    <section
-      id='projects'
-      className='min-vh-100 d-flex align-items-center'
-      ref={ref}
-    >
+    <section id='projects' className='min-vh-100 d-flex align-items-center'>
       <div className='container'>
         <h2 className='text-center'>
           Confira alguns dos projetos já realizados
@@ -51,8 +47,24 @@ function Projects() {
         <article className='projects__container'>
           <div className='row justify-content-center'>
             {projectsList.map((project) => (
-              <div className='project col-5' key={project.name}>
-                <img src={project.image} alt='' className='thefront' />
+              <motion.div
+                ref={ref}
+                className='project col-sm-5'
+                key={project.name}
+                whileHover={{
+                  scale: 1.2,
+                  rotateY: '180deg',
+                }}
+              >
+                <motion.img
+                  src={project.image}
+                  alt='project image'
+                  className='thefront'
+                  loading='lazy'
+                  initial={{ y: -80, opacity: 0 }}
+                  animate={animation}
+                  transition={{ duration: 1, delay: 0.5 }}
+                />
                 <div className='theback'>
                   <h3>{project.name}</h3>
                   <p>
@@ -78,7 +90,7 @@ function Projects() {
                     )}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </article>
