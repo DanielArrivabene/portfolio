@@ -10,14 +10,12 @@ function About() {
           </div>
           <div className='col-lg-5 description'>
             <h2 className='description__title'>
-              Buscando por serviços de desenvolvimento web? Eu posso te ajudar!
+              Buscando por serviços de desenvolvimento web? <br/> Eu posso te ajudar!
             </h2>
             <p className='description__text'>
-              Olá! Meu nome é <strong>Daniel Goulart Arrivabene</strong> e sou
+              Olá! Meu nome é <strong>Daniel Goulart Arrivabene</strong>, eu sou
               um desenvolvedor apaixonado por construir sites da web de
-              alto nível e com funcionalidades intuitivas. Atuo transformando
-              ideias em realidade usando soluções criativas, sempre em busca de
-              novas habilidades, ferramentas e conceitos.{' '}
+              alto nível. Atuo transformando ideias em realidade usando soluções criativas, sempre em busca de novas habilidades, ferramentas e conceitos.{' '}
             </p>
             <a className='description__link' href='#technologies'>
               Ver Skills

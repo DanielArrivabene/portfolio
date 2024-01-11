@@ -64,10 +64,10 @@ function Projects() {
                   className='project__image'
                   loading='lazy'
                 />
-                <a href='#' className='project__link_code'>
+                <a href={project.urlGithub} target='_blank' rel="noreferrer" className='project__link_code'>
                   <BiLogoGithub />
                 </a>
-                <a href='#' className='project__link_site'>
+                <a href={project.urlSite} target='_blank' rel="noreferrer" className='project__link_site'>
                   <BiLinkExternal />
                 </a>
               </motion.div>

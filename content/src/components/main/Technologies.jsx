@@ -58,7 +58,7 @@ function Technologies() {
               experiência do usuário com as tecnologias a seguir.
             </p>
             <p>
-              Para mais informações <a href='#contact'>entre em contato</a>.
+              Para mais informações <a href='#contact'>entre em contato!</a>
             </p>
           </article>
           <article className='col-md-6 tech__items' ref={ref}>
