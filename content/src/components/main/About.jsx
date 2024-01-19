@@ -10,7 +10,7 @@ function About() {
           </div>
           <div className='col-lg-5 description'>
             <h2 className='description__title'>
-              Buscando por serviços de desenvolvimento web? <br/> Eu posso te ajudar!
+              Buscando por serviços de desenvolvimento web<span className="destaque--text">?</span> <br/> Eu posso te ajudar<span className="destaque--text">!</span>
             </h2>
             <p className='description__text'>
               Olá! Meu nome é <strong>Daniel Goulart Arrivabene</strong>, eu sou

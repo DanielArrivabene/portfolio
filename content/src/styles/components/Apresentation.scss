@@ -38,10 +38,10 @@
       border: none;
       margin-top: .8em;
       background-color: transparent;
+      transition: $transition_one;
 
       &:hover {
         scale: 1.1;
-        transition: $transition_one;
 
         svg > path {
           color: $text_color;
@@ -69,10 +69,10 @@
     display: flex;
     align-items: center;
     gap: .7em;
+    transition: $transition_one;
 
     &:hover {
       scale: 1.03;
-      transition: $transition_one;
     }
 
     svg {

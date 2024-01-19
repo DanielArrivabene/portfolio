@@ -37,30 +37,31 @@
           border: none;
           width: 5.5em;
           height: 5.5em;
-          box-shadow: 10px 10px 40px #00000018;
+          box-shadow: 5px 5px 0px #000000;
           border-radius: 12px;
           background-color: $bg_color--card;
           position: relative;
-          z-index: 2;
 
-          &:hover .tech__name {
+          /*&:hover .tech__name {
             transform: translate(-50%, -38px);
             opacity: 1;
             transition: $transition_two;
-          }
+            transition-delay: .4s;
+          }*/
 
           .tech__name {
             text-wrap: nowrap;
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translate(-50%, -20px);
+            text-align: center;
+            transform: translate(-50%, -30px);
             color: $bg_color--card;
             background-color: $destaque_color;
             font-family: $secondary_font;
             font-weight: bold;
             border-radius: 5px;
-            padding: .3em .6em;
+            padding: 0.3em 0.6em;
             opacity: 0;
           }
 
