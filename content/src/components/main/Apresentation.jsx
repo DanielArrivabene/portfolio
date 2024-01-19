@@ -69,23 +69,7 @@ function Apresentation() {
       >
         Frontend Web Developer
       </motion.h2>
-      <motion.a
-        href='#contact'
-        className='apresentation_button'
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 1,
-          delay: 2,
-        }}
-      >
-        Assinature
-      </motion.a>
-      {Assinature}
+      <img src={Assinature} alt="Daniel Goulart Arrivabene" className="apresentation_assinature" />
 
       <ul className='contacts-list list-group'>
         {contactsList &&

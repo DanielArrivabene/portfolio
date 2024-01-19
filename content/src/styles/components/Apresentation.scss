@@ -25,9 +25,8 @@
     font-size: 1.8em;
   }
 
-  .apresentation_button {
-    @include btn_destaque--secondary;
-    margin-top: 1em;
+  .apresentation_assinature {
+    width: 200px;
   }
 
   .contacts-list {
