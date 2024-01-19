@@ -9,6 +9,9 @@ import {
   BiDownArrowAlt,
 } from 'react-icons/bi';
 
+
+import Assinature from '../../assets/assinature.png'
+
 const contactsList = [
   {
     name: 'LinkedIn',
@@ -80,8 +83,9 @@ function Apresentation() {
           delay: 2,
         }}
       >
-        Faça um Orçamento!
+        Assinature
       </motion.a>
+      {Assinature}
 
       <ul className='contacts-list list-group'>
         {contactsList &&
