@@ -20,26 +20,32 @@
         width: 100%;
         border-radius: 15px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         border: 2px solid #000;
         box-shadow: 4px 4px 0px #000;
         padding: 0;
+        overflow: hidden;
 
         .project__image {
           width: 50%;
-          aspect-ratio: 10 / 6;
+          height: 100%;
           border-radius: 15px;
+          box-shadow: 0px 0px 35px #0000003a;
         }
 
         .project__text_container {
           padding: 2em;
-          height: 100%;
+          width: 50%;
+          height: max-content;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          gap: 1em;
 
           .project__title {
+            align-self: center;
             padding: .5em;
             width: fit-content;
             border-radius: 10px;
@@ -48,6 +54,18 @@
 
           .project__descryption {
             font-size: 1.15em;
+          }
+
+          .project__links_container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            .project__link {
+              @include btn_default--secondary;
+              display: block;
+              width: 45%;
+            }
           }
         }
       }

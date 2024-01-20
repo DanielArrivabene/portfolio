@@ -37,21 +37,23 @@
   }
 
   #projects {
-    padding: 6em 0;
-
-    h2 {
-      margin-bottom: 2em;
-
-      &::after {
-        content: ':';
-        color: $destaque_color;
-      }
-    }
+    padding: 6em 0em;
   }
 }
 
-@media (width < 990px) {
-  #about .avatar {
-    -webkit-box-reflect: below 0px linear-gradient(transparent 80%, rgba(0,0,0,0.4)) !important;
+@media (width < 950px) {
+  #projects {
+    padding: 6em 1em;
+
+    .project__image {
+      aspect-ratio: 10 / 6;
+      height: fit-content !important;
+      width: 100% !important;
+      margin-bottom: 1em;
+    }
+
+    .project__text_container {
+      width: 100% !important;
+    }
   }
 }

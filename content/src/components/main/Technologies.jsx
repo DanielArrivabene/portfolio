@@ -57,7 +57,7 @@ function Technologies() {
             <h2>Quais são as tecnologias que utilizo<span className="destaque--text">:</span></h2>
             <p>
               Desenvolvo interfaces intuitivas e responsivas. Melhorando a
-              experiência do usuário com as tecnologias a seguir
+              experiência do usuário com as tecnologias a seguir:
             </p>
             <a href='#projects'>Projetos</a>
           </article>

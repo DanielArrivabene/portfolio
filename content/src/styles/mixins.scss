@@ -42,3 +42,21 @@
     background-color: $bg_color;
   }
 }
+
+@mixin btn_default--secondary {
+  text-decoration: none;
+  color: $text_color;
+  text-align: center;
+  border: 2px solid $text_color;
+  background-color: transparent;
+  padding: 0.5em 1.3em;
+  border-radius: 12px;
+  font-family: $secondary_font;
+  font-size: 1.2em;
+  transition: $transition_one;
+
+  &:hover {
+    color: $bg_color;
+    background-color: $text_color;
+  }
+}

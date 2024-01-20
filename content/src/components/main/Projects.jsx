@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import { BiLogoGithub, BiLinkExternal } from 'react-icons/bi';
-
 import Repara from '../../assets/repara.png';
 import Kateli from '../../assets/Kateli.png';
 
@@ -63,9 +61,19 @@ function Projects() {
                   className='project__image'
                   loading='lazy'
                 />
-                <div className="project__text_container">
-                  <h3 className="project__title">{project.name}</h3>
-                  <p className="project__descryption">{project.description}</p>
+                <div className='project__text_container'>
+                  <h3 className='project__title'>{project.name}</h3>
+                  <p className='project__descryption'>{project.description}</p>
+                  <div className='project__links_container'>
+                    <a href={project.urlSite} className='project__link'>
+                      Visitar
+                    </a>
+                    {project.urlGithub && (
+                      <a href={project.urlGithub} className='project__link'>
+                        Github
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}
