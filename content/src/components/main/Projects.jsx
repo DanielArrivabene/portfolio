@@ -11,19 +11,19 @@ import Kateli from '../../assets/Kateli.png';
 
 const projectsList = [
   {
+    name: 'Clínica Kateli',
+    description:
+      'Projeto construído em WordPress, HTML, CSS e Javascript. Este site conta com um design elegante e refinado, atendendo aos mais altos padrões e gostos.',
+    image: Kateli,
+    urlSite: 'http://katelisaude.com.br/',
+  },
+  {
     name: 'Repara!',
     description:
-      'Projeto construído em HTML, Bootstrap, CSS, Sass, Javascript e React. Com foco em apresentar a empresa ao público alvo e atrair clientes, Repara! conta com uma identidade visual única, intuitiva e dinâmica. Fique por dentro dos detalhes',
+      'Projeto construído em HTML, Bootstrap, CSS, Sass, Javascript e React. Com foco em apresentar a empresa ao público alvo e atrair clientes, Repara! conta com uma identidade visual única, intuitiva e dinâmica.',
     image: Repara,
     urlGithub: 'https://github.com/DanielArrivabene/repara',
     urlSite: 'https://repara-tec.vercel.app/',
-  },
-  {
-    name: 'Clínica Kateli',
-    description:
-      'Projeto construído em WordPress, HTML, CSS e Javascript. Este site conta com um design elegante e refinado, atendendo aos mais altos padrões e gostos. Fique por dentro dos detalhes',
-    image: Kateli,
-    urlSite: 'http://katelisaude.com.br/',
   },
 ];
 
@@ -57,19 +57,16 @@ function Projects() {
                 animate={animation}
                 transition={{ duration: 1, delay: 0.5 }}
               >
-                <i></i>
                 <img
                   src={project.image}
                   alt='project image'
                   className='project__image'
                   loading='lazy'
                 />
-                <a href={project.urlGithub} target='_blank' rel="noreferrer" className='project__link_code'>
-                  <BiLogoGithub />
-                </a>
-                <a href={project.urlSite} target='_blank' rel="noreferrer" className='project__link_site'>
-                  <BiLinkExternal />
-                </a>
+                <div className="project__text_container">
+                  <h3 className="project__title">{project.name}</h3>
+                  <p className="project__descryption">{project.description}</p>
+                </div>
               </motion.div>
             ))}
           </div>

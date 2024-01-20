@@ -14,79 +14,41 @@
   .projects__container {
     .row {
       flex-wrap: wrap;
-      gap: 2em;
+      gap: 5em;
 
       .project {
-        position: relative;
-        aspect-ratio: 10 / 6;
-        box-shadow: 0px 5px 40px #00000041;
-        border-radius: 10px;
-        overflow: hidden;
-        padding: 0;
+        width: 100%;
+        border-radius: 15px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-
-        &:hover {
-          i {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: $transition_two;
-          }
-          
-          a {
-            bottom: 50%;
-            transform: translate(0%, 50%);
-            transition: $transition_two;
-          }
-        }
-
-        i {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 0;
-          background-image: linear-gradient(180deg, #000000c7, #000000a4, #00000000);
-        }
+        border: 2px solid #000;
+        box-shadow: 4px 4px 0px #000;
+        padding: 0;
 
         .project__image {
-          width: 100%;
+          width: 50%;
+          aspect-ratio: 10 / 6;
+          border-radius: 15px;
+        }
+
+        .project__text_container {
+          padding: 2em;
           height: 100%;
-          border-radius: 10px;
-        }
-
-        a {
-          position: absolute;
-          bottom: 0;
-          transform: translateY(100px);
-          border-radius: 100%;
-          width: 3em;
-          height: 3em;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #0000001f;
+          flex-direction: column;
+          justify-content: space-between;
 
-          svg {
-            scale: 2.5;
-
-            * {
-              color: $destaque_color;
-              font-size: 10em !important;
-            }
+          .project__title {
+            padding: .5em;
+            width: fit-content;
+            border-radius: 10px;
+            background-color: rgb(234, 208, 197);
           }
-        }
 
-        .project__link_site {
-          left: 25%;
-        }
-
-        .project__link_code {
-          right: 25%;
+          .project__descryption {
+            font-size: 1.15em;
+          }
         }
       }
     }

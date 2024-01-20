@@ -30,7 +30,7 @@ function Contact() {
       <div className='container'>
         <div className='row justify-content-center flex-wrap gap-5'>
           <article className='col-md-5 contacts__container d-flex flex-column '>
-            <h2>Você tem algum projeto em mente<span className="destaque--text">?</span> Me envie uma mensagem<span className="destaque--text">!</span></h2>
+            <h2>Você tem algum projeto em mente? Me envie uma mensagem<span className="destaque--text">!</span></h2>
             <p>
               Entre em contato comigo preenchendo o formulário, para iniciarmos
               o desenvolvimento de algo <strong>incrível</strong>!
