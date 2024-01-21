@@ -49,7 +49,7 @@ function Technologies() {
   return (
     <section
       id='technologies'
-      className='d-flex align-items-center justify-content-around'
+      className='d-flex align-items-center justify-content-around section-area'
     >
       <div className='container d-flex align-items-center'>
         <div className='row justify-content-between'>

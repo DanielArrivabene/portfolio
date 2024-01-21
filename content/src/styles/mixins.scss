@@ -3,7 +3,7 @@
 @mixin btn_destaque--primary {
   width: fit-content;
   text-decoration: none;
-  color: $bg_color;
+  color: $bg_color--card;
   border: 2px solid $text_color;
   box-shadow: 3px 3px 0px #000;
   background-color: $destaque_color;
@@ -28,7 +28,7 @@
   color: $text_color;
   border: 2px solid $text_color;
   box-shadow: 3px 3px 0px $text_color;
-  background-color: transparent;
+  background-color: $bg_color--card;
   padding: 0.5em 1.3em;
   border-radius: 10px;
   font-family: $secondary_font;
@@ -36,10 +36,10 @@
   transition: $transition_one;
 
   &:hover {
-    color: $text_color;
+    color: $bg_color--card;
     transform: translate(3px, 3px);
     box-shadow: none;
-    background-color: $bg_color;
+    background-color: $text_color;
   }
 }
 
@@ -48,15 +48,24 @@
   color: $text_color;
   text-align: center;
   border: 2px solid $text_color;
-  background-color: transparent;
+  background-color: $bg_color--card;
   padding: 0.5em 1.3em;
   border-radius: 12px;
   font-family: $secondary_font;
-  font-size: 1.2em;
   transition: $transition_one;
 
+  span {
+    display: block;
+    font-size: 1.2em;
+    transition: $transition_one;
+  }
+
   &:hover {
-    color: $bg_color;
-    background-color: $text_color;
+    box-shadow: inset 3px 3px 0px #000;
+    background-color: $bg_color;
+
+    span {
+     transform: translate(3px, 3px);
+    }
   }
 }

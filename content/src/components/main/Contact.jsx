@@ -26,7 +26,7 @@ const contactsList = [
 
 function Contact() {
   return (
-    <section id='contact' className='min-vh-100 d-flex align-items-center mb-5'>
+    <section id='contact' className='min-vh-100 d-flex align-items-center mb-5 section-area'>
       <div className='container'>
         <div className='row justify-content-center flex-wrap gap-5'>
           <article className='col-md-5 contacts__container d-flex flex-column '>

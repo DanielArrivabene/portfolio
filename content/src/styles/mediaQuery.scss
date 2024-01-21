@@ -35,25 +35,25 @@
       }
     }
   }
-
-  #projects {
-    padding: 6em 0em;
-  }
 }
 
-@media (width < 950px) {
+@media (width < 900px) {
+
+  .section-area {
+    padding: 3em 0 !important;
+  }
+
   #projects {
-    padding: 6em 1em;
-
-    .project__image {
-      aspect-ratio: 10 / 6;
-      height: fit-content !important;
-      width: 100% !important;
-      margin-bottom: 1em;
-    }
-
-    .project__text_container {
-      width: 100% !important;
-    }
+      .project__image_container {
+        aspect-ratio: 10 / 6;
+        height: fit-content !important;
+        width: 100% !important;
+        margin-bottom: 1em;
+        order: 0 !important;
+      }
+  
+      .project__text_container {
+        width: 100% !important;
+      }
   }
 }
