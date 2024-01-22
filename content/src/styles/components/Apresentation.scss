@@ -7,10 +7,10 @@
   h1 {
     font-size: 4.5em;
     text-align: center;
-    font-family: $destaque_font;
+    font-family: $main_font;
 
     i {
-      font-family: $destaque_font;
+      font-family: $main_font;
       font-style: normal;
       text-shadow: 3px 0 0 $destaque_color--secondary;
     }
@@ -18,7 +18,7 @@
 
   h2 {
     color: #1f1f1f;
-    font-family: $primary_font !important;
+    font-family: $main_font !important;
     font-weight: normal !important;
     text-decoration: underline;
     text-decoration-color: $destaque_color;
@@ -36,7 +36,7 @@
 
     li {
       border: none;
-      margin-top: .8em;
+      margin-top: 0.8em;
       background-color: transparent;
       transition: $transition_one;
 
@@ -68,7 +68,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: .7em;
+    gap: 0.7em;
     transition: $transition_one;
 
     &:hover {

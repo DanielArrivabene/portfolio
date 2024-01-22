@@ -2,6 +2,8 @@
 @import '../mixins.scss';
 
 #atributes {
+  background-color: $bg_color--secondary;
+  
   .cards__container {
     .atribute__card {
       svg {

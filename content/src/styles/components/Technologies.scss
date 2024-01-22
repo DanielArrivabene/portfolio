@@ -38,7 +38,7 @@
           height: 5.5em;
           box-shadow: 5px 5px 0px #000000;
           border-radius: 12px;
-          background-color: $bg_color--card;
+          background-color: $card_color;
           position: relative;
 
           /*&:hover .tech__name {
@@ -55,7 +55,7 @@
             left: 50%;
             text-align: center;
             transform: translate(-50%, -30px);
-            color: $bg_color--card;
+            color: $card_color;
             background-color: $destaque_color;
             font-family: $secondary_font;
             font-weight: bold;

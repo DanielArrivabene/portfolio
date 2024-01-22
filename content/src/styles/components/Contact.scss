@@ -13,7 +13,6 @@
     }
 
     .contact_label {
-
       > strong {
         font-family: $secondary_font;
         font-weight: bold;
@@ -66,7 +65,7 @@
 
   .form__container {
     form {
-      background-color: $bg_color--card;
+      background-color: $card_color;
       border: 2px solid black;
       box-shadow: 3px 3px 0px #000000;
       border-radius: 10px;
@@ -86,10 +85,10 @@
         input,
         textarea {
           border: none;
-          background-color: $bg_color--secondary;
+          background-color: $card_color--secondary;
           border-radius: 10px;
           color: $text_color;
-          border: 1px solid $bg_color--secondary;
+          border: 1px solid $card_color--secondary;
           box-shadow: inset 0px 0px 3px #00000013;
         }
       }

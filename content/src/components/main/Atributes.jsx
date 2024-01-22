@@ -1,31 +1,27 @@
 import '../../styles/components/Atributes.scss';
 
-import { FaLink } from "react-icons/fa";
-import { IoStar } from "react-icons/io5";
-import { BsFillLightningFill } from "react-icons/bs";
+import Ray from '../../assets/ray.svg';
+import Chain from '../../assets/chain.svg';
+import Star from '../../assets/star.svg';
 
 function Atributes() {
   const atributesData = [
     {
       title: 'Rápido e fácil',
-      text: 'Rápido e fácil para que você possa gastar seu tempo criando ótimo conteúdo. Fácil porque ninguém gosta de difícil.',
-      icon: <BsFillLightningFill />,
-      iconClass: 'ray'
+      text: 'Rápido e fácil para que você possa otimizar seu tempo, entregando um conteúdo de qualidade ao seu público alvo.',
+      icon: Ray,
     },
     {
       title: 'Rentável',
-      text: 'A confiabilidade é nossa primeira prioridade. Não queremos que você se preocupe com o que pode dar errado.',
-      icon: <FaLink />,
-      iconClass: 'chain'
+      text: 'Rentabilidade é a prioridade, tendo como principal objetivo fazer com que o dinheiro investido gere lucros cada vez maiores.',
+      icon: Chain,
     },
     {
       title: 'Foco nos detalhes',
-      text: 'Pequenos detalhes divertidos que fazem você sorrir porque a maioria dos softwares B2B já é bastante chata.',
-      icon: <IoStar />,
-      iconClass: 'star'
+      text: 'Pequenos detalhes fazem grande diferença no dia a dia aumentando o engajamento e atraindo novos clientes.',
+      icon: Star,
     },
   ];
-  
 
   return (
     <section
@@ -37,9 +33,12 @@ function Atributes() {
           <h2 className='text-center mb-5'>Feito com carinho</h2>
           {atributesData &&
             atributesData.map((atribute, index) => (
-              <div key={index} className='col-lg-4 text-center atribute__card p-3'>
-                <h3 className='card__title mb-3'>{atribute.title}</h3>
-                <span className={atribute.iconClass}>{atribute.icon}</span>
+              <div
+                key={index}
+                className='col-lg-4 text-center atribute__card p-3'
+              >
+              {atribute.icon && <img src={atribute.icon} alt='atributes icons' />}
+                <h3 className='card__title mb-3 mt-5'>{atribute.title}</h3>
                 <p className='card__description'>{atribute.text}</p>
               </div>
             ))}

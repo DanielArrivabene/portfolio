@@ -2,6 +2,8 @@
 @import '../mixins.scss';
 
 #projects {
+  background-color: $bg_color--secondary;
+
   h2 {
     margin-bottom: 2em;
 
@@ -27,7 +29,7 @@
         box-shadow: 4px 4px 0px #000;
         padding: 0;
         overflow: hidden;
-        background-color: $bg_color--card;
+        background-color: $card_color;
 
         .project__image_container {
           width: 50%;

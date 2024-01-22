@@ -3,7 +3,7 @@
 @mixin btn_destaque--primary {
   width: fit-content;
   text-decoration: none;
-  color: $bg_color--card;
+  color: $card_color;
   border: 2px solid $text_color;
   box-shadow: 3px 3px 0px #000;
   background-color: $destaque_color;
@@ -21,14 +21,13 @@
   }
 }
 
-
 @mixin btn_destaque--secondary {
   width: fit-content;
   text-decoration: none;
   color: $text_color;
   border: 2px solid $text_color;
   box-shadow: 3px 3px 0px $text_color;
-  background-color: $bg_color--card;
+  background-color: $card_color;
   padding: 0.5em 1.3em;
   border-radius: 10px;
   font-family: $secondary_font;
@@ -36,7 +35,7 @@
   transition: $transition_one;
 
   &:hover {
-    color: $bg_color--card;
+    color: $card_color;
     transform: translate(3px, 3px);
     box-shadow: none;
     background-color: $text_color;
@@ -48,7 +47,7 @@
   color: $text_color;
   text-align: center;
   border: 2px solid $text_color;
-  background-color: $bg_color--card;
+  background-color: $card_color;
   padding: 0.5em 1.3em;
   border-radius: 12px;
   font-family: $secondary_font;
@@ -65,7 +64,7 @@
     background-color: $bg_color;
 
     span {
-     transform: translate(3px, 3px);
+      transform: translate(3px, 3px);
     }
   }
 }

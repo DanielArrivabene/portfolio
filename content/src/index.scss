@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-family: $secondary_font !important;
+  font-family: $main_font !important;
 }
 
 a {
@@ -26,7 +26,8 @@ a {
   text-decoration: none;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -50,7 +51,7 @@ html::-webkit-scrollbar-thumb {
 
 .logo {
   display: flex;
-  font-family: $destaque_font !important;
+  font-family: $main_font !important;
   align-items: center;
   margin: 0;
 
