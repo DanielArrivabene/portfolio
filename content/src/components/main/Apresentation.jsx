@@ -2,8 +2,6 @@ import '../../styles/components/Apresentation.scss';
 
 import { motion } from 'framer-motion';
 
-import Assinature from '../../assets/assinature.png'
-
 function Apresentation() {
   return (
     <section
@@ -43,7 +41,6 @@ function Apresentation() {
       >
         Frontend Web Developer
       </motion.h2>
-      <img src={Assinature} alt="Daniel Goulart Arrivabene" className="apresentation_assinature" />
     </section>
   );
 }

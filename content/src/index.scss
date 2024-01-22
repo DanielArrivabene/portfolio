@@ -50,15 +50,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .logo {
-  display: flex;
-  font-family: $main_font !important;
-  align-items: center;
-  margin: 0;
-
-  &::after {
-    content: '.';
-    color: red;
-  }
+  width: 100px;
 }
 
 .destaque--text {

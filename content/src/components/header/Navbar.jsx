@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import '../../styles/components/Navbar.scss';
 
+import Logo from '../../assets/assinature.png'
+
 import { GoVerified } from 'react-icons/go';
 import { AiOutlineMenu } from 'react-icons/ai';
 
@@ -28,7 +30,7 @@ function Navbar() {
         id='navbar'
         className='navbar navbar-expand container py-3 d-flex justify-content-between'
       >
-        <h2 className='logo'>DGA</h2>
+      <img src={Logo} alt="Daniel Goulart Arrivabene" className="logo" />
         <ul className='navbar-nav'>
           {navLinks.map((link, index) => (
             <li
