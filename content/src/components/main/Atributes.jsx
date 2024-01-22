@@ -29,13 +29,13 @@ function Atributes() {
       className='d-flex justify-content-around section-area'
     >
       <article className='container d-flex align-items-center justify-content-center'>
-        <div className='w-100 row justify-content-between cards__container'>
+        <div className='w-100 row justify-content-around cards__container'>
           <h2 className='text-center mb-5'>Feito com carinho</h2>
           {atributesData &&
             atributesData.map((atribute, index) => (
               <div
                 key={index}
-                className='col-lg-4 text-center atribute__card p-3'
+                className='col-lg-4 w text-center atribute__card p-3'
               >
               {atribute.icon && <img src={atribute.icon} alt='atributes icons' />}
                 <h3 className='card__title mb-3 mt-5'>{atribute.title}</h3>

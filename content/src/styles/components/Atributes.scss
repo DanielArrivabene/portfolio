@@ -6,6 +6,8 @@
   
   .cards__container {
     .atribute__card {
+      max-width: 400px;
+
       svg {
         font-size: 3.5em;
         filter: drop-shadow(4px 4px 0px #000);
