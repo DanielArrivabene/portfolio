@@ -30,7 +30,7 @@ function Atributes() {
     >
       <article className='container d-flex align-items-center justify-content-center'>
         <div className='w-100 row justify-content-around cards__container'>
-          <h2 className='text-center mb-5'>Feito com carinho</h2>
+          <h2 className='text-center mb-5'>Feito sob medida</h2>
           {atributesData &&
             atributesData.map((atribute, index) => (
               <div
