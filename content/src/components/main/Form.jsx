@@ -43,7 +43,7 @@ function Form() {
       alert('Por favor, preencha todos os campos.');
       return;
     } else {
-      const url = `https://wa.me//5527996544482?text=Olá,%20meus%20dados%20são:%20Nome:%20${name},%20E-mail:%20${email},%20Número:%20${number}.%20Mensagem:%20${message}`;
+      const url = `https://wa.me//5527996544482?text=Olá,%20me%20chamo%20${name}.%20${message}`;
       window.open(url, '_blank');
     }
   };
@@ -51,7 +51,7 @@ function Form() {
   return (
     <form ref={ref}>
       <div className='form-group'>
-        <label>Nome</label>
+        <label htmlFor='InputName'>Nome</label>
         <motion.input
           required
           initial={{ width: 0, opacity: 0 }}
@@ -59,14 +59,13 @@ function Form() {
           transition={{ duration: 1, delay: 0.3 }}
           type='text'
           className='form-control'
-          id='name_input'
-          placeholder='ex. João Silva'
+          id='InputName'
           onChange={handleNameChange}
           value={name}
         />
       </div>
       <div className='form-group'>
-        <label>E-mail</label>
+        <label htmlFor="InputEmail">E-mail</label>
         <motion.input
           required
           initial={{ width: 0, opacity: 0 }}
@@ -74,14 +73,13 @@ function Form() {
           transition={{ duration: 1, delay: 0.5 }}
           type='email'
           className='form-control'
-          id='exampleInputEmail1'
-          placeholder='ex. seuemail@exemplo.com'
+          id='InputEmail'
           onChange={handleEmailChange}
           value={email}
         />
       </div>
       <div className='form-group'>
-        <label>Telefone</label>
+        <label htmlFor='InputTel'>Telefone</label>
         <motion.input
           required
           initial={{ width: 0, opacity: 0 }}
@@ -89,22 +87,20 @@ function Form() {
           transition={{ duration: 1, delay: 0.7 }}
           type='tel'
           className='form-control'
-          id='exampleInputEmail1'
-          placeholder='ex. (99) 99999-9999'
+          id='InputTel'
           onChange={handleNumberChange}
           value={number}
         />
       </div>
       <div className='form-group'>
-        <label>Mensagem</label>
+        <label htmlFor='InputMessage'>Mensagem</label>
         <motion.textarea
           initial={{ width: 0, opacity: 0 }}
           animate={animation}
           transition={{ duration: 1, delay: 0.9 }}
           className='form-control'
-          id='message_input'
+          id='InputMessage'
           rows='5'
-          placeholder='Digite aqui ...'
           onChange={handleMessageChange}
           value={message}
         ></motion.textarea>

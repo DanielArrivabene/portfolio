@@ -1,6 +1,9 @@
 import '../../styles/components/Contact.scss';
 
-import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
@@ -27,6 +30,19 @@ const contactsList = [
 ];
 
 function Contact() {
+
+  const { ref, inView } = useInView(false);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        y: 0,
+      });
+    }
+  }, [inView, animation]);
+
   return (
     <section
       id='contact'
@@ -55,7 +71,7 @@ function Contact() {
               </p>
               <p>danielg.arrivabene@gmail.com</p>
             </div>
-            <ul className='list-group contacts_list d-flex flex-row'>
+            <ul ref={ref} className='list-group contacts_list d-flex flex-row'>
               {contactsList &&
                 contactsList.map((contact, index) => (
                   <motion.li
@@ -65,10 +81,7 @@ function Contact() {
                       y: '100px',
                       opacity: 0,
                     }}
-                    animate={{
-                      y: 0,
-                      opacity: 1,
-                    }}
+                    animate={animation}
                     transition={{
                       type: 'spring',
                       damping: 17,
