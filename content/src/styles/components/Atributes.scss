@@ -1,0 +1,29 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#atributes {
+  .cards__container {
+    .atribute__card {
+      svg {
+        font-size: 3.5em;
+        filter: drop-shadow(4px 4px 0px #000);
+      }
+
+      .ray > svg > * {
+        color: #FFF7AE;
+      }
+
+      .chain > svg > * {
+        color: #CFCFED;
+      }
+
+      .star > svg > * {
+        color: #FFF7AE;
+      }
+
+      .card__description {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
