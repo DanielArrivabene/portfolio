@@ -1,9 +1,5 @@
 import '../../styles/components/Projects.scss';
 
-import { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-
 import Repara from '../../assets/repara.png';
 import Kateli from '../../assets/Kateli.png';
 
@@ -31,20 +27,10 @@ const projectsList = [
 ];
 
 function Projects() {
-  const { ref, inView } = useInView(false);
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: 0,
-        opacity: 1,
-      });
-    }
-  }, [inView, animation]);
 
   return (
-    <section id='projects' className='min-vh-100 d-flex align-items-center section-area'>
+    <section id='projects' 
+   className='min-vh-100 d-flex align-items-center section-area'>
       <div className='container'>
         <h2 className='text-center'>
           Confira alguns dos projetos já realizados
@@ -52,14 +38,9 @@ function Projects() {
         <article className='projects__container'>
           <div className='row justify-content-center'>
             {projectsList.map((project) => (
-              <motion.div
-                ref={ref}
+              <div
                 className='project col-sm-5'
-                key={project.name}
-                initial={{ y: 80, opacity: 0 }}
-                animate={animation}
-                transition={{ duration: 1, delay: 0.5 }}
-              >
+                key={project.name}>
                 <div className={`project__image_container ${project.order} ${project.class}`}>
                   <img
                     src={project.image}
@@ -83,7 +64,7 @@ function Projects() {
                     )}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </article>

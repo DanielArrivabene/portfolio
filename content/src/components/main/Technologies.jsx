@@ -54,7 +54,10 @@ function Technologies() {
       <div className='container d-flex align-items-center'>
         <div className='row justify-content-between'>
           <article className='col-md-5 mb-5 tech__description'>
-            <h2>Quais são as tecnologias que utilizo<span className="destaque--text">:</span></h2>
+            <h2>
+              Quais são as tecnologias que utilizo
+              <span className='destaque--text'>:</span>
+            </h2>
             <p>
               Desenvolvo interfaces intuitivas e responsivas. Melhorando a
               experiência do usuário com as tecnologias a seguir:
