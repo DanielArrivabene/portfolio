@@ -2,7 +2,7 @@ import '../../styles/components/About.scss';
 
 function About() {
   return (
-    <section id='about' className='min-vh-100 d-flex justify-content-around'>
+    <section id='about' className='d-flex justify-content-around section-area'>
       <article className='container d-flex align-items-center'>
         <div className='row justify-content-center gap-3'>
           <div className='col-lg-5 text-center avatar__container'>
@@ -10,7 +10,7 @@ function About() {
           </div>
           <div className='col-lg-5 description'>
             <h2 className='description__title'>
-              Buscando por serviços de desenvolvimento web? <br/> Eu posso te ajudar!
+              Buscando por serviços de desenvolvimento web?<br/> Eu posso te ajudar<span className="destaque--text">!</span>
             </h2>
             <p className='description__text'>
               Olá! Meu nome é <strong>Daniel Goulart Arrivabene</strong>, eu sou

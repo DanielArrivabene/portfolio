@@ -1,6 +1,10 @@
 @import './variables.scss';
 
 @media (width < 700px) {
+  #header {
+    padding: 0 1em !important;
+  }
+
   #navbar {
     > .navbar-nav {
       display: none;
@@ -15,16 +19,14 @@
     }
   }
 
-  #Apresentation {
-    font-size: 0.8em;
-
-    .contacts-list,
-    .scroll_link {
-      bottom: 5em !important;
+  #home {
+    h1 {
+      font-size: 2.5em !important;
+      line-height: 1.6em !important;
     }
 
-    .scroll_link {
-      padding: 1em;
+    p {
+      font-size: 1em !important;
     }
   }
 
@@ -35,23 +37,24 @@
       }
     }
   }
-
-  #projects {
-    padding: 6em 0;
-
-    h2 {
-      margin-bottom: 2em;
-
-      &::after {
-        content: ':';
-        color: $destaque_color;
-      }
-    }
-  }
 }
 
-@media (width < 990px) {
-  #about .avatar {
-    -webkit-box-reflect: below 0px linear-gradient(transparent 80%, rgba(0,0,0,0.4)) !important;
+@media (width < 900px) {
+  .section-area {
+    padding: 3em 0 !important;
+  }
+
+  #projects {
+    .project__image_container {
+      aspect-ratio: 10 / 6;
+      height: fit-content !important;
+      width: 100% !important;
+      margin-bottom: 1em;
+      order: 0 !important;
+    }
+
+    .project__text_container {
+      width: 100% !important;
+    }
   }
 }

@@ -2,6 +2,8 @@
 @import '../mixins.scss';
 
 #contact {
+  background-color: $bg_color;
+
   .contacts__container {
     justify-content: space-between;
     gap: 1.2em;
@@ -10,16 +12,17 @@
       font-size: 1.15em;
     }
 
-    .contact_label > strong {
-      font-family: $secondary_font;
-      font-weight: bold;
+    .contact_label {
+      > strong {
+        font-family: $secondary_font;
+        font-weight: bold;
 
-      &::after {
-        content: ':';
-        color: $destaque_color;
+        &::after {
+          content: ':';
+          color: $destaque_color;
+        }
       }
     }
-
     .contacts_list {
       gap: 1em;
 
@@ -27,16 +30,12 @@
         background-color: $text_color;
         padding: 7px;
         border-radius: 50%;
-        -webkit-box-reflect: below 5px
-          linear-gradient(transparent 1%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.26));
 
         &:hover {
-          scale: 1.05;
           transition: $transition_one;
-          background-color: #151515;
+          scale: 1.1;
         }
 
-        
         svg {
           font-size: 1.6em;
 
@@ -46,11 +45,11 @@
         }
 
         a.Whatsapp svg {
-            font-size: 1.6em;
+          font-size: 1.6em;
 
-            * {
-              color: rgb(0, 255, 0);
-            }
+          * {
+            color: rgb(0, 255, 0);
+          }
         }
 
         a.LinkedIn svg {
@@ -59,22 +58,21 @@
           * {
             color: rgb(62, 125, 253);
           }
-      }
+        }
       }
     }
   }
 
   .form__container {
     form {
-      background-color: $bg_color--card;
-      box-shadow: 5px 10px 50px #0000001b;
+      background-color: $card_color;
+      border: 2px solid black;
+      box-shadow: 3px 3px 0px #000000;
       border-radius: 10px;
       padding: 1.3em;
       display: flex;
       flex-direction: column;
       gap: 1em;
-      -webkit-box-reflect: below 7px
-        linear-gradient(transparent 96%, rgb(0, 0, 0));
 
       .form-group {
         label {
@@ -87,28 +85,17 @@
         input,
         textarea {
           border: none;
-          background-color: $bg_color--secondary;
+          background-color: $card_color--secondary;
           border-radius: 10px;
-          color: $destaque_color;
-          border: 1px solid $bg_color--secondary;
-          box-shadow: inset 0px 0px 3px #00000013;
-
-          &:focus {
-            box-shadow: 0px 0px 2px $destaque_color;
-            border: 1px solid $destaque_color;
-          }
+          color: $text_color;
+          border: 1px solid $card_color--secondary;
+          box-shadow: inset 2px 2px 0px #44444427;
         }
       }
 
       #send {
-        background-color: $text_color;
-        color: $destaque_color;
-        font-size: 1.2em;
-        font-family: $destaque_font;
-
-        &:hover {
-          background-color: $text_color--secondary;
-        }
+        @include btn_destaque--primary;
+        width: 100%;
       }
     }
   }

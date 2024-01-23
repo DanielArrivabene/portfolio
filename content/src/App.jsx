@@ -7,6 +7,7 @@ import Apresentation from './components/main/Apresentation';
 import Contact from './components/main/Contact';
 import Projects from './components/main/Projects';
 import Technologies from './components/main/Technologies';
+import Atributes from './components/main/Atributes';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Apresentation />
         <About />
         <Technologies />
+        <Atributes />
         <Projects />
         <Contact />
       </main>

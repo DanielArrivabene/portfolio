@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-family: $secondary_font !important;
+  font-family: $main_font !important;
 }
 
 a {
@@ -26,7 +26,8 @@ a {
   text-decoration: none;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -42,18 +43,16 @@ html::-webkit-scrollbar-thumb {
 
 .container {
   max-width: 1150px !important;
-  padding: 4.5em 2em 0 2em !important;
 }
 
+.section-area {
+  padding: 6em 0;
+}
 
 .logo {
-  display: flex;
-  font-family: $destaque_font !important;
-  align-items: center;
-  margin: 0;
+  width: 100px;
+}
 
-  &::after {
-    content: '.';
-    color: red;
-  }
+.destaque--text {
+  color: $destaque_color !important;
 }

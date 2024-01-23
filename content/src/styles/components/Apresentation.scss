@@ -1,83 +1,48 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
-#Apresentation {
-  position: relative;
+#home {
+  background-image: radial-gradient($bg_color--secondary, $bg_color);
 
   h1 {
-    font-size: 4.5em;
-    text-align: center;
-    font-family: $destaque_font;
+    font-size: 4em;
+    font-family: $main_font;
+    line-height: 1.3em;
 
-    i {
-      font-family: $destaque_font;
-      font-style: normal;
-      text-shadow: 3px 0 0 $destaque_color--secondary;
+    span {
+      padding: 0.1em 0.35em;
+      background-color: #efe0e0;
+      border-radius: 24px;
     }
   }
 
-  h2 {
-    color: #1f1f1f;
-    font-family: $primary_font !important;
-    font-weight: normal !important;
-    text-decoration: underline;
-    text-decoration-color: $destaque_color;
-    font-size: 1.8em;
+  p {
+    font-weight: 500;
+    font-size: 1.2em;
   }
 
-  .apresentation_button {
-    @include btn_destaque--secondary;
-    margin-top: 1em;
-  }
-
-  .contacts-list {
-    position: absolute;
-    bottom: 3em;
-    left: 0;
-
-    li {
-      border: none;
-      margin-top: .8em;
-      background-color: transparent;
-
-      &:hover {
-        scale: 1.1;
-        transition: $transition_one;
-
-        svg > path {
-          color: $text_color;
-        }
-      }
-
-      svg {
-        font-size: 1.9em;
-
-        path {
-          color: $text_color--secondary;
-        }
-      }
-    }
-  }
-
-  .scroll_link {
-    position: absolute;
-    bottom: 3em;
-    right: 0;
-    text-transform: uppercase;
-    writing-mode: vertical-lr;
-    color: $text_color--secondary;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: .7em;
+  .apresentation__butons_container {
+    transition: $transition_one;
 
     &:hover {
-      scale: 1.03;
-      transition: $transition_one;
+      transform: translate(3px, 3px);
+
+      svg {
+        transform: rotate(90deg);
+      }
     }
 
-    svg {
-      font-size: 1.4em;
+    .apresentation__buton {
+      @include btn_destaque--primary;
+
+      svg {
+        font-size: 1.1em;
+        transition: $transition_one;
+
+        * {
+          color: $card_color;
+        }
+      }
     }
   }
 }

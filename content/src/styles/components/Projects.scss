@@ -2,6 +2,8 @@
 @import '../mixins.scss';
 
 #projects {
+  background-color: $bg_color--secondary;
+
   h2 {
     margin-bottom: 2em;
 
@@ -14,79 +16,87 @@
   .projects__container {
     .row {
       flex-wrap: wrap;
-      gap: 2em;
+      gap: 5em;
 
       .project {
-        position: relative;
-        aspect-ratio: 10 / 6;
-        box-shadow: 0px 5px 40px #00000041;
-        border-radius: 10px;
-        overflow: hidden;
-        padding: 0;
+        width: 90%;
+        border-radius: 15px;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
+        border: 2px solid #000;
+        box-shadow: 4px 4px 0px #000;
+        padding: 0;
+        overflow: hidden;
+        background-color: $card_color;
 
-        &:hover {
-          i {
+        .project__image_container {
+          width: 50%;
+          height: 100%;
+          position: relative;
+
+          .project__image {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            transition: $transition_two;
+            border-radius: 15px;
+            box-shadow: 0px 0px 35px #00000059;
           }
-          
-          a {
-            bottom: 50%;
-            transform: translate(0%, 50%);
-            transition: $transition_two;
+
+          .project__status {
+            position: absolute;
+            bottom: 1em;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.3em 0.4em;
+            background-color: #ffebedd7;
+            font-weight: bold;
+            color: $destaque_color;
           }
         }
 
-        i {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 0;
-          background-image: linear-gradient(180deg, #000000c7, #000000a4, #00000000);
-        }
-
-        .project__image {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-        }
-
-        a {
-          position: absolute;
-          bottom: 0;
-          transform: translateY(100px);
-          border-radius: 100%;
-          width: 3em;
-          height: 3em;
+        .project__text_container {
+          padding: 2em;
+          width: 50%;
+          height: max-content;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #0000001f;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 1em;
 
-          svg {
-            scale: 2.5;
+          .project__title {
+            align-self: center;
+            padding: 0.5em;
+            width: fit-content;
+            border-radius: 10px;
+          }
 
-            * {
-              color: $destaque_color;
-              font-size: 10em !important;
+          .kateli {
+            background-color: #fff3c2;
+          }
+
+          .repara {
+            background-color: #96ffbe;
+          }
+
+          .project__description {
+            font-size: 1.15em;
+          }
+
+          .project__links_container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            .project__link {
+              @include btn_default--secondary;
+              display: block;
+              width: 45%;
             }
           }
-        }
-
-        .project__link_site {
-          left: 25%;
-        }
-
-        .project__link_code {
-          right: 25%;
         }
       }
     }

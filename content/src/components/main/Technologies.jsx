@@ -40,6 +40,8 @@ function Technologies() {
       animation.start({
         opacity: 1,
         y: 0,
+        x: 0,
+        boxShadow: '5px 5px 0px #000000',
       });
     }
   }, [inView, animation]);
@@ -47,19 +49,20 @@ function Technologies() {
   return (
     <section
       id='technologies'
-      className='d-flex align-items-center justify-content-around'
+      className='d-flex align-items-center justify-content-around section-area'
     >
       <div className='container d-flex align-items-center'>
         <div className='row justify-content-between'>
           <article className='col-md-5 mb-5 tech__description'>
-            <h2>Quais são as tecnologias que domino?</h2>
+            <h2>
+              Quais são as tecnologias que utilizo
+              <span className='destaque--text'>:</span>
+            </h2>
             <p>
               Desenvolvo interfaces intuitivas e responsivas. Melhorando a
-              experiência do usuário com as tecnologias a seguir.
+              experiência do usuário com as tecnologias a seguir:
             </p>
-            <p>
-              Para mais informações <a href='#contact'>entre em contato!</a>
-            </p>
+            <a href='#projects'>Projetos</a>
           </article>
           <article className='col-md-6 tech__items' ref={ref}>
             <ul className='list-group tech__list'>
@@ -68,11 +71,29 @@ function Technologies() {
                   key={tech.name}
                   className={`list-group-item d-flex
                  justify-content-center align-items-center ${tech.name}`}
-                  initial={{ opacity: 0, y: -25 }}
+                  initial={{
+                    opacity: 0,
+                    y: 15,
+                    x: 15,
+                    boxShadow: '0px 0px 0px #000000',
+                  }}
                   animate={animation}
-                  transition={{ duration: 1.4, delay: index / 3 }}
+                  transition={{ duration: 1.2, delay: index / 3 }}
+                  whileHover={{
+                    rotateZ: [
+                      '0deg',
+                      '15deg',
+                      '-15deg',
+                      '15deg',
+                      '-15deg',
+                      '15deg',
+                      '-15deg',
+                      '0deg',
+                    ],
+                    transition: { duration: 0.4 },
+                  }}
                 >
-                  <p className="tech__name">{tech.name}</p>
+                  <p className='tech__name'>{tech.name}</p>
                   {tech.icon}
                 </motion.li>
               ))}

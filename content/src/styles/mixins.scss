@@ -1,36 +1,70 @@
 @import './variables.scss';
 
-@mixin btn_destaque--secondary {
-    text-decoration: none;
-    color: $destaque_color--secondary;
-    border: 2px solid $destaque_color--secondary;
-    padding: .5em 1.3em;
-    border-radius: 5px;
-    font-family: $secondary_font;
-    font-size: 1.2em;
-
-    &:hover {
-      color: $bg_color;
-      border: 2px solid $destaque_color--secondary;
-      background-color: $destaque_color--secondary;
-      transition: $transition_one;
-    }
-}
-
 @mixin btn_destaque--primary {
+  width: fit-content;
   text-decoration: none;
-  color: $bg_color;
-  border: 2px solid $destaque_color;
+  color: $card_color;
+  border: 2px solid $text_color;
+  box-shadow: 3px 3px 0px #000;
   background-color: $destaque_color;
-  padding: .5em 1.3em;
-  border-radius: 5px;
+  padding: 0.5em 1.3em;
+  border-radius: 10px;
   font-family: $secondary_font;
   font-size: 1.2em;
+  transition: $transition_one;
 
   &:hover {
-    color: $destaque_color;
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px #000;
     border: 2px solid destaque_color;
-    background-color: $bg_color;
+    background-color: $text_color;
+  }
+}
+
+@mixin btn_destaque--secondary {
+  width: fit-content;
+  text-decoration: none;
+  color: $text_color;
+  border: 2px solid $text_color;
+  box-shadow: 3px 3px 0px $text_color;
+  background-color: $card_color;
+  padding: 0.5em 1.3em;
+  border-radius: 10px;
+  font-family: $secondary_font;
+  font-size: 1.2em;
+  transition: $transition_one;
+
+  &:hover {
+    color: $card_color;
+    transform: translate(3px, 3px);
+    box-shadow: none;
+    background-color: $text_color;
+  }
+}
+
+@mixin btn_default--secondary {
+  text-decoration: none;
+  color: $text_color;
+  text-align: center;
+  border: 2px solid $text_color;
+  background-color: $card_color;
+  padding: 0.5em 1.3em;
+  border-radius: 12px;
+  font-family: $secondary_font;
+  transition: $transition_one;
+
+  span {
+    display: block;
+    font-size: 1.2em;
     transition: $transition_one;
+  }
+
+  &:hover {
+    box-shadow: inset 3px 3px 0px #000000;
+    background-color: $bg_color;
+
+    span {
+      transform: translate(3px, 3px);
+    }
   }
 }
