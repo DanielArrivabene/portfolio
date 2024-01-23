@@ -1,6 +1,10 @@
 @import './variables.scss';
 
 @media (width < 700px) {
+  #header {
+    padding: 0 1em !important;
+  }
+
   #navbar {
     > .navbar-nav {
       display: none;
@@ -16,15 +20,13 @@
   }
 
   #home {
-    font-size: 0.8em;
-
-    .contacts-list,
-    .scroll_link {
-      bottom: 5em !important;
+    h1 {
+      font-size: 2.5em !important;
+      line-height: 1.6em !important;
     }
 
-    .scroll_link {
-      padding: 1em;
+    p {
+      font-size: 1em !important;
     }
   }
 
@@ -38,22 +40,21 @@
 }
 
 @media (width < 900px) {
-
   .section-area {
     padding: 3em 0 !important;
   }
 
   #projects {
-      .project__image_container {
-        aspect-ratio: 10 / 6;
-        height: fit-content !important;
-        width: 100% !important;
-        margin-bottom: 1em;
-        order: 0 !important;
-      }
-  
-      .project__text_container {
-        width: 100% !important;
-      }
+    .project__image_container {
+      aspect-ratio: 10 / 6;
+      height: fit-content !important;
+      width: 100% !important;
+      margin-bottom: 1em;
+      order: 0 !important;
+    }
+
+    .project__text_container {
+      width: 100% !important;
+    }
   }
 }

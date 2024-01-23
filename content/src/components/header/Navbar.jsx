@@ -49,7 +49,7 @@ function Navbar() {
   }
 
   return (
-    <header>
+    <header id="header">
       <nav
         id='navbar'
         className='navbar navbar-expand container d-flex justify-content-between'
