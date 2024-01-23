@@ -19,9 +19,8 @@ header {
         flex-direction: column-reverse;
         width: fit-content;
 
-        &:hover > hr {
-          width: 100%;
-          opacity: 1;
+        &:hover a, a.active {
+          color: $destaque_color;
         }
 
         a {
@@ -29,14 +28,7 @@ header {
           padding: 0;
           text-shadow: 0 0 40px #fff;
           color: $text_color;
-        }
-
-        hr {
-          width: 0;
-          margin: 0;
           transition: $transition_one;
-          border: 1px solid $destaque_color;
-          opacity: 0;
         }
       }
     }
@@ -49,6 +41,7 @@ header {
       display: none;
       background-color: transparent;
       border: none;
+
 
       svg {
         font-size: 1.6em;
