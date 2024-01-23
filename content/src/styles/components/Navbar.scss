@@ -25,17 +25,17 @@ header {
         }
 
         a {
-          font-family: $secondary_font;
-          font-weight: bold;
+          font-family: $main_font;
           padding: 0;
           text-shadow: 0 0 40px #fff;
+          color: $text_color;
         }
 
         hr {
           width: 0;
           margin: 0;
           transition: $transition_one;
-          border: 2px solid $destaque_color--secondary;
+          border: 1px solid $destaque_color;
           opacity: 0;
         }
       }
