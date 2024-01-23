@@ -43,11 +43,16 @@ function Navbar() {
     });
   };
 
+  window.onscroll = () => {
+    const header = document.querySelector('header');
+    header.classList.toggle('header_active', window.scrollY > 0);
+  }
+
   return (
     <header>
       <nav
         id='navbar'
-        className='navbar navbar-expand container py-2 d-flex justify-content-between'
+        className='navbar navbar-expand container d-flex justify-content-between'
       >
         <img src={Logo} alt='Daniel Goulart Arrivabene' className='logo' />
         <ul className='navbar-nav'>

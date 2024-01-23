@@ -2,6 +2,8 @@
 @import '../mixins.scss';
 
 #about {
+  scroll-margin-top: 4.5em;
+
   .row {
     .avatar__container {
       display: flex;
