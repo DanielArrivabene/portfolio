@@ -28,10 +28,9 @@ function Navbar() {
   window.onscroll = () => {
     sections.forEach((sec) => {
       let top = window.scrollY;
-      let offset = sec.offsetTop;
+      let offset = sec.offsetTop - 100;
       let height = sec.offsetHeight;
       let id = sec.getAttribute('id');
-      console.log(id)
       if (top >= offset && top < offset + height) {
         links.forEach((links) => {
           links.classList.remove('active');
@@ -41,7 +40,7 @@ function Navbar() {
         });
       }
     });
-    
+
     const header = document.querySelector('header');
     header.classList.toggle('header_active', window.scrollY > 0);
   };
