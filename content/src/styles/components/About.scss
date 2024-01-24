@@ -5,25 +5,21 @@
   scroll-margin-top: 4.5em;
 
   .row {
-    .avatar__container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 2em;
+    max-width: 900px;
 
-      .avatar {
+    .avatar__container {
+      img {
+        aspect-ratio: 3 / 4;
         width: 100%;
-        aspect-ratio: 5 / 4;
-        border-radius: 10px;
-        background-image: url('../../assets//my_picture.jpg');
-        background-size: contain;
+        object-fit: cover;
+        border-radius: 15px;
       }
     }
 
     .description {
       display: flex;
       flex-direction: column;
-      gap: 0.15em;
+      gap: 0.25em;
 
       .description__title {
         font-family: $secondary_font;

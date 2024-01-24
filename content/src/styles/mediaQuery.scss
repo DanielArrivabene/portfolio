@@ -40,6 +40,12 @@
 }
 
 @media (width < 900px) {
+  #about {
+
+    .row {
+      gap: 3em !important;
+    }
+  }
   .section-area {
     padding: 3em 0 !important;
   }
