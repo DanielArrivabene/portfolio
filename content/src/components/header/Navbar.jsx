@@ -10,7 +10,7 @@ import Menu from './Menu';
 
 function Navbar() {
   const navLinks = [
-    { text: 'Início', href: '#home', class: 'nav-link active' },
+    { text: 'Início', href: '#home', class: 'nav-link' },
     { text: 'Sobre', href: '#about', class: 'nav-link' },
     { text: 'Skills', href: '#technologies', class: 'nav-link ' },
     { text: 'Portfólio', href: '#projects', class: 'nav-link ' },
@@ -28,7 +28,7 @@ function Navbar() {
   window.onscroll = () => {
     sections.forEach((sec) => {
       let top = window.scrollY;
-      let offset = sec.offsetTop - 100;
+      let offset = sec.offsetTop;
       let height = sec.offsetHeight;
       let id = sec.getAttribute('id');
       if (top >= offset && top < offset + height) {
