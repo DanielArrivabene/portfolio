@@ -1,7 +1,5 @@
 import '../../styles/components/Atributes.scss';
 
-import { motion } from 'framer-motion';
-
 import Ray from '../../assets/ray.svg';
 import Chain from '../../assets/chain.svg';
 import Star from '../../assets/star.svg';
@@ -42,38 +40,20 @@ function Atributes() {
                 className='col-lg-4 w text-center atribute__card p-2'
               >
                 {atribute.icon && (
-                  <motion.img
-                    src={atribute.icon}
-                    alt='atributes icons'
-                    initial={{
-                      opacity: 0,
-                    }}
-                    animate={{
-                      opacity: 1,
-                    }}
-                    transition={{
-                      duration: .4,
-                      delay: 2 - index,
-                    }}
-                  />
+                  <img src={atribute.icon} alt='atributes icons' />
                 )}
-                <motion.div
-                  initial={{
-                    opacity: 0,
-                  }}
-                  animate={{
-                    opacity: 1,
-                  }}
-                  transition={{
-                    duration: 1,
-                    delay: 2 - index,
-                  }}
-                >
-                  <h3 className='card__title mb-3 mt-3'>{atribute.title}</h3>
-                  <p className='card__description'>{atribute.text}</p>
-                </motion.div>
+                <h3 className='card__title mb-3 mt-4'>{atribute.title}</h3>
+                <p className='card__description'>{atribute.text}</p>
               </div>
             ))}
+          <div className='atributes__links_container w-100 d-flex justify-content-center gap-2 mt-5'>
+            <a href='#projects' className='atributes__link--projects'>
+              Projetos
+            </a>
+            <a href='#contact' className='atributes__link--contacts'>
+              Contatos
+            </a>
+          </div>
         </div>
       </article>
     </section>

@@ -30,7 +30,7 @@
       }
 
       .description__link {
-        @include btn_destaque--primary;
+        @include btn--primary;
         width: fit-content;
       }
     }

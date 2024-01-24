@@ -20,8 +20,19 @@
         }
 
         .card__description {
-          font-size: 1.2em;
+          font-size: 10em !important;
         }
+      }
+    }
+
+    .atributes__links_container {
+
+      .atributes__link--projects {
+        @include btn_default--primary;
+      }
+
+      .atributes__link--contacts {
+        @include btn_default--secondary;
       }
     }
   }

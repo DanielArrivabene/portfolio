@@ -92,7 +92,7 @@
             justify-content: space-around;
 
             .project__link {
-              @include btn_default--secondary;
+              @include btn_destaque--secondary;
               display: block;
               width: 45%;
             }

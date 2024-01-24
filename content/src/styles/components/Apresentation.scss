@@ -31,7 +31,7 @@
     }
 
     .apresentation__buton {
-      @include btn_destaque--primary;
+      @include btn--primary;
 
       svg {
         font-size: 1.1em;
