@@ -37,7 +37,7 @@ function Atributes() {
             atributesData.map((atribute, index) => (
               <div
                 key={index}
-                className='col-lg-4 w text-center atribute__card p-2'
+                className='col-lg-4 text-center atribute__card p-2'
               >
                 {atribute.icon && (
                   <img src={atribute.icon} alt='atributes icons' />
