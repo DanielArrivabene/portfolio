@@ -4,7 +4,6 @@ import '../../styles/components/Navbar.scss';
 
 import Logo from '../../assets/assinature.png';
 
-import { GoVerified } from 'react-icons/go';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 import Menu from './Menu';
@@ -29,9 +28,10 @@ function Navbar() {
   window.onscroll = () => {
     sections.forEach((sec) => {
       let top = window.scrollY;
-      let offset = sec.offsetTop - 150;
+      let offset = sec.offsetTop;
       let height = sec.offsetHeight;
       let id = sec.getAttribute('id');
+      console.log(id)
       if (top >= offset && top < offset + height) {
         links.forEach((links) => {
           links.classList.remove('active');
@@ -41,15 +41,13 @@ function Navbar() {
         });
       }
     });
-  };
-
-  window.onscroll = () => {
+    
     const header = document.querySelector('header');
     header.classList.toggle('header_active', window.scrollY > 0);
-  }
+  };
 
   return (
-    <header id="header">
+    <header id='header'>
       <nav
         id='navbar'
         className='navbar navbar-expand container d-flex justify-content-between'
@@ -64,7 +62,6 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <GoVerified />
         <button id='menu_toggler' onClick={handleMenu}>
           <AiOutlineMenu />
         </button>

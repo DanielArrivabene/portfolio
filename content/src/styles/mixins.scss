@@ -42,6 +42,28 @@
   }
 }
 
+@mixin btn_default--primary {
+  text-decoration: none;
+  color: $bg_color;
+  text-align: center;
+  border: 2px solid $text_color;
+  background-color: $destaque_color;
+  padding: 0.5em 1.3em;
+  border-radius: 12px;
+  font-family: $secondary_font;
+  transition: $transition_one;
+
+  span {
+    display: block;
+    font-size: 1.2em;
+    transition: $transition_one;
+  }
+
+  &:hover {
+    background-color: $text_color;
+  }
+}
+
 @mixin btn_default--secondary {
   text-decoration: none;
   color: $text_color;
