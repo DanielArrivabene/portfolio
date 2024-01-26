@@ -12,13 +12,18 @@ body {
   background-color: $bg_color !important;
 }
 
+h1 {
+  font-family: $secondary_font;
+  font-weight: bolder;
+}
+
 h2 {
-  font-family: $secondary_font !important;
+  font-family: $main_font !important;
   font-weight: bolder !important;
 }
 
 h3 {
-  font-family: $main_font !important;
+  font-family: $secondary_font !important;
 }
 
 a {
@@ -42,15 +47,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 .container {
-  max-width: 1150px !important;
+  max-width: 1200px !important;
 }
 
 .section-area {
-  padding: 6em 0;
-}
-
-.logo {
-  width: 100px;
+  padding: 6em 1em;
 }
 
 .destaque--text {

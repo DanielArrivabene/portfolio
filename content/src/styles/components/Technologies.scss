@@ -8,7 +8,6 @@
   align-items: end;
 
   .container {
-    padding: 3em 2em !important;
 
     .tech__description {
       display: flex;
@@ -20,7 +19,7 @@
       }
 
       a {
-        @include btn_destaque--secondary;
+        @include btn--secondary;
       }
     }
 

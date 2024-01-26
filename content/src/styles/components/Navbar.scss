@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixins.scss';
 
 header {
   position: fixed;
@@ -6,12 +7,17 @@ header {
   left: 0;
   width: 100%;
   z-index: 999;
-  backdrop-filter: blur(7px);
-  padding: .8em 2em !important;
+  backdrop-filter: blur(6px);
+  padding: 0.8em 2em;
   transition: $transition_two;
 
   #navbar {
     background-blend-mode: difference;
+
+    .logo {
+      width: 6em;
+      transition: $transition_two;
+    }
 
     ul {
       gap: 2.5em;
@@ -21,7 +27,8 @@ header {
         flex-direction: column-reverse;
         width: fit-content;
 
-        &:hover a, a.active {
+        &:hover a,
+        a.active {
           color: $destaque_color;
         }
 
@@ -35,15 +42,14 @@ header {
       }
     }
 
-    > svg {
-      font-size: 1.8em;
+    .navbar__btn {
+      @include btn_default--primary;
     }
 
     #menu_toggler {
       display: none;
       background-color: transparent;
       border: none;
-
 
       svg {
         font-size: 1.6em;
@@ -76,7 +82,7 @@ header {
           svg {
             font-size: 2em;
             cursor: pointer;
-            
+
             path {
               color: $bg_color;
             }
@@ -88,7 +94,10 @@ header {
 }
 
 #header.header_active {
-  padding: 0 !important;
-  box-shadow: 0px 0px 3px #0000003b;
-  background-color: #ffffff2e;
+  padding: 0.2em 1em;
+  box-shadow: 0px 0px 1px #0000003b;
+
+  .logo {
+    width: 5em;
+  }
 }

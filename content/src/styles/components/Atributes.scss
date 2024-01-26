@@ -2,31 +2,34 @@
 @import '../mixins.scss';
 
 #atributes {
-  background-color: $bg_color--secondary;
-  
+  background-color: $bg_color--destaque;
+
   .cards__container {
+    background-color: $card_color;
+    padding: 2em;
+    border-radius: 30px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px #000;
+
     .atribute__card {
       max-width: 400px;
 
-      svg {
-        font-size: 3.5em;
-        filter: drop-shadow(4px 4px 0px #000);
-      }
-
-      .ray > svg > * {
-        color: #FFF7AE;
-      }
-
-      .chain > svg > * {
-        color: #CFCFED;
-      }
-
-      .star > svg > * {
-        color: #FFF7AE;
+      .card__title {
+        font-weight: 600;
       }
 
       .card__description {
-        font-size: 1.2em;
+        font-size: 1.15em;
+      }
+    }
+
+    .atributes__links_container {
+      .atributes__link--projects {
+        @include btn_default--primary;
+      }
+
+      .atributes__link--contacts {
+        @include btn_default--secondary;
       }
     }
   }

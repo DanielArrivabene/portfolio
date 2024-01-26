@@ -62,7 +62,7 @@ function Technologies() {
               Desenvolvo interfaces intuitivas e responsivas. Melhorando a
               experiência do usuário com as tecnologias a seguir:
             </p>
-            <a href='#projects'>Projetos</a>
+            <a href='#atributes'>Vantagens</a>
           </article>
           <article className='col-md-6 tech__items' ref={ref}>
             <ul className='list-group tech__list'>

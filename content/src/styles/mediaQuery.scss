@@ -2,6 +2,10 @@
 
 @media (width < 700px) {
   #header {
+    padding: 1em 1.9em 1em 1em !important;
+  }
+
+  #header.header_active {
     padding: 0 1em !important;
   }
 
@@ -40,8 +44,14 @@
 }
 
 @media (width < 900px) {
+  #about {
+
+    .row {
+      gap: 3em !important;
+    }
+  }
   .section-area {
-    padding: 3em 0 !important;
+    padding: 4em 1em !important;
   }
 
   #projects {
@@ -56,5 +66,9 @@
     .project__text_container {
       width: 100% !important;
     }
+  }
+
+  #footer .row {
+    justify-content: space-between !important;
   }
 }

@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-@mixin btn_destaque--primary {
+@mixin btn--primary {
   width: fit-content;
   text-decoration: none;
   color: $card_color;
@@ -21,7 +21,7 @@
   }
 }
 
-@mixin btn_destaque--secondary {
+@mixin btn--secondary {
   width: fit-content;
   text-decoration: none;
   color: $text_color;
@@ -42,7 +42,42 @@
   }
 }
 
+@mixin btn_default--primary {
+  text-decoration: none;
+  color: $bg_color;
+  text-align: center;
+  border: 2px solid $text_color;
+  background-color: $destaque_color;
+  padding: 0.5em 1.4em;
+  border-radius: 12px;
+  font-size: 1.25em;
+  font-family: $secondary_font;
+  transition: $transition_one;
+
+  &:hover {
+    background-color: $text_color;
+  }
+}
+
 @mixin btn_default--secondary {
+  text-decoration: none;
+  color: $text_color;
+  text-align: center;
+  border: 2px solid $text_color;
+  background-color: transparent;
+  padding: 0.5em 1.3em;
+  border-radius: 12px;
+  font-size: 1.25em;
+  font-family: $secondary_font;
+  transition: $transition_one;
+
+  &:hover {
+    background-color: $text_color;
+    color: $bg_color;
+  }
+}
+
+@mixin btn_destaque--secondary {
   text-decoration: none;
   color: $text_color;
   text-align: center;
