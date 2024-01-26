@@ -8,7 +8,7 @@ function About() {
       <article className='container d-flex align-items-center justify-content-center'>
         <div className='row justify-content-center'>
           <div className="col-lg-4 d-flex justify-content-end avatar__container">
-            <img src={Avatar} alt="Daniel Goulart Arrivabene" />
+            <img src={Avatar} alt="Daniel Goulart Arrivabene" loading='lazy'/>
           </div>
           <div className='col-lg-7 description'>
             <h2 className='description__title'>

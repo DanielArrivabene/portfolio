@@ -51,7 +51,7 @@ function Navbar() {
         id='navbar'
         className='navbar navbar-expand container d-flex justify-content-between'
       >
-        <img src={Logo} alt='Daniel Goulart Arrivabene' className='logo' />
+        <img src={Logo} alt='Daniel Goulart Arrivabene' loading='eager' className='logo' />
         <ul className='navbar-nav'>
           {navLinks.map((link, index) => (
             <li key={index} className='nav-item'>

@@ -43,7 +43,7 @@ function Projects() {
                 <div
                   className={`project__image_container ${project.order} ${project.class}`}
                 >
-                  <img
+                  <img 
                     src={project.image}
                     alt='project image'
                     className='project__image'
