@@ -46,7 +46,7 @@ function Atributes() {
                 <p className='card__description'>{atribute.text}</p>
               </div>
             ))}
-          <div className='atributes__links_container w-100 d-flex justify-content-center gap-2 mt-5'>
+          <div className='atributes__links_container w-100 d-flex flex-wrap justify-content-center gap-2 mt-5'>
             <a href='#projects' className='atributes__link--projects'>
               Projetos
             </a>
