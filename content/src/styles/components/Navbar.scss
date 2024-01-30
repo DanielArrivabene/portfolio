@@ -79,6 +79,7 @@ header {
 
       .menu__nav {
         display: flex;
+        list-style: none;
 
         a {
           color: $bg_color;

@@ -10,8 +10,8 @@
   }
 
   #navbar {
-    > .navbar-nav {
-      display: none;
+    > .navbar_nav {
+      display: none !important;
     }
 
     > svg {
