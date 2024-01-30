@@ -47,11 +47,11 @@ function Atributes() {
               </div>
             ))}
           <div className='atributes__links_container w-100 d-flex flex-wrap justify-content-center gap-2 mt-5'>
-            <a href='#projects' className='atributes__link--projects'>
-              Portfólio
+            <a href='#about' className='atributes__link--projects'>
+            Sobre mim
             </a>
-            <a href='#about' className='atributes__link--contacts'>
-              Sobre mim
+            <a href='#projects' className='atributes__link--contacts'>
+              Portfólio
             </a>
           </div>
         </div>
