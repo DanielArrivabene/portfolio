@@ -10,11 +10,10 @@ import Menu from './Menu';
 
 function Navbar() {
   const navLinks = [
-    { text: 'Início', href: '#home', class: 'nav-link' },
     { text: 'Sobre', href: '#about', class: 'nav-link' },
     { text: 'Skills', href: '#technologies', class: 'nav-link ' },
     { text: 'Portfólio', href: '#projects', class: 'nav-link ' },
-    { text: 'Contatos', href: '#contact', class: 'nav-link ' },
+    { text: 'Contatos', href: '#contact', class: 'navbar__btn' },
   ];
 
   const [showMenu, setShowMenu] = useState(false);
@@ -28,7 +27,7 @@ function Navbar() {
   window.onscroll = () => {
     sections.forEach((sec) => {
       let top = window.scrollY;
-      let offset = sec.offsetTop;
+      let offset = sec.offsetTop - 100;
       let height = sec.offsetHeight;
       let id = sec.getAttribute('id');
       if (top >= offset && top < offset + height) {
@@ -51,8 +50,9 @@ function Navbar() {
         id='navbar'
         className='navbar navbar-expand container d-flex justify-content-between'
       >
-        <img src={Logo} alt='Daniel Goulart Arrivabene' loading='eager' className='logo' />
-        <ul className='navbar-nav'>
+        <a href="#home">
+        <img src={Logo} alt='Daniel Goulart Arrivabene' loading='eager' className='logo' /></a>
+        <ul className='navbar_nav mb-0'>
           {navLinks.map((link, index) => (
             <li key={index} className='nav-item'>
               <a className={`${link.class}`} href={link.href}>

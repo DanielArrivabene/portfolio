@@ -5,19 +5,22 @@
   background-image: radial-gradient($bg_color--secondary, $bg_color);
 
   h1 {
-    font-size: 4em;
-    line-height: 1.4em;
-    letter-spacing: -.02em;
+    font-weight: 700;
+    font-family: $secondary_font;
+    font-size: 64px;
+    line-height: 75px;
 
     > span {
+      font-family: $secondary_font;
       padding: 0.1em 0.35em;
       border-radius: 24px;
+      font-weight: 600;
     }
   }
 
   p {
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1.15em !important;
+    font-weight: 500;
     font-family: var(--font-gilroy);
     font-size: 20px;
     line-height: 34px;

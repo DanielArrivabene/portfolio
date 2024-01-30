@@ -12,6 +12,9 @@ header {
   transition: $transition_two;
 
   #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-blend-mode: difference;
 
     .logo {
@@ -19,7 +22,10 @@ header {
       transition: $transition_two;
     }
 
-    ul {
+    .navbar_nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 2.5em;
 
       li {
@@ -40,10 +46,11 @@ header {
           transition: $transition_one;
         }
       }
-    }
 
-    .navbar__btn {
-      @include btn_default--primary;
+      .navbar__btn {
+        @include btn_default--primary;
+        font-size: 1.1em;
+      }
     }
 
     #menu_toggler {

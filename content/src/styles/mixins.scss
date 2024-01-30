@@ -55,6 +55,7 @@
   transition: $transition_one;
 
   &:hover {
+    color: $bg_color;
     background-color: $text_color;
   }
 }
