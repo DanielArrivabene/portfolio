@@ -34,8 +34,9 @@ function Projects() {
     >
       <div className='container'>
         <h2 className='text-center'>
-          Confira alguns dos projetos já realizados
+          Portfólio
         </h2>
+        <p className="text-center mb-5">Confira alguns dos projetos já realizados.</p>
         <article className='projects__container'>
           <div className='row justify-content-center'>
             {projectsList.map((project) => (

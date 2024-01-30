@@ -4,13 +4,8 @@
 #projects {
   background-color: $bg_color--secondary;
 
-  h2 {
-    margin-bottom: 2em;
-
-    &::after {
-      content: ':';
-      color: $destaque_color;
-    }
+  p {
+    font-size: 1.15em;
   }
 
   .projects__container {
