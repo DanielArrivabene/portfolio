@@ -40,7 +40,7 @@ function Apresentation() {
         Desenvolvimento de Websites com alta responsividade e SEO integrados - feitos sob medida para o seu negócio.
       </p>
       <div className='apresentation__butons_container'>
-        <a href='#about' className='apresentation__buton mt-5'>
+        <a href='#atributes' className='apresentation__buton mt-5'>
           Saiba mais <IoArrowForwardSharp />
         </a>
       </div>
