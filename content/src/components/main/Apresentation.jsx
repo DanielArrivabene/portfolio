@@ -8,12 +8,12 @@ function Apresentation() {
   return (
     <section
       id='home'
-      className=' container min-vh-100 d-flex 
+      className=' container d-flex 
       flex-column
       justify-content-center align-items-center
     '
     >
-      <h1 className='text-center mb-4'>
+      <h1 className='text-center mb-3'>
         Elegância,{' '}
         <motion.span 
           initial={
@@ -36,10 +36,10 @@ function Apresentation() {
         </motion.span>
         <br />& Produtividade
       </h1>
-      <p className='text-center mb-5'>
+      <p className='text-center mb-4'>
         Desenvolvimento de Websites com alta responsividade e SEO integrados - feitos sob medida para o seu negócio.
       </p>
-      <div className='apresentation__butons_container'>
+      <div className='apresentation__butons_container mt-2'>
         <a href='#atributes' className='apresentation__buton mt-5'>
           Saiba mais <IoArrowForwardSharp />
         </a>
