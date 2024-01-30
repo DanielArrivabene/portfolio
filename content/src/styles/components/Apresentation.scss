@@ -2,7 +2,7 @@
 @import '../mixins.scss';
 
 #home {
-  background-image: radial-gradient($bg_color--secondary, $bg_color);
+  background-image: radial-gradient($bg_color, $bg_color--secondary);
   padding-top: 10em;
   padding-bottom: 13em;
 

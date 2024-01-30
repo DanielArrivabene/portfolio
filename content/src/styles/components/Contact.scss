@@ -2,7 +2,7 @@
 @import '../mixins.scss';
 
 #contact {
-  background-color: $bg_color;
+  background-color: $bg_color--secondary;
 
   .contacts__container {
     justify-content: space-between;
