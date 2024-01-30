@@ -60,7 +60,7 @@ function Projects() {
                   <h3 className={`project__title ${project.class}`}>
                     {project.name}
                   </h3>
-                  <p className='project__description'>{project.description}</p>
+                  <p className='project__description text-center'>{project.description}</p>
                   <div className='project__links_container'>
                     <a
                       href={project.urlSite}

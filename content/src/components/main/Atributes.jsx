@@ -42,7 +42,7 @@ function Atributes() {
                 {atribute.icon && (
                   <img src={atribute.icon} loading='lazy' alt='atributes icons' />
                 )}
-                <h3 className='card__title mb-3 mt-4'>{atribute.title}</h3>
+                <h3 className='card__title mb-3 mt-3'>{atribute.title}</h3>
                 <p className='card__description'>{atribute.text}</p>
               </div>
             ))}
