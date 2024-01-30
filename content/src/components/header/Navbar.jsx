@@ -33,9 +33,11 @@ function Navbar() {
       if (top >= offset && top < offset + height) {
         links.forEach((links) => {
           links.classList.remove('active');
-          document
+          if(id != 'contact') {
+            document
             .querySelector('header nav a[href*=' + id + ']')
             .classList.add('active');
+          }
         });
       }
     });

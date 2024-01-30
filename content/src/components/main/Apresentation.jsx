@@ -22,7 +22,7 @@ function Apresentation() {
             }
           }
           animate={{
-            backgroundColor: ['#ffe4e0', '#f5fed9', '#d9fedd', '#d9fef3', '#d9f8fe'],
+            backgroundColor: ['#f5fed9', '#d9fedd', '#d9f8fe'],
           }}
           transition={{
             duration: 10,

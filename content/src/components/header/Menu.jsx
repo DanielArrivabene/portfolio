@@ -5,7 +5,6 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 function Menu(props) {
   const navLinks = [
-    { text: 'Início', href: '#' },
     { text: 'Sobre', href: '#about' },
     { text: 'Skills', href: '#technologies' },
     { text: 'Portfólio', href: '#projects' },
