@@ -8,7 +8,7 @@ function Menu(props) {
     { text: 'Sobre', href: '#about' },
     { text: 'Skills', href: '#technologies' },
     { text: 'Portfólio', href: '#projects' },
-    { text: 'Contatos', href: '#contact' },
+    { text: 'Contato', href: '#contact' },
   ];
 
   return (
