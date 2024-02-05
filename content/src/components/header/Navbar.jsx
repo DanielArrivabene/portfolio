@@ -13,7 +13,7 @@ function Navbar() {
     { text: 'Sobre', href: '#about', class: 'nav-link' },
     { text: 'Skills', href: '#technologies', class: 'nav-link ' },
     { text: 'Portfólio', href: '#projects', class: 'nav-link ' },
-    { text: 'Contato', href: '#contact', class: 'navbar__btn' },
+    { text: 'Contatos', href: '#contact', class: 'navbar__btn' },
   ];
 
   const [showMenu, setShowMenu] = useState(false);
