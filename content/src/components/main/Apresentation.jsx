@@ -36,7 +36,7 @@ function Apresentation() {
         </motion.span>
         <br />& Produtividade
       </h1>
-      <p className='text-center mb-4'>
+      <p className='text-center mb-5'>
         Desenvolvimento de Websites com alta responsividade e SEO integrados - feitos sob medida para o seu negócio.
       </p>
       <div className='apresentation__butons_container mt-2'>

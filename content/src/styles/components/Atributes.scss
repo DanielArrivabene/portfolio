@@ -26,11 +26,11 @@
     }
 
     .atributes__links_container {
-      .atributes__link--projects {
+      .atributes__link--about {
         @include btn_default--primary;
       }
 
-      .atributes__link--contacts {
+      .atributes__link--projects {
         @include btn_default--secondary;
       }
     }

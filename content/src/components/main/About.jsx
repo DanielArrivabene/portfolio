@@ -15,9 +15,8 @@ function About() {
               Buscando por serviços de desenvolvimento web?<br/> Eu posso te ajudar<span className="destaque--text">!</span>
             </h2>
             <p className='description__text'>
-              Olá! Meu nome é <strong>Daniel Goulart Arrivabene</strong>, eu sou
-              um desenvolvedor apaixonado por construir sites da web de
-              alto nível. Atuo transformando ideias em realidade usando soluções criativas, sempre em busca de novas habilidades, ferramentas e conceitos.{' '}
+              Prazer, meu nome é <strong>Daniel Goulart Arrivabene</strong>. Eu atuo como Frontend Developer e Web Designer desenvolvendo websites de
+              alto nível para que suas ideias se tornem realidade. Tudo através de código e uma boa xícara de café.
             </p>
             <a className='description__link' href='#technologies'>
               Ver Skills

@@ -30,7 +30,7 @@ function Atributes() {
     >
       <article className='container d-flex align-items-center justify-content-center'>
         <div className='w-100 row justify-content-around cards__container'>
-          <h2 className='text-center mb-5'>
+          <h2 className='text-center mb-4'>
             Feito sob medida<span className='destaque--text'>.</span>
           </h2>
           {atributesData &&
@@ -40,17 +40,21 @@ function Atributes() {
                 className='col-lg-4 text-center atribute__card p-2'
               >
                 {atribute.icon && (
-                  <img src={atribute.icon} loading='lazy' alt='atributes icons' />
+                  <img
+                    src={atribute.icon}
+                    loading='lazy'
+                    alt='atributes icons'
+                  />
                 )}
                 <h3 className='card__title mb-3 mt-3'>{atribute.title}</h3>
                 <p className='card__description'>{atribute.text}</p>
               </div>
             ))}
-          <div className='atributes__links_container w-100 d-flex flex-wrap justify-content-center gap-2 mt-5'>
-            <a href='#about' className='atributes__link--projects'>
-            Sobre mim
+          <div className='atributes__links_container w-100 d-flex flex-wrap justify-content-center gap-2 mt-3'>
+            <a href='#about' className='atributes__link--about'>
+              Sobre mim
             </a>
-            <a href='#projects' className='atributes__link--contacts'>
+            <a href='#projects' className='atributes__link--projects'>
               Portfólio
             </a>
           </div>
