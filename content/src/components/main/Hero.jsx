@@ -1,10 +1,10 @@
-import '../../styles/components/Apresentation.scss';
+import '../../styles/components/Hero.scss';
 
 import { motion } from 'framer-motion';
 
 import { IoArrowForwardSharp } from 'react-icons/io5';
 
-function Apresentation() {
+function Hero() {
   return (
     <section
       id='home'
@@ -15,12 +15,10 @@ function Apresentation() {
     >
       <h1 className='text-center mb-3'>
         Elegância,{' '}
-        <motion.span 
-          initial={
-            {
-              backgroundColor: '#ffe4e4'
-            }
-          }
+        <motion.span
+          initial={{
+            backgroundColor: '#ffe4e4',
+          }}
           animate={{
             backgroundColor: ['#f5fed9', '#d9fedd', '#d9f8fe'],
           }}
@@ -28,7 +26,7 @@ function Apresentation() {
             duration: 10,
             delay: 2.5,
             repeat: Infinity,
-            repeatType: 'reverse' ,
+            repeatType: 'reverse',
             repeatDelay: 0,
           }}
         >
@@ -37,10 +35,11 @@ function Apresentation() {
         <br />& Produtividade
       </h1>
       <p className='text-center mb-5'>
-        Desenvolvimento de Websites com alta responsividade e SEO integrados - feitos sob medida para o seu negócio.
+        Desenvolvimento de Websites com alta responsividade e SEO integrados -
+        feitos sob medida para o seu negócio.
       </p>
-      <div className='apresentation__butons_container mt-2'>
-        <a href='#atributes' className='apresentation__buton mt-5'>
+      <div className='hero__butons_container mt-2'>
+        <a href='#atributes' className='hero__buton mt-5'>
           Saiba mais <IoArrowForwardSharp />
         </a>
       </div>
@@ -48,4 +47,4 @@ function Apresentation() {
   );
 }
 
-export default Apresentation;
+export default Hero;

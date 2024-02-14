@@ -29,7 +29,7 @@
     max-width: 650px;
   }
 
-  .apresentation__butons_container {
+  .hero__butons_container {
     transition: $transition_one;
 
     &:hover {
@@ -40,7 +40,7 @@
       }
     }
 
-    .apresentation__buton {
+    .hero__buton {
       @include btn--primary;
       padding: 0.8em 1.4em;
 

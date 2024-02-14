@@ -3,7 +3,7 @@ import './styles/mediaQuery.scss';
 import Footer from './components/footer/Footer';
 import Navbar from './components/header/Navbar';
 import About from './components/main/About';
-import Apresentation from './components/main/Apresentation';
+import Hero from './components/main/Hero';
 import Contact from './components/main/Contact';
 import Projects from './components/main/Projects';
 import Technologies from './components/main/Technologies';
@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <main>
-        <Apresentation />
+        <Hero />
         <Atributes />
         <About />
         <Technologies />
