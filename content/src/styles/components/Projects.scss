@@ -20,6 +20,7 @@
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
+      filter: grayscale(1);
 
       .project__data {
         display: flex;
@@ -28,7 +29,8 @@
         align-items: center;
         box-shadow: inset 0px 0px 30px #00000061;
         width: 100%;
-        background-color: #000000c5;
+        min-height: 400px;
+        background-color: #000000b0;
         transition: $transition_two;
 
         .project__title {
@@ -37,26 +39,38 @@
 
         .project__description {
           font-size: 1.15em;
-          color: $text_light;
+          color: $text_light--secondary;
           max-width: 500px;
         }
 
-        .project__links_container {
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
+        .project__links_container .project__link {
+          @include btn_destaque--secondary;
+          transition: scale $transition_one;
 
-          .project__link {
-            @include btn_destaque--secondary;
-            display: block;
-            width: 45%;
+          &:hover {
+            scale: 1.05;
           }
         }
 
         &:hover {
-          background-color: #00000052;
-          box-shadow: inset 0px 0px 30px #00000061;
+          background-color: #00000062;
+
+          .project__description {
+            color: $text_dark--secondary;
+          }
+
+          .project__links_container .project__link {
+            background-color: #000000a3;
+
+            svg * {
+              color: $text_light;
+            }
+          }
         }
+      }
+
+      &:hover {
+        filter: grayscale(0);
       }
     }
 

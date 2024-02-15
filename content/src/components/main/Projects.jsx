@@ -1,5 +1,7 @@
 import '../../styles/components/Projects.scss';
 
+import { BiLinkExternal, BiLogoGithub } from 'react-icons/bi';
+
 import Repara from '../../assets/repara.png';
 import Kateli from '../../assets/Kateli.png';
 
@@ -44,17 +46,17 @@ function Projects() {
           >
             <div className='project__data p-5'>
               <h3 className='project__title mb-4'>{project.name}</h3>
-              <p className='project__description text-center'>
+              <p className='project__description text-center mb-3'>
                 {project.description}
               </p>
-              <div className='project__links_container'>
+              <div className='project__links_container d-flex gap-3'>
                 <a
                   href={project.urlSite}
                   target='_blank'
                   rel='noreferrer'
                   className='project__link'
                 >
-                  <span>Visitar</span>
+                  <BiLinkExternal />
                 </a>
                 {project.urlGithub && (
                   <a
@@ -63,7 +65,7 @@ function Projects() {
                     rel='noreferrer'
                     className='project__link'
                   >
-                    <span>Github</span>
+                    <BiLogoGithub />
                   </a>
                 )}
               </div>

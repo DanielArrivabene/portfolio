@@ -80,25 +80,20 @@
 
 @mixin btn_destaque--secondary {
   text-decoration: none;
-  color: $text_dark;
+  background-color: $card_color;
   text-align: center;
-  border: 2px solid $text_dark;
-  padding: 0.5em 1.3em;
-  border-radius: 12px;
+  padding: 0.7em;
+  border-radius: 100%;
   font-family: $secondary_font;
-  transition: $transition_one;
+  transition: $transition_two;
 
-  span {
-    display: block;
-    font-size: 1.2em;
-    transition: $transition_one;
-  }
+  svg {
+    font-size: 1.6em;
+    transition: $transition_two;
 
-  &:hover {
-    box-shadow: inset 3px 3px 0px #000000;
-
-    span {
-      transform: translate(3px, 3px);
+    * {
+      color: $text_dark;
+      transition: $transition_two;
     }
   }
 }
