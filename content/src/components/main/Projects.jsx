@@ -30,63 +30,47 @@ function Projects() {
   return (
     <section
       id='projects'
-      className='min-vh-100 d-flex align-items-center section-area'
+      className='min-vh-100 d-flex flex-column align-items-center section-area'
     >
-      <div className='container'>
-        <h2 className='text-center'>
-          Portfólio
-        </h2>
-        <p className="text-center mb-5">Confira alguns dos projetos já realizados.</p>
-        <article className='projects__container'>
-          <div className='row justify-content-center'>
-            {projectsList.map((project) => (
-              <div className='project col-sm-5' key={project.name}>
-                <div
-                  className={`project__image_container ${project.order} ${project.class}`}
+      <h2 className='text-center'>Portfólio</h2>
+      <p className='text-center mb-5'>
+        Confira alguns dos projetos já realizados.
+      </p>
+      <article className='projects__container'>
+        {projectsList.map((project) => (
+          <div
+            className={`project ${project.order} ${project.class}`}
+            key={project.name}
+          >
+            <div className='project__data p-5'>
+              <h3 className='project__title mb-4'>{project.name}</h3>
+              <p className='project__description text-center'>
+                {project.description}
+              </p>
+              <div className='project__links_container'>
+                <a
+                  href={project.urlSite}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='project__link'
                 >
-                  <img 
-                    src={project.image}
-                    alt='project image'
-                    className='project__image'
-                    loading='lazy'
-                  />
-                  {project.status && (
-                    <span className='project__status rounded-pill'>
-                      {project.status}
-                    </span>
-                  )}
-                </div>
-                <div className='project__text_container'>
-                  <h3 className={`project__title ${project.class}`}>
-                    {project.name}
-                  </h3>
-                  <p className='project__description text-center'>{project.description}</p>
-                  <div className='project__links_container'>
-                    <a
-                      href={project.urlSite}
-                      target='_blank'
-                      rel='noreferrer'
-                      className='project__link'
-                    >
-                      <span>Visitar</span>
-                    </a>
-                    {project.urlGithub && (
-                      <a
-                        href={project.urlGithub}
-                        target='_blank'
-                        rel='noreferrer'
-                        className='project__link'
-                      >
-                        <span>Github</span>
-                      </a>
-                    )}
-                  </div>
-                </div>
+                  <span>Visitar</span>
+                </a>
+                {project.urlGithub && (
+                  <a
+                    href={project.urlGithub}
+                    target='_blank'
+                    rel='noreferrer'
+                    className='project__link'
+                  >
+                    <span>Github</span>
+                  </a>
+                )}
               </div>
-            ))}
+            </div>
           </div>
-        </article>
-      </div>
+        ))}
+      </article>
     </section>
   );
 }

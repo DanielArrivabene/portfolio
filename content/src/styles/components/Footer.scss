@@ -1,12 +1,12 @@
 @import '../variables.scss';
 
 #footer {
-  background-color: $text_color;
+  background-color: $text_dark;
   padding: 5em 2em;
   border-radius: 50px 50px 0px 0px;
 
   * {
-    color: $text_color--secondary;
+    color: $text_dark--secondary;
   }
 
   .footer__container {
@@ -22,7 +22,6 @@
       font-size: 1.4em;
     }
 
-    
     .footer__contacts_list {
       display: flex;
       gap: 1.5em;
@@ -37,7 +36,7 @@
 
         a {
           text-decoration: none;
-          color: $text_color--secondary;
+          color: $text_dark--secondary;
           transition: $transition_one;
 
           &:hover {

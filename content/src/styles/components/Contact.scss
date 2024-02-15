@@ -27,7 +27,7 @@
       gap: 1em;
 
       li {
-        background-color: $text_color;
+        background-color: $text_dark;
         padding: 7px;
         border-radius: 50%;
 
@@ -87,7 +87,7 @@
           border: none;
           background-color: $card_color--secondary;
           border-radius: 10px;
-          color: $text_color;
+          color: $text_dark;
           border: 1px solid $card_color--secondary;
           box-shadow: inset 2px 2px 0px #44444427;
         }

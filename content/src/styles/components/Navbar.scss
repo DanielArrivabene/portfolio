@@ -42,7 +42,7 @@ header {
           font-family: $main_font;
           padding: 0;
           text-shadow: 0 0 40px #fff;
-          color: $text_color;
+          color: $text_dark;
           transition: $transition_one;
         }
       }
@@ -63,7 +63,7 @@ header {
         cursor: pointer;
 
         * {
-          color: $text_color;
+          color: $text_dark;
         }
       }
     }

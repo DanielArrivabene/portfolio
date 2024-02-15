@@ -3,96 +3,69 @@
 
 #projects {
   background-color: $bg_color;
+  padding: 3em 0 0 0 !important;
+  width: 100%;
 
   p {
     font-size: 1.15em;
   }
 
   .projects__container {
-    .row {
-      flex-wrap: wrap;
-      gap: 5em;
+    width: 100%;
 
-      .project {
-        width: 90%;
-        border-radius: 15px;
+    .project {
+      width: 100%;
+      padding: 0;
+      background-position: top center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .project__data {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        border: 2px solid #000;
-        box-shadow: 4px 4px 0px #000;
-        padding: 0;
-        overflow: hidden;
-        background-color: $card_color;
+        box-shadow: inset 0px 0px 30px #00000061;
+        width: 100%;
+        background-color: #000000c5;
+        transition: $transition_two;
 
-        .project__image_container {
-          width: 50%;
-          height: 100%;
-          position: relative;
+        .project__title {
+          color: $text_light;
+        }
 
-          .project__image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-          }
+        .project__description {
+          font-size: 1.15em;
+          color: $text_light;
+          max-width: 500px;
+        }
 
-          .project__status {
-            position: absolute;
-            bottom: 1em;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 0.3em 0.8em;
-            background-color: #ffebedd7;
-            font-weight: bold;
-            color: $destaque_color;
+        .project__links_container {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+          .project__link {
+            @include btn_destaque--secondary;
+            display: block;
+            width: 45%;
           }
         }
 
-        .project__text_container {
-          padding: 2em;
-          width: 50%;
-          height: max-content;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          gap: 1em;
-
-          .project__title {
-            align-self: center;
-            padding: 0.5em;
-            width: fit-content;
-            border-radius: 10px;
-          }
-
-          .kateli {
-            background-color: #fff3c2;
-          }
-
-          .repara {
-            background-color: #96ffbe;
-          }
-
-          .project__description {
-            font-size: 1.15em;
-          }
-
-          .project__links_container {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-
-            .project__link {
-              @include btn_destaque--secondary;
-              display: block;
-              width: 45%;
-            }
-          }
+        &:hover {
+          background-color: #00000052;
+          box-shadow: inset 0px 0px 30px #00000061;
         }
       }
+    }
+
+    .kateli {
+      background-image: url('../../assets/Kateli.png');
+    }
+
+    .repara {
+      background-image: url('../../assets/Repara.png');
     }
   }
 }
