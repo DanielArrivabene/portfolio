@@ -17,7 +17,7 @@ const projectsList = [
     order: 'order-0',
   },
   {
-    name: 'Repara!',
+    name: 'Repara',
     class: 'repara',
     description:
       'Projeto construído em HTML, Bootstrap, CSS, Sass, Javascript e React. Com foco em apresentar a empresa ao público alvo e atrair clientes, Repara! conta com uma identidade visual única, intuitiva e dinâmica.',
@@ -46,9 +46,6 @@ function Projects() {
           >
             <div className='project__data p-5'>
               <h3 className='project__title mb-4'>{project.name}</h3>
-              <p className='project__description text-center mb-3'>
-                {project.description}
-              </p>
               <div className='project__links_container d-flex gap-3'>
                 <a
                   href={project.urlSite}
