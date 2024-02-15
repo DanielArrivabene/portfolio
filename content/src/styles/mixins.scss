@@ -80,8 +80,8 @@
 
 @mixin btn_destaque--secondary {
   text-decoration: none;
-  background-color: $card_color;
   text-align: center;
+  background-color: #000000a3;
   padding: 0.7em;
   border-radius: 100%;
   font-family: $secondary_font;
@@ -92,7 +92,7 @@
     transition: $transition_two;
 
     * {
-      color: $text_dark;
+      color: $text_light;
       transition: $transition_two;
     }
   }

@@ -29,7 +29,8 @@
         align-items: center;
         box-shadow: inset 0px 0px 30px #00000033;
         width: 100%;
-        min-height: 400px;
+        min-height: 15em;
+        backdrop-filter: blur(1px);
         background-color: #000000b0;
         transition: $transition_two;
 
@@ -54,16 +55,17 @@
 
         &:hover {
           background-color: #00000062;
+          backdrop-filter: blur(0px);
 
           .project__description {
             color: $text_dark--secondary;
           }
 
           .project__links_container .project__link {
-            background-color: #000000a3;
+            background-color: #ffffffc5;
 
             svg * {
-              color: $text_light;
+              color: $text_dark;
             }
           }
         }
