@@ -1,0 +1,52 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#hero_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+  background-color: $text_dark;
+  z-index: 999;
+
+  .hero_bar__text {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1em !important;
+  }
+
+  .hero_bar__link {
+    background-color: $bg_color;
+    color: $text_dark;
+    border-radius: 15em;
+    padding: 0.3em 1.1em;
+    transition: $transition_one;
+
+    &:hover {
+      background-color: $bg_color--destaque;
+    }
+  }
+
+  .hero_bar__dismiss {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #333;
+
+    svg * {
+      color: $text_dark--secondary;
+    }
+  }
+}

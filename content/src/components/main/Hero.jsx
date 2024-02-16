@@ -13,8 +13,7 @@ function Hero() {
       justify-content-center align-items-center
     '
     >
-      <h1 className='text-center mb-3'>
-        Elegância,{' '}
+      {/*{' '}
         <motion.span
           initial={{
             backgroundColor: '#ffe4e4',
@@ -31,18 +30,19 @@ function Hero() {
           }}
         >
           Inovação
-        </motion.span>
-        <br />& Produtividade
+        </motion.span>*/}
+        <p className="hero__message">Free For Freelancer</p>
+      <h1 className='text-center hero__title'>
+        Web Development
+        <br /> & Design
       </h1>
-      <p className='text-center mb-5'>
+      <p className='text-center hero__description'>
         Desenvolvimento de Websites com alta responsividade e SEO integrados -
         feitos sob medida para o seu negócio.
       </p>
-      <div className='hero__butons_container mt-2'>
-        <a href='#atributes' className='hero__buton mt-5'>
-          Saiba mais <IoArrowForwardSharp />
-        </a>
-      </div>
+      <a href='#atributes' className='hero__buton'>
+        Saiba mais <IoArrowForwardSharp />
+      </a>
     </section>
   );
 }

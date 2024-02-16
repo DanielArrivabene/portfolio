@@ -8,6 +8,7 @@ import Contact from './components/main/Contact';
 import Projects from './components/main/Projects';
 import Technologies from './components/main/Technologies';
 import Atributes from './components/main/Atributes';
+import HeroBar from './components/main/HeroBar';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <HeroBar />
         <Atributes />
         <About />
         <Technologies />

@@ -14,21 +14,28 @@ body {
 
 h1 {
   font-family: $secondary_font;
-  font-weight: bolder;
+  font-weight: 500 !important;
+  font-size: 4.7em !important;
+  line-height: 1.15em !important;
+  letter-spacing: -1px !important;
 }
 
 h2 {
-  font-family: $main_font !important;
+  font-family: $secondary_font;
   font-weight: bolder !important;
 }
 
 h3 {
-  font-family: $secondary_font !important;
+  font-family: $secondary_font;
+}
+
+p {
+  font-size: 1.15em !important;
 }
 
 a {
   color: $text_dark;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 html,
