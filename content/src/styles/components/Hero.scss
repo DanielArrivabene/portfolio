@@ -3,10 +3,10 @@
 
 #home {
   background-image: radial-gradient($bg_color, $bg_color--secondary);
-  padding: 9em 1em 5em 1em;
+  padding: 10em 1em 5em 1em;
 
   .hero__message {
-    background-color: #ffe5c7;
+    background-color: $secondary_color;
     font-size: 1em !important;
     padding: 0.5em 1.3em;
     border-radius: 10em;

@@ -17,11 +17,13 @@
 
   .hero_bar__text {
     color: #ffffff;
-    display: flex;
-    align-items: center;
     text-align: center;
     margin: 0;
     font-size: 1em !important;
+
+    span {
+      color: $secondary_color;
+    }
   }
 
   .hero_bar__link {

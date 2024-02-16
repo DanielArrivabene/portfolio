@@ -11,7 +11,9 @@ function HeroBar() {
     <>
       {showBar && (
         <div id='hero_bar'>
-          <p className='hero_bar__text'>Faça um orçamento — É GRÁTIS!</p>
+          <p className='hero_bar__text'>
+            <span>FAÇA UM ORÇAMENTO </span> — É grátis!
+          </p>
           <a href='#contact' className='hero_bar__link'>
             Fale conosco
           </a>

@@ -9,7 +9,6 @@
   background-color: $bg_color--secondary;
 
   .container {
-
     .tech__description {
       display: flex;
       flex-direction: column;
@@ -56,7 +55,7 @@
             text-align: center;
             transform: translate(-50%, -30px);
             color: $card_color;
-            background-color: $destaque_color;
+            background-color: $primary_color;
             font-family: $secondary_font;
             font-weight: bold;
             border-radius: 5px;

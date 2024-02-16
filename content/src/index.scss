@@ -15,9 +15,9 @@ body {
 h1 {
   font-family: $secondary_font;
   font-weight: 500 !important;
-  font-size: 4.7em !important;
+  font-size: 4.6em !important;
   line-height: 1.13em !important;
-  letter-spacing: -1px !important;
+  letter-spacing: -0.5px !important;
 }
 
 h2 {
@@ -62,5 +62,5 @@ html::-webkit-scrollbar-thumb {
 }
 
 .destaque--text {
-  color: $destaque_color !important;
+  color: $primary_color !important;
 }
