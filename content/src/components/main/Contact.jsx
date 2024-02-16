@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { BiLogoLinkedin, BiLogoWhatsapp, BiLogoGithub } from 'react-icons/bi';
@@ -30,7 +29,6 @@ const contactsList = [
 ];
 
 function Contact() {
-
   const { ref, inView } = useInView(false);
   const animation = useAnimation();
 
@@ -52,8 +50,8 @@ function Contact() {
         <div className='row justify-content-center flex-wrap gap-5'>
           <article className='col-md-5 contacts__container d-flex flex-column '>
             <h2>
-              Você tem algum projeto em mente? Me envie uma mensagem
-              <span className='destaque--text'>!</span>
+              Você tem algum projeto em mente
+              <span className='destaque--text'>?</span>
             </h2>
             <p>
               Entre em contato comigo preenchendo o formulário, para iniciarmos

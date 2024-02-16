@@ -14,7 +14,10 @@ function HeroBar() {
           <p className='hero_bar__text'>
             <span>FAÇA UM ORÇAMENTO </span> — É grátis!
           </p>
-          <a href='#contact' className='hero_bar__link'>
+          <a href='#contact' className='hero_bar__link'
+            onClick={() => {
+              setShowBar(false);
+            }}>
             Fale conosco
           </a>
           <button

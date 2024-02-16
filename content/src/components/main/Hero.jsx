@@ -6,14 +6,13 @@ import { IoArrowForwardSharp } from 'react-icons/io5';
 
 function Hero() {
   return (
-    <section
-      id='home'
-      className=' container d-flex 
+    <section id='home'>
+      <article
+        className='container d-flex 
       flex-column
-      justify-content-center align-items-center
-    '
-    >
-      {/*{' '}
+      justify-content-center align-items-center'
+      >
+        {/*{' '}
         <motion.span
           initial={{
             backgroundColor: '#ffe4e4',
@@ -31,18 +30,19 @@ function Hero() {
         >
           Inovação
         </motion.span>*/}
-        <p className="hero__message">Free For Freelancer</p>
-      <h1 className='text-center hero__title'>
-        Web Development
-        <br /> & Design
-      </h1>
-      <p className='text-center hero__description'>
-        Desenvolvimento de Websites com alta responsividade e SEO.
-        Feitos sob medida para o seu negócio.
-      </p>
-      <a href='#atributes' className='hero__buton'>
-        Saiba mais <IoArrowForwardSharp />
-      </a>
+        <p className='hero__message'>Free For Freelancer</p>
+        <h1 className='text-center hero__title'>
+          Web Development
+          <br /> & Design
+        </h1>
+        <p className='text-center hero__description'>
+          Desenvolvimento de Websites com alta responsividade e SEO. Feitos sob
+          medida para o seu negócio.
+        </p>
+        <a href='#atributes' className='hero__buton'>
+          Saiba mais <IoArrowForwardSharp />
+        </a>
+      </article>
     </section>
   );
 }
