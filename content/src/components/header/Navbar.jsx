@@ -2,8 +2,6 @@ import { useState } from 'react';
 
 import '../../styles/components/Navbar.scss';
 
-import Logo from '../../assets/assinature.png';
-
 import { AiOutlineMenu } from 'react-icons/ai';
 
 import Menu from './Menu';
@@ -22,38 +20,15 @@ function Navbar() {
     setShowMenu(!showMenu);
   };
 
-  let sections = document.querySelectorAll('section');
-  let links = document.querySelectorAll('header nav a');
-  window.onscroll = () => {
-    sections.forEach((sec) => {
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 100;
-      let height = sec.offsetHeight;
-      let id = sec.getAttribute('id');
-      if (top >= offset && top < offset + height) {
-        links.forEach((links) => {
-          links.classList.remove('active');
-          if(id != 'contact') {
-            document
-            .querySelector('header nav a[href*=' + id + ']')
-            .classList.add('active');
-          }
-        });
-      }
-    });
-
-    const header = document.querySelector('header');
-    header.classList.toggle('header_active', window.scrollY > 0);
-  };
-
   return (
     <header id='header'>
       <nav
         id='navbar'
         className='navbar navbar-expand container d-flex justify-content-between'
       >
-        <a href="#home">
-        <img src={Logo} alt='Daniel Goulart Arrivabene' loading='eager' className='logo' /></a>
+        <a href='#home' className='logo'>
+          D <span>.</span>
+        </a>
         <ul className='navbar_nav mb-0'>
           {navLinks.map((link, index) => (
             <li key={index} className='nav-item'>

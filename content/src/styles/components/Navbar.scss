@@ -2,7 +2,7 @@
 @import '../mixins.scss';
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,8 +18,13 @@ header {
     background-blend-mode: difference;
 
     .logo {
-      width: 6em;
-      transition: $transition_two;
+      color: $text_light;
+      font-size: 2em;
+      font-family: $terciary_font;
+
+      span {
+        color: $primary_color;
+      }
     }
 
     .navbar_nav {
@@ -33,17 +38,15 @@ header {
         flex-direction: column-reverse;
         width: fit-content;
 
-        &:hover a,
-        a.active {
-          color: $primary_color;
-        }
-
         a {
           font-family: $main_font;
           padding: 0;
-          text-shadow: 0 0 40px #fff;
-          color: $text_dark;
+          color: $text_light--terciary;
           transition: $transition_one;
+
+          &:hover {
+            color: $text_dark--secondary;
+          }
         }
       }
 
@@ -98,14 +101,5 @@ header {
         }
       }
     }
-  }
-}
-
-#header.header_active {
-  padding: 0.2em 1em;
-  box-shadow: 0px 0px 1px #0000003b;
-
-  .logo {
-    width: 5em;
   }
 }
