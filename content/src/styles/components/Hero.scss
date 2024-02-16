@@ -3,7 +3,7 @@
 
 #home {
   background-image: radial-gradient($bg_color, $bg_color--secondary);
-  padding: 9em 0 5em 0;
+  padding: 9em 1em 5em 1em;
 
   .hero__message {
     background-color: #ffe5c7;
@@ -13,7 +13,7 @@
   }
 
   .hero__title {
-    margin-bottom: 15px;
+    margin-bottom: .3em;
   }
 
   .hero__description {
@@ -21,9 +21,9 @@
     font-weight: 500;
     font-family: $main_font;
     font-size: 20px;
-    line-height: 1.5em;
+    line-height: 1.4em;
     max-width: 580px;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
   }
 
   .hero__buton {
@@ -31,6 +31,7 @@
     padding: 0.8em 1.4em;
 
     svg {
+      margin-left: 7px;
       font-size: 1.1em;
       transition: $transition_one;
 
