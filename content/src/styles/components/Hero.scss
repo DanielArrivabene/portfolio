@@ -2,7 +2,10 @@
 @import '../mixins.scss';
 
 #home {
-  background-image: radial-gradient($bg_color, $bg_color--secondary);
+  background-image: url('../../assets/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 10em 1em 5em 1em;
 
   .hero__message {
@@ -13,10 +16,12 @@
   }
 
   .hero__title {
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
+    color: $text_light;
   }
 
   .hero__description {
+    color: $text_light--secondary;
     font-size: 1.15em !important;
     font-weight: 500;
     font-family: $main_font;
