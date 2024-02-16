@@ -37,8 +37,8 @@ function Hero() {
         <br /> & Design
       </h1>
       <p className='text-center hero__description'>
-        Desenvolvimento de Websites com alta responsividade e SEO integrados -
-        feitos sob medida para o seu negócio.
+        Desenvolvimento de Websites com alta responsividade e SEO.
+        Feitos sob medida para o seu negócio.
       </p>
       <a href='#atributes' className='hero__buton'>
         Saiba mais <IoArrowForwardSharp />
