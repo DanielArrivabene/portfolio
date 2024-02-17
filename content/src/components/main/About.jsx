@@ -26,7 +26,7 @@ function About() {
   return (
     <section id='about' className='d-flex justify-content-around section-area'>
       <article className='container d-flex align-items-center justify-content-center'>
-        <div className='row justify-content-between'>
+        <div className='row justify-content-center'>
           <div className='d-flex justify-content-end avatar__container'>
             <img src={Avatar} alt='Daniel Goulart Arrivabene' loading='lazy' />
           </div>

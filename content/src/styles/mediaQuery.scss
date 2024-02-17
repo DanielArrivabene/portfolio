@@ -1,5 +1,39 @@
 @import './variables.scss';
 
+
+
+@media (width < 900px) {
+  #about {
+    .avatar__container {
+      width: 70% !important;
+      order: 2;
+    }
+
+    .description {
+      width: 100% !important;
+      margin-bottom: 6em;
+    }
+  }
+
+  #projects {
+    .project__image_container {
+      aspect-ratio: 10 / 6;
+      height: fit-content !important;
+      width: 100% !important;
+      margin-bottom: 1em;
+      order: 0 !important;
+    }
+
+    .project__text_container {
+      width: 100% !important;
+    }
+  }
+
+  #footer .row {
+    justify-content: space-between !important;
+  }
+}
+
 @media (width < 700px) {
   #header {
     padding: 1em 1.9em 1em 1em !important;
@@ -42,39 +76,8 @@
   }
 
   #about {
-    .row {
-      .description .description__link {
-        margin: auto;
-      }
-    }
-  }
-}
-
-@media (width < 900px) {
-  #about {
-    .row {
-      gap: 3em !important;
-    }
-  }
-  .section-area {
-    padding: 4em 1em !important;
-  }
-
-  #projects {
-    .project__image_container {
-      aspect-ratio: 10 / 6;
-      height: fit-content !important;
-      width: 100% !important;
-      margin-bottom: 1em;
-      order: 0 !important;
-    }
-
-    .project__text_container {
+    .avatar__container {
       width: 100% !important;
     }
-  }
-
-  #footer .row {
-    justify-content: space-between !important;
   }
 }
