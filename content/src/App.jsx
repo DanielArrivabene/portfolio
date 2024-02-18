@@ -1,14 +1,15 @@
 import './styles/mediaQuery.scss';
 
 import Navbar from './components/header/Navbar';
+import Hero from './components/main/Hero';
 import HeroBar from './components/main/HeroBar';
 import Clients from './components/main/Clients';
 import About from './components/main/About';
-import Hero from './components/main/Hero';
-import Contact from './components/main/Contact';
-import Projects from './components/main/Projects';
-import Technologies from './components/main/Technologies';
+import Services from './components/main/Services';
 import Atributes from './components/main/Atributes';
+import Technologies from './components/main/Technologies';
+import Projects from './components/main/Projects';
+import Contact from './components/main/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <HeroBar />
         <Clients />
         <About />
+        <Services />
         <Technologies />
         <Atributes />
         <Projects />

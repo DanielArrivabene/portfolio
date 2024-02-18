@@ -1,7 +1,5 @@
 @import './variables.scss';
 
-
-
 @media (width < 900px) {
   #about {
     .avatar__container {
@@ -70,7 +68,7 @@
     }
   }
 
-  #atributes .cards__container {
+  #atributes .cards_container {
     padding: 2.5em 1em !important;
     margin-top: none !important;
   }

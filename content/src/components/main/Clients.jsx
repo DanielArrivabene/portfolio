@@ -31,10 +31,13 @@ function Clients() {
       className='d-flex justify-content-around section-area'
     >
       <article className='container d-flex align-items-center justify-content-center'>
-        <div className='w-100 row justify-content-around align-items-center cards__container'>
+        <div className='w-100 row justify-content-around align-items-center cards_container'>
           {clientsList &&
             clientsList.map((client, index) => (
-              <div key={index} className={`col-lg-2 text-center clients__card ${client.name}`}>
+              <div
+                key={index}
+                className={`col-lg-2 text-center clients__card ${client.name}`}
+              >
                 <img src={client.image} alt={client.name} />
               </div>
             ))}

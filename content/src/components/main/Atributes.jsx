@@ -29,7 +29,7 @@ function Atributes() {
       className='d-flex justify-content-around section-area'
     >
       <article className='container d-flex align-items-center justify-content-center'>
-        <div className='w-100 row justify-content-around cards__container'>
+        <div className='w-100 row justify-content-around cards_container'>
           {atributesData &&
             atributesData.map((atribute, index) => (
               <div

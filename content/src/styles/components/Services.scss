@@ -1,0 +1,12 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#services {
+  .services_container {
+    .service {
+      &:nth-child(even) {
+        background: #fff6f6;
+      }
+    }
+  }
+}
