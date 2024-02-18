@@ -1,0 +1,23 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#clients {
+  background-color: $text_dark;
+  padding: 3em 2em;
+
+  .cards__container {
+    .clients__card {
+      max-width: 400px;
+
+      img {
+        width: 100%;
+        filter: grayscale(1) brightness(60%);
+        transition: $transition_one;
+
+        &:hover {
+          filter: grayscale(1) brightness(70%);
+        }
+      }
+    }
+  }
+}
