@@ -43,7 +43,7 @@
       }
 
       .description__link {
-        @include btn--primary;
+        @include btn--terciary;
         width: fit-content;
       }
     }

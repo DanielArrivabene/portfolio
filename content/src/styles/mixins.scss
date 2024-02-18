@@ -7,7 +7,7 @@
   border: 2px solid $text_dark;
   box-shadow: 3px 4px 0px #000;
   background-color: $primary_color;
-  padding: 0.8em 1.4em;
+  padding: 0.8em 1.5em;
   border-radius: 10em;
   font-family: $main_font;
   font-size: 1em;
@@ -28,7 +28,7 @@
   border: 2px solid $text_dark;
   box-shadow: 3px 3px 0px $text_dark;
   background-color: $card_color;
-  padding: 0.6em 1.4em;
+  padding: 0.8em 1.4em;
   border-radius: 10px;
   font-family: $main_font;
   font-size: 1.2em;
@@ -39,6 +39,22 @@
     transform: translate(3px, 3px);
     box-shadow: none;
     background-color: $text_dark;
+  }
+}
+
+@mixin btn--terciary {
+  width: fit-content;
+  text-decoration: none;
+  color: $text_light;
+  background-color: $text_dark;
+  padding: 0.8em 1.5em;
+  border-radius: 10em;
+  font-family: $main_font;
+  font-size: 1em;
+  transition: $transition_one;
+
+  &:hover {
+    background-color: $primary_color;
   }
 }
 
