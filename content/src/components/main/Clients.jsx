@@ -34,7 +34,7 @@ function Clients() {
         <div className='w-100 row justify-content-around align-items-center cards__container'>
           {clientsList &&
             clientsList.map((client, index) => (
-              <div key={index} className='col-lg-2 text-center clients__card'>
+              <div key={index} className={`col-lg-2 text-center clients__card ${client.name}`}>
                 <img src={client.image} alt={client.name} />
               </div>
             ))}
