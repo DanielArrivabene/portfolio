@@ -41,7 +41,7 @@ function Hero() {
           Desenvolvimento de Websites com alta responsividade e SEO. Feitos sob
           medida para o seu negócio.
         </p>
-        <a href='#atributes' className='hero__buton'>
+        <a href='#clients' className='hero__buton'>
           Saiba mais <HiArrowLongRight />
         </a>
       </article>
