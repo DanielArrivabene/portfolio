@@ -2,35 +2,25 @@ import '../../styles/components/Projects.scss';
 
 const projectsList = [
   {
-    name: 'Clínica Kateli',
-    class: 'kateli',
-    status: 'new',
-    description:
-      'Projeto construído em WordPress, HTML, CSS e Javascript. Este site conta com um design elegante e refinado, atendendo aos mais altos padrões e gostos.',
-    urlSite: 'http://katelisaude.com.br/',
-  },
-  {
-    name: 'Clínica Kateli',
-    class: 'kateli',
-    status: 'new',
-    description:
-      'Projeto construído em WordPress, HTML, CSS e Javascript. Este site conta com um design elegante e refinado, atendendo aos mais altos padrões e gostos.',
-    urlSite: 'http://katelisaude.com.br/',
-  },
-  {
     name: 'Repara',
     class: 'repara',
-    description:
-      'Projeto construído em HTML, Bootstrap, CSS, Sass, Javascript e React. Com foco em apresentar a empresa ao público alvo e atrair clientes, Repara! conta com uma identidade visual única, intuitiva e dinâmica.',
     urlSite: 'https://repara-tec.vercel.app/',
   },
   {
     name: 'Clínica Kateli',
     class: 'kateli',
-    status: 'new',
-    description:
-      'Projeto construído em WordPress, HTML, CSS e Javascript. Este site conta com um design elegante e refinado, atendendo aos mais altos padrões e gostos.',
     urlSite: 'http://katelisaude.com.br/',
+  },
+  {
+    name: 'Repara',
+    class: 'repara',
+    urlSite: 'https://repara-tec.vercel.app/',
+  },
+  {
+    name: 'Seu Projeto',
+    class: 'your',
+    urlSite: '#contact',
+    target: '_self',
     alert: 'Em breve',
   },
 ];
@@ -49,14 +39,16 @@ function Projects() {
         <article className='projects__container'>
           {projectsList.map((project) => (
             <div className={`project ${project.class}`} key={project.name}>
-              <a
-                href={project.urlSite}
-                target='_blank'
-                rel='noreferrer'
-                className='project__link'
-              >
-                <h3 className='project__title'>{project.name}</h3>
-              </a>
+              <div className='project__data_container'>
+                <a
+                  href={project.urlSite}
+                  target={project.target ? project.target : '_blank'}
+                  rel='noreferrer'
+                  className='project__link'
+                >
+                  <h3 className='project__title'>{project.name}</h3>
+                </a>
+              </div>
               {project.alert && (
                 <span className='project__alert'>{project.alert}</span>
               )}
