@@ -1,18 +1,31 @@
 import '../../styles/components/Services.scss';
 
+import WebDev from '../../assets/site-dev.jpg';
+import AppDev from '../../assets/app-dev.jpg';
+import DesignDev from '../../assets/design-dev.jpg';
+
 function Services() {
   const servicesList = [
     {
       title: 'Web Development',
       description: 'Desenvolvimento de sites e sistemas customizados.',
+      image: WebDev,
     },
     {
-      title: 'Web Design',
+      title: 'UX / UI Design',
       description: 'Desenvolvimento de sites e sistemas customizados.',
+      image: DesignDev,
     },
     {
-      title: 'App Development',
+      title: 'Performace Optimization',
       description: 'Desenvolvimento de sites e sistemas customizados.',
+      image: AppDev,
+    },
+    {
+      title: 'Mobile App',
+      description: 'Desenvolvimento de sites e sistemas customizados.',
+      image: AppDev,
+      aviso: 'Em breve',
     },
   ];
 
@@ -26,11 +39,12 @@ function Services() {
         <p className='fst-italic'>
           ´´Com grandes responsabilidades vem grandes poderes´´
         </p>
-        <div className='row justify-content-between align-items-center services_container mt-5'>
+        <div className='services_container mt-5'>
           {servicesList.map((service, index) => (
-            <div key={index} className='service col-lg-4 p-1'>
+            <div key={index} className='service p-4'>
               <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <p className='m-0'>{service.description}</p>
+              {service.aviso && <span className="service__aviso">{service.aviso}</span>}
             </div>
           ))}
         </div>

@@ -17,6 +17,15 @@
 
   .hero__title {
     margin-bottom: 0.3em;
+    background-image: linear-gradient(
+      to bottom,
+      $text_light,
+      $text_light,
+      $text_dark--secondary
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: $text_light;
   }
 

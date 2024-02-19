@@ -55,8 +55,8 @@ function About() {
                   </li>
                 ))}
             </ul>
-            <a className='description__link' href='#technologies'>
-              Ver Skills
+            <a className='description__link' href='#services'>
+              Serviços
             </a>
           </div>
         </div>
