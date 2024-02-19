@@ -5,7 +5,7 @@
   padding: 5em 2em;
 
   * {
-    color: $text_dark--secondary;
+    color: $text_light--terciary;
   }
 
   .footer__container {
@@ -35,7 +35,7 @@
 
         a {
           text-decoration: none;
-          color: $text_dark--secondary;
+          color: $text_light--terciary;
           transition: $transition_one;
 
           &:hover {

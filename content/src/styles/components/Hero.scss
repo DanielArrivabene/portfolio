@@ -9,23 +9,19 @@
   padding: 10em 1em 5em 1em;
 
   .hero__message {
-    background-color: $secondary_color;
+    background-color: #ffffff1e;
+    color: $text_light--secondary;
     font-size: 1em !important;
-    padding: 0.5em 1.3em;
+    padding: 0.3em 1.3em;
     border-radius: 10em;
+
+    span {
+      color: $secondary_color;
+    }
   }
 
   .hero__title {
     margin-bottom: 0.3em;
-    background-image: linear-gradient(
-      to bottom,
-      $text_light,
-      $text_light,
-      $text_dark--secondary
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: $text_light;
   }
 

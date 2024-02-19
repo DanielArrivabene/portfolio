@@ -30,7 +30,7 @@ function Hero() {
         >
           Inovação
         </motion.span>*/}
-        <p className='hero__message'>Free For Freelancer</p>
+        <p className='hero__message'><span>NEW</span> ✨ Free For Freelancer</p>
         <h1 className='text-center hero__title'>
           Web Development
           <br /> & Design

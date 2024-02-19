@@ -40,11 +40,11 @@ header {
         a {
           font-family: $main_font;
           padding: 0;
-          color: $text_light--terciary;
+          color: $text_light--secondary;
           transition: $transition_one;
 
           &:hover {
-            color: $text_dark--secondary;
+            color: $text_light--terciary;
           }
         }
       }
