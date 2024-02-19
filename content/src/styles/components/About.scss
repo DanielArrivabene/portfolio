@@ -37,13 +37,13 @@
           background-color: transparent;
 
           svg {
-            font-size: 1.3em;
+            font-size: 1.9em;
           }
         }
       }
 
       .description__link {
-        @include btn--terciary;
+        @include btn_default--primary;
         width: fit-content;
       }
     }

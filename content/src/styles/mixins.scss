@@ -1,23 +1,47 @@
 @import './variables.scss';
 
 @mixin btn--primary {
-  width: fit-content;
-  text-decoration: none;
-  color: $card_color;
-  border: 2px solid $text_dark;
-  box-shadow: 3px 4px 0px #000;
-  background-color: $primary_color;
-  padding: 0.8em 1.5em;
-  border-radius: 10em;
-  font-family: $main_font;
-  font-size: 1em;
-  transition: $transition_one;
+  background: $primary_color;
+  box-shadow:
+    4px 4px #0000009e,
+    8px 8px #ffffff4e;
+  color: $text_dark;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.8em 1.4em;
+  align-items: center;
+  font-size: 0.9em !important;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  overflow: hidden;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: $text_dark;
+    z-index: -1;
+    transition: $transition_one;
+  }
+
+  &:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+  }
 
   &:hover {
-    transform: translate(3px, 3px);
-    box-shadow: 0px 0px 0px #000;
-    border: 2px solid primary_color;
-    background-color: $text_dark;
+    box-shadow:
+      0 0 #fff,
+      0 0 #151515;
+    color: white;
   }
 }
 
@@ -62,7 +86,7 @@
   text-decoration: none;
   color: $bg_color;
   text-align: center;
-  background-color: $primary_color;
+  background-color: $text_dark;
   padding: 0.5em 1.4em;
   border-radius: 10em;
   font-size: 1em !important;
@@ -70,8 +94,8 @@
   transition: $transition_one;
 
   &:hover {
-    color: $bg_color;
-    background-color: $text_dark;
+    color: $text_dark;
+    background-color: $primary_color;
   }
 }
 

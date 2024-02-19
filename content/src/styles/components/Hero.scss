@@ -38,20 +38,21 @@
 
   .hero__buton {
     @include btn--primary;
-    padding: 0.8em 1.4em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
 
     svg {
-      margin-left: 7px;
-      font-size: 1.1em;
-      transition: $transition_one;
+      font-size: 1.6em;
 
       * {
-        color: $card_color;
+        color: $text_dark;
+        transition-delay: 0.3s !important;
       }
     }
 
-    &:hover svg {
-      transform: rotate(90deg);
+    &:hover svg * {
+      color: $text_light;
     }
   }
 }

@@ -2,7 +2,7 @@ import '../../styles/components/Hero.scss';
 
 import { motion } from 'framer-motion';
 
-import { IoArrowForwardSharp } from 'react-icons/io5';
+import { HiArrowLongRight } from 'react-icons/hi2';
 
 function Hero() {
   return (
@@ -30,7 +30,9 @@ function Hero() {
         >
           Inovação
         </motion.span>*/}
-        <p className='hero__message'><span>NEW</span> ✨ Free For Freelancer</p>
+        <p className='hero__message'>
+          <span>NEW</span> ✨ Free For Freelancer
+        </p>
         <h1 className='text-center hero__title'>
           Web Development
           <br /> & Design
@@ -40,7 +42,7 @@ function Hero() {
           medida para o seu negócio.
         </p>
         <a href='#atributes' className='hero__buton'>
-          Saiba mais <IoArrowForwardSharp />
+          Saiba mais <HiArrowLongRight />
         </a>
       </article>
     </section>
