@@ -6,6 +6,11 @@
   box-sizing: border-box;
   font-family: $main_font;
   color: $text_dark;
+
+  &::selection {
+    color: $text_dark !important;
+    background-color: $card_color !important;
+  }
 }
 
 body {
