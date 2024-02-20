@@ -32,9 +32,9 @@ function Services() {
         </p>
         <div className='services_container row justify-content-between'>
           {servicesList.map((service, index) => (
-            <div key={index} className='service d-flex flex-column justify-content-between p-4'>
-              <h3>{service.title}</h3>
-              <p className='m-0'>{service.description}</p>
+            <div key={index} className='service p-4'>
+              <h3 className='service__title'>{service.title}</h3>
+              <p className='m-0 service__description'>{service.description}</p>
               {service.aviso && (
                 <span className='service__aviso'>{service.aviso}</span>
               )}
