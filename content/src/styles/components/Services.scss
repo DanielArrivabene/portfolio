@@ -4,24 +4,34 @@
 #services {
   .services_container {
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 50% 50%;
     grid-template-rows: span span span span span span span span span;
     gap: 1.5em;
 
     .service {
+      width: calc(50% - 1em);
       box-shadow: 0;
       position: relative;
       overflow: hidden;
-      border: 1px dashed #000;
+      border: 1px dashed #ffffff;
+      background-color: $text_dark;
       transition: $transition_two;
 
+      .service__subtitle {
+        color: $secondary_color--dark;
+      }
+
       .service__title {
+        color: $text_dark;
+        font-weight: 400 !important;
         font-family: $main_font !important;
       }
 
       .service__description {
-        color: $text_dark--secondary;
+        color: $text_dark;
+        font-weight: 200 !important;
       }
 
       &:nth-child(1) {

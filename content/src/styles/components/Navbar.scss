@@ -2,19 +2,19 @@
 @import '../mixins.scss';
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   padding: 0.8em 2em;
   transition: $transition_two;
+  mix-blend-mode: difference;
 
   #navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-blend-mode: difference;
 
     .logo {
       color: $text_light;
@@ -23,6 +23,7 @@ header {
 
       span {
         color: $terciary_color;
+        mix-blend-mode: none;
       }
     }
 
