@@ -8,60 +8,65 @@
     flex-wrap: wrap;
 
     .service {
-      box-shadow: 0;
-      position: relative;
-      overflow: hidden;
-      border: 1px dashed #ffffff;
-      background-color: $text_dark;
-      transition: $transition_two;
+      width: 30%;
 
-      .service__subtitle {
-        color: $secondary_color--dark;
-      }
-
-      .service__title {
-        color: $text_light;
-        font-weight: 400 !important;
-        font-family: $main_font !important;
-        letter-spacing: 1px;
-      }
-
-      .service__description {
-        color: $text_light--secondary;
-        font-weight: 200 !important;
-      }
-
-      &:nth-child(1) {
-        width: 30%;
-        grid-row-start: 2;
-        grid-row-end: 6;
-        grid-column-start: 1;
-        grid-column-end: 2;
+      &:nth-child(1) .service__data_container {
         box-shadow:
-          -4px 4px #000000,
-          -8px 8px $secondary_color;
+          -4px 4px #00c677,
+          -8px 8px #000;
+
+        .service__subtitle,
+        .service__link {
+          color: #00c677;
+        }
       }
 
       &:nth-child(2) {
         width: 36%;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        box-shadow:
-          0px 4px #000000,
-          0px 8px $secondary_color;
+
+        .service__data_container {
+          box-shadow:
+            0px 4px #d3b000,
+            0px 8px #000;
+          scale: 1.05;
+          z-index: 929;
+
+          .service__subtitle,
+          .service__link {
+            color: #d3b000;
+          }
+        }
       }
 
-      &:nth-child(3) {
-        width: 30%;
-        grid-row-start: 6;
-        grid-row-end: 10;
-        grid-column-start: 1;
-        grid-column-end: 2;
+      &:nth-child(3) .service__data_container {
         box-shadow:
-          4px 4px #000000,
-          8px 8px $secondary_color;
+          4px 4px #008bc6,
+          8px 8px #000;
+
+        .service__subtitle,
+        .service__link {
+          color: #008bc6;
+        }
+      }
+
+      .service__data_container {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border: 1px dashed #000000;
+        background-color: $card_color;
+
+        .service__title {
+          color: $text_dark;
+          font-weight: 400 !important;
+          font-family: $main_font !important;
+          letter-spacing: 1px;
+        }
+
+        .service__description {
+          color: $text_dark;
+          font-weight: 300 !important;
+        }
       }
     }
   }
