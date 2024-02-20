@@ -2,14 +2,13 @@
 @import '../mixins.scss';
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   padding: 0.8em 2em;
   transition: $transition_two;
-  mix-blend-mode: difference;
 
   #navbar {
     display: flex;
