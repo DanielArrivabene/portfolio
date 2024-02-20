@@ -8,12 +8,44 @@
     flex-wrap: wrap;
 
     .service {
-      width: 30%;
+      width: 32%;
+      position: relative;
+
+      .service__hover_bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        background-color: $text_dark;
+        transition: $transition_one;
+      }
+
+      &:hover {
+        .service__hover_bg {
+          right: auto;
+          left: 0;
+          width: 100%;
+        }
+
+        .service__data_container {
+          box-shadow: -8px 8px #000 !important;
+
+          .service__title {
+            color: $text_light;
+          }
+
+          .service__description {
+            color: $text_light--secondary;
+          }
+        }
+      }
 
       &:nth-child(1) .service__data_container {
         box-shadow:
-          -4px 4px #00c677,
-          -8px 8px #000;
+          -4px 4px #000000af,
+          -8px 8px #00000028;
+        border: 1px dashed #00000079;
 
         .service__subtitle,
         .service__link {
@@ -21,27 +53,17 @@
         }
       }
 
-      &:nth-child(2) {
-        width: 36%;
+      &:nth-child(2) .service__data_container {
+        box-shadow: -4px 0 #d3b000;
 
-        .service__data_container {
-          box-shadow:
-            0px 4px #d3b000,
-            0px 8px #000;
-          scale: 1.05;
-          z-index: 929;
-
-          .service__subtitle,
-          .service__link {
-            color: #d3b000;
-          }
+        .service__subtitle,
+        .service__link {
+          color: #d3b000;
         }
       }
 
       &:nth-child(3) .service__data_container {
-        box-shadow:
-          4px 4px #008bc6,
-          8px 8px #000;
+        box-shadow: -4px 0 #008bc6;
 
         .service__subtitle,
         .service__link {
@@ -53,19 +75,18 @@
         width: 100%;
         position: relative;
         overflow: hidden;
-        border: 1px dashed #000000;
-        background-color: $card_color;
+        transition: $transition_one;
 
         .service__title {
-          color: $text_dark;
           font-weight: 400 !important;
           font-family: $main_font !important;
           letter-spacing: 1px;
+          transition: $transition_one;
         }
 
         .service__description {
-          color: $text_dark;
           font-weight: 300 !important;
+          transition: $transition_one;
         }
       }
     }

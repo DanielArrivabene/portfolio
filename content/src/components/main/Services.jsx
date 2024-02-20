@@ -29,12 +29,13 @@ function Services() {
         <p className='fst-italic mb-3'>
           ´´Com grandes responsabilidades vem grandes poderes´´
         </p>
-        <div className='services_container row justify-content-center mt-4'>
+        <div className='services_container row justify-content-between mt-4'>
           {servicesList.map((service, index) => (
             <div key={index} className='service p-0'>
+              <div className="service__hover_bg"></div>
               <div className='service__data_container p-4'>
                 <p className='service__subtitle mb-4'>{service.subitle}</p>
-                <h3 className='service__title mb-2'>{service.title}</h3>
+                <h3 className='service__title mb-4'>{service.title}</h3>
                 <p className='service__description mb-1'>
                   {service.description}
                 </p>
