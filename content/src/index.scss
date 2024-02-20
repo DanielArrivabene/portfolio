@@ -8,8 +8,8 @@
   color: $text_dark;
 
   &::selection {
-    color: $text_dark !important;
-    background-color: $card_color !important;
+    color: $card_color !important;
+    background-color: $text_dark !important;
   }
 }
 

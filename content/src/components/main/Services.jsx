@@ -1,6 +1,5 @@
 import '../../styles/components/Services.scss';
 
-
 function Services() {
   const servicesList = [
     {
@@ -18,7 +17,6 @@ function Services() {
     {
       title: 'Mobile App',
       description: 'Desenvolvimento de sites e sistemas customizados.',
-      aviso: 'Em breve',
     },
   ];
 
@@ -29,15 +27,17 @@ function Services() {
     >
       <article className='container d-flex flex-column align-items-center justify-content-center'>
         <h2 className='mb-3'>Serviços</h2>
-        <p className='fst-italic'>
+        <p className='fst-italic mb-5'>
           ´´Com grandes responsabilidades vem grandes poderes´´
         </p>
-        <div className='services_container mt-5'>
+        <div className='services_container row justify-content-between'>
           {servicesList.map((service, index) => (
-            <div key={index} className='service p-4'>
+            <div key={index} className='service d-flex flex-column justify-content-between p-4'>
               <h3>{service.title}</h3>
               <p className='m-0'>{service.description}</p>
-              {service.aviso && <span className="service__aviso">{service.aviso}</span>}
+              {service.aviso && (
+                <span className='service__aviso'>{service.aviso}</span>
+              )}
             </div>
           ))}
         </div>
