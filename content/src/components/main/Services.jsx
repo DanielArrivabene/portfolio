@@ -3,24 +3,19 @@ import '../../styles/components/Services.scss';
 function Services() {
   const servicesList = [
     {
+      title: 'UX / UI Design',
+      subitle: 'NEW',
+      description: 'Criação de interfaces e experiencias digitais únicas.',
+    },
+    {
       title: 'Web Development',
       subitle: 'MOST POPULAR',
       description: 'Desenvolvimento de sites e sistemas customizados.',
     },
     {
-      title: 'UX / UI Design',
-      subitle: 'NEW',
-      description: 'Desenvolvimento de sites e sistemas customizados.',
-    },
-    {
-      title: 'Performace Optimization',
+      title: 'Optimizations',
       subitle: 'BUSINESS',
-      description: 'Desenvolvimento de sites e sistemas customizados.',
-    },
-    {
-      title: 'Mobile App',
-      subitle: 'COMING SOON',
-      description: 'Desenvolvimento de sites e sistemas customizados.',
+      description: 'Melhorias e soluções em websites já existentes.',
     },
   ];
 
@@ -34,7 +29,7 @@ function Services() {
         <p className='fst-italic mb-3'>
           ´´Com grandes responsabilidades vem grandes poderes´´
         </p>
-        <div className='services_container row justify-content-between mt-3'>
+        <div className='services_container row justify-content-center mt-3'>
           {servicesList.map((service, index) => (
             <div key={index} className='service p-4'>
               <p className='service__subtitle mb-4'>{service.subitle}</p>
