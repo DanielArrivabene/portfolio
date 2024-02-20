@@ -48,8 +48,12 @@
     border: none;
     background-color: #333;
 
+    &:hover svg * {
+      color: $text_light--secondary;
+    }
+
     svg * {
-      color: $text_dark--secondary;
+      color: $text_light--terciary;
     }
   }
 }
