@@ -4,17 +4,17 @@ function Services() {
   const servicesList = [
     {
       title: 'UX / UI Design',
-      subitle: 'NEW',
-      description: 'Criação de interfaces e experiencias digitais únicas.',
+      subitle: 'New',
+      description: 'Criação de interfaces digitais animações únicas.',
     },
     {
       title: 'Web Development',
-      subitle: 'MOST POPULAR',
+      subitle: 'Most popuplar',
       description: 'Desenvolvimento de sites e sistemas customizados.',
     },
     {
       title: 'Optimizations',
-      subitle: 'BUSINESS',
+      subitle: 'business',
       description: 'Melhorias e soluções em websites já existentes.',
     },
   ];
@@ -34,7 +34,7 @@ function Services() {
             <div key={index} className='service p-0'>
               <div className="service__hover_bg"></div>
               <div className='service__data_container p-4'>
-                <p className='service__subtitle mb-4'>{service.subitle}</p>
+                <p className='service__subtitle ps-4'>{service.subitle}</p>
                 <h3 className='service__title mb-4'>{service.title}</h3>
                 <p className='service__description mb-1'>
                   {service.description}
