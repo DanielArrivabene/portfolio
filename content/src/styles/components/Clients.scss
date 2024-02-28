@@ -3,14 +3,14 @@
 
 #clients {
   background-color: $text_dark;
-  padding: 3em 2em;
+  padding: 2em 2em;
 
   .cards_container {
     .clients__card {
       max-width: 400px;
 
       img {
-        width: 100%;
+        width: 60%;
         filter: grayscale(1) brightness(60%);
         transition: $transition_one;
 
@@ -21,7 +21,7 @@
     }
 
     .kateli img {
-      width: 75%;
+      width: 50%;
     }
   }
 }
