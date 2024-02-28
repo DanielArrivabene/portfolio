@@ -3,11 +3,12 @@
 
 #services {
   margin-top: 5em;
-  
+
   .service {
     width: 30%;
 
     .service__data_container {
+      text-shadow: 0px 0px 50px #000000;
       width: 100%;
       transition: $transition_one;
 
