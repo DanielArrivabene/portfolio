@@ -2,6 +2,16 @@
 @import '../mixins.scss';
 
 #services {
+  .services__subtitle {
+    font-size: 1.15em !important;
+    font-weight: 300;
+    font-family: $main_font;
+    font-size: 20px;
+    line-height: 1.4em;
+    max-width: 580px;
+    margin-bottom: 2em;
+  }
+
   .services_container {
     width: 100%;
     display: flex;
@@ -9,107 +19,43 @@
 
     .service {
       width: 32%;
-      position: relative;
-
-      .service__hover_bg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 0%;
-        height: 100%;
-        background-color: $text_dark;
-        transition: $transition_one;
-      }
-
-      &:hover {
-        .service__hover_bg {
-          right: auto;
-          left: 0;
-          width: 100%;
-        }
-
-        .service__data_container {
-          box-shadow:
-            -8px 8px #000000af,
-            -16px 16px #00000028 !important;
-        }
-      }
-
-      &:nth-child(1) .service__data_container {
-        box-shadow:
-          -4px 4px #000000af,
-          -8px 8px #00000028;
-        border: 1px dashed #00000079;
-
-        .service__subtitle {
-          background-color: #00824e;
-        }
-
-        .service__link {
-          color: #00824e;
-        }
-      }
-
-      &:nth-child(2) .service__data_container {
-        box-shadow:
-          -4px 4px #000000af,
-          -8px 8px #00000028;
-        border: 1px dashed #00000079;
-
-        .service__subtitle {
-          background-color: #d3b000;
-        }
-
-        .service__link {
-          color: #d3b000;
-        }
-      }
-
-      &:nth-child(3) .service__data_container {
-        box-shadow:
-          -4px 4px #000000af,
-          -8px 8px #00000028;
-        border: 1px dashed #00000079;
-
-        .service__subtitle {
-          background-color: #008bc6;
-        }
-
-        .service__link {
-          color: #008bc6;
-        }
-      }
 
       .service__data_container {
         width: 100%;
-        position: relative;
-        overflow: hidden;
         transition: $transition_one;
-        background-color: $primary_color;
-
-        .service__subtitle {
-          position: absolute;
-          top: 1.5rem;
-          left: -0;
-          padding-right: 1.2em;
-          color: #ffffff !important;
-          border: 1px dashed #000;
-          border-left: none;
-          text-transform: capitalize;
-        }
+        text-align: center;
 
         .service__title {
-          margin-top: 3.6rem;
           font-weight: 400 !important;
           font-family: $main_font !important;
           letter-spacing: 1px;
           transition: $transition_one;
-          color: $text_dark--secondary;
+          color: $text_dark;
         }
 
         .service__description {
           font-weight: 300 !important;
           transition: $transition_one;
+        }
+
+        .service__link {
+          color: $text_dark;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1em;
+
+          span {
+            padding: 0 .3em .2em .3em;
+            background-color: $text_dark;
+            border-radius: 100%;
+
+            svg {
+              * {
+                color: $bg_color;
+              }
+            }
+          }
         }
       }
     }

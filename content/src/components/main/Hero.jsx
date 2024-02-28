@@ -37,7 +37,7 @@ function Hero() {
           Web Development
           <br /> & Design
         </h1>
-        <p className='text-center hero__description'>
+        <p className='text-center hero__description fw-light'>
           Websites com sucesso nas buscas e adaptáveis a todos os dipositivos  — Desenvolvidos sob medida para o seu negócio.
         </p>
         <a href='#clients' className='hero__buton'>

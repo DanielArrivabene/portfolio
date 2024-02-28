@@ -57,10 +57,10 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: $text_dark;
+  background-color: $text_dark--secondary;
 
   &:hover {
-    background-color: $text_dark--secondary;
+    background-color: $text_dark;
   }
 }
 
