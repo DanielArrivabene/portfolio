@@ -4,7 +4,6 @@ import Navbar from './components/header/Navbar';
 import Hero from './components/main/Hero';
 import HeroBar from './components/main/HeroBar';
 import Clients from './components/main/Clients';
-import Services from './components/main/Services';
 import About from './components/main/About';
 import Atributes from './components/main/Atributes';
 import Technologies from './components/main/Technologies';
@@ -20,7 +19,6 @@ function App() {
         <Hero />
         <HeroBar />
         <Clients />
-        <Services />
         <About />
         <Technologies />
         <Atributes />

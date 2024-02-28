@@ -2,61 +2,28 @@
 @import '../mixins.scss';
 
 #services {
-  .services__subtitle {
-    font-size: 1.15em !important;
-    font-weight: 300;
-    font-family: $main_font;
-    font-size: 20px;
-    line-height: 1.4em;
-    max-width: 580px;
-    margin-bottom: 2em;
-  }
+  margin-top: 5em;
+  
+  .service {
+    width: 30%;
 
-  .services_container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    .service__data_container {
+      width: 100%;
+      transition: $transition_one;
 
-    .service {
-      width: 32%;
-
-      .service__data_container {
-        width: 100%;
+      .service__title {
+        font-size: 1em !important;
+        font-weight: 400 !important;
+        font-family: $main_font !important;
         transition: $transition_one;
-        text-align: center;
+        color: $text_light;
+      }
 
-        .service__title {
-          font-weight: 400 !important;
-          font-family: $main_font !important;
-          letter-spacing: 1px;
-          transition: $transition_one;
-          color: $text_dark;
-        }
-
-        .service__description {
-          font-weight: 300 !important;
-          transition: $transition_one;
-        }
-
-        .service__link {
-          color: $text_dark;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 1em;
-
-          span {
-            padding: 0 .3em .2em .3em;
-            background-color: $text_dark;
-            border-radius: 100%;
-
-            svg {
-              * {
-                color: $bg_color;
-              }
-            }
-          }
-        }
+      .service__description {
+        font-weight: 300 !important;
+        font-size: 0.9em !important;
+        transition: $transition_one;
+        color: $text_light--terciary;
       }
     }
   }

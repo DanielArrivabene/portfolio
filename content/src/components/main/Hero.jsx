@@ -3,14 +3,20 @@ import '../../styles/components/Hero.scss';
 import { motion } from 'framer-motion';
 
 import { HiArrowLongRight } from 'react-icons/hi2';
+import Services from './Services';
 
 function Hero() {
   return (
-    <section id='home'>
+    <section
+      id='home'
+      className='min-vh-100 d-flex 
+    flex-column
+    justify-content-center align-items-center'
+    >
       <article
         className='container d-flex 
       flex-column
-      justify-content-center align-items-center min-vh-100'
+      justify-content-center align-items-center'
       >
         {/*{' '}
         <motion.span
@@ -38,12 +44,14 @@ function Hero() {
           <br /> & Design
         </h1>
         <p className='text-center hero__description fw-light'>
-          Websites com sucesso nas buscas e adaptáveis a todos os dipositivos  — Desenvolvidos sob medida para o seu negócio.
+          Websites com sucesso nas buscas e adaptáveis a todos os dipositivos —
+          Desenvolvidos sob medida para o seu negócio.
         </p>
         <a href='#clients' className='hero__buton'>
           Saiba mais <HiArrowLongRight />
         </a>
       </article>
+      <Services />
     </section>
   );
 }

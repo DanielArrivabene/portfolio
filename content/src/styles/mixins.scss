@@ -84,9 +84,9 @@
 
 @mixin btn_default--primary {
   text-decoration: none;
-  color: $bg_color;
+  color: $text_dark;
   text-align: center;
-  background-color: $text_dark;
+  background-color: $primary_color;
   padding: 0.5em 1.4em;
   border-radius: 10em;
   font-size: 1em !important;
@@ -94,8 +94,8 @@
   transition: $transition_one;
 
   &:hover {
-    color: $text_dark;
-    background-color: $primary_color;
+    color: $text_light;
+    background-color: $text_dark;
   }
 }
 
