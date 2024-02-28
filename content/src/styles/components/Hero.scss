@@ -6,7 +6,8 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10em 1em 5em 1em;
+  background-attachment: fixed;
+  padding: 1em;
 
   .hero__message {
     background-color: #ffffff1e;
@@ -28,7 +29,7 @@
   .hero__description {
     color: $text_light--secondary;
     font-size: 1.15em !important;
-    font-weight: 500;
+    font-weight: 300;
     font-family: $main_font;
     font-size: 20px;
     line-height: 1.4em;

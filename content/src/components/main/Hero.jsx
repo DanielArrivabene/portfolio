@@ -10,7 +10,7 @@ function Hero() {
       <article
         className='container d-flex 
       flex-column
-      justify-content-center align-items-center'
+      justify-content-center align-items-center min-vh-100'
       >
         {/*{' '}
         <motion.span
@@ -38,8 +38,7 @@ function Hero() {
           <br /> & Design
         </h1>
         <p className='text-center hero__description'>
-          Desenvolvimento de Websites com alta responsividade e SEO. Feitos sob
-          medida para o seu negócio.
+          Websites com sucesso nas buscas e adaptáveis a todos os dipositivos  — Desenvolvidos sob medida para o seu negócio.
         </p>
         <a href='#clients' className='hero__buton'>
           Saiba mais <HiArrowLongRight />

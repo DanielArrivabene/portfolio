@@ -57,8 +57,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: $text_dark--secondary;
-  border-radius: 3px;
+  background-color: $text_dark;
+
+  &:hover {
+    background-color: $text_dark--secondary;
+  }
 }
 
 .container {
