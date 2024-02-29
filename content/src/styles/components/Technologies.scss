@@ -29,45 +29,30 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1em;
+        gap: 0.7em;
 
         li {
           border: none;
-          width: 5.5em;
-          height: 5.5em;
-          box-shadow: 5px 5px 0px #000000;
-          border-radius: 12px;
+          width: 7.5em;
+          aspect-ratio: 5 / 4;
           background-color: $card_color;
-          position: relative;
-
-          /*&:hover .tech__name {
-            transform: translate(-50%, -38px);
-            opacity: 1;
-            transition: $transition_two;
-            transition-delay: .4s;
-          }*/
+          box-shadow: 0 0 40px #0000000c;
+          gap: 0.1em;
 
           .tech__name {
             text-wrap: nowrap;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            text-align: center;
-            transform: translate(-50%, -30px);
-            color: $card_color;
-            background-color: $primary_color;
-            font-family: $secondary_font;
-            font-weight: bold;
-            border-radius: 5px;
-            padding: 0.3em 0.6em;
-            opacity: 0;
+            font-size: 0.9em !important;
           }
 
           svg {
-            font-size: 3.5em;
+            font-size: 2.5em;
+
+            * {
+              color: #2d2d2d;
+            }
           }
         }
-
+        /*
         .HTML > svg * {
           color: #dd4b25;
         }
@@ -114,7 +99,7 @@
 
         .Framer > svg * {
           color: #ee0bb2;
-        }
+        }*/
       }
     }
   }

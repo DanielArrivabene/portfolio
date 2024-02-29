@@ -39,9 +39,6 @@ function Technologies() {
     if (inView) {
       animation.start({
         opacity: 1,
-        y: 0,
-        x: 0,
-        boxShadow: '5px 5px 0px #000000',
       });
     }
   }, [inView, animation]);
@@ -69,13 +66,10 @@ function Technologies() {
               {technologiesList.map((tech, index) => (
                 <motion.li
                   key={tech.name}
-                  className={`list-group-item d-flex
+                  className={`list-group-item d-flex flex-column
                  justify-content-center align-items-center ${tech.name}`}
                   initial={{
                     opacity: 0,
-                    y: 15,
-                    x: 15,
-                    boxShadow: '0px 0px 0px #000000',
                   }}
                   animate={animation}
                   transition={{ duration: 1.2, delay: index / 3 }}
@@ -93,8 +87,8 @@ function Technologies() {
                     transition: { duration: 0.4 },
                   }}
                 >
-                  <p className='tech__name'>{tech.name}</p>
                   {tech.icon}
+                  <p className='tech__name m-0'>{tech.name}</p>
                 </motion.li>
               ))}
             </ul>
