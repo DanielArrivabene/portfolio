@@ -8,8 +8,6 @@ import Menu from './Menu';
 
 function Navbar() {
   const navLinks = [
-    { text: 'Sobre', href: '#about', class: 'nav-link' },
-    { text: 'Skills', href: '#technologies', class: 'nav-link ' },
     { text: 'Portfólio', href: '#projects', class: 'nav-link ' },
     { text: 'Contatos', href: '#contact', class: 'navbar__btn' },
   ];
