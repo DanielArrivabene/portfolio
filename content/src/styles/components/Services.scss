@@ -37,13 +37,21 @@
       }
 
       .service__link {
+        width: 100%;
         font-size: 0.9em !important;
         color: #050505;
         transition: $transition_one;
 
+        &:hover {
+          svg {
+            transform: translateX(100%);
+          }
+        }
+
         * {
           color: #050505;
           font-size: 1.5em !important;
+          transition: $transition_one;
         }
       }
     }
