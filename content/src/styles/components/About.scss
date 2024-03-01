@@ -2,48 +2,18 @@
 @import '../mixins.scss';
 
 #about {
-  background-color: #fff;
+  background-color: #050505;
 
-  .description__title {
+  .description__text {
     width: 100%;
+    font-size: 1.15em;
+    font-size: 3.2em !important;
+    color: $text_light;
     font-family: $secondary_font;
   }
 
-  .row {
-    .avatar__container {
-      width: 45%;
-      img {
-        aspect-ratio: 1 / 1;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    .description {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .description__text {
-        font-size: 1.15em;
-        color: $text_dark--secondary;
-      }
-
-      .contacts_list {
-        li {
-          background-color: transparent;
-
-          svg {
-            font-size: 1.9em;
-          }
-        }
-      }
-
-      .description__link {
-        @include btn_default--primary;
-        width: fit-content;
-      }
-    }
+  .description__link {
+    @include btn_default--primary;
+    width: fit-content;
   }
 }

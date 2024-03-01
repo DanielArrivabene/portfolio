@@ -53,7 +53,7 @@ function Technologies() {
           <article className='col-md-5 mb-5 tech__description'>
             <h2>
               Quais são as tecnologias que utilizo
-              <span className='destaque--text'>:</span>
+              <span className='destaque--color'>:</span>
             </h2>
             <p>
               Desenvolvo interfaces intuitivas e responsivas. Melhorando a

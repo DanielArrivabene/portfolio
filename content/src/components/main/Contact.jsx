@@ -51,7 +51,7 @@ function Contact() {
           <article className='col-md-5 contacts__container d-flex flex-column '>
             <h2>
               Você tem algum projeto em mente
-              <span className='destaque--text'>?</span>
+              <span className='destaque--color'>?</span>
             </h2>
             <p>
               Entre em contato comigo preenchendo o formulário, para iniciarmos
