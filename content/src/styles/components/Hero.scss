@@ -8,7 +8,8 @@
   background-size: cover;
   background-position: bottom center;
   background-attachment: fixed;
-  padding: 10em 0 4em 0;
+  padding: 10em 0 15em 0;
+  box-shadow: inset 0 0 30px #ffffff23;
 
   .hero__title {
     margin-bottom: 1.3em;
@@ -16,23 +17,16 @@
     > span {
       color: transparent;
       font-family: $secondary_font;
-      font-size: 2.2em !important;
       line-height: 0.95em !important;
       letter-spacing: -6px !important;
       font-weight: 700 !important;
       -webkit-text-stroke: 1px #040404;
+      font-size: 4.5em !important;
     }
 
     span.first {
       color: $text_dark;
-    }
-
-    span.second {
-      font-size: 5em !important;
-    }
-
-    span.thirth {
-      font-size: 5em !important;
+      font-size: 2.2em !important;
     }
   }
 }
