@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import '../../styles/components/Hero.scss';
 
 //import { motion } from 'framer-motion';
