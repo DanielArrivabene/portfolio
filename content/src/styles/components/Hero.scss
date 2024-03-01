@@ -3,12 +3,19 @@
 
 #home {
   background-color: $bg_color--secondary;
+  background-image: url('../../assets/main_bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  padding: 9em 0 1em 0;
+  transition: $transition_two;
 
   .hero__title {
-    margin-bottom: 0.5em;
+    margin-bottom: 1.3em;
 
     > span {
-      color: $bg_color--secondary;
+      color: transparent;
       font-family: $secondary_font;
       font-size: 2.2em !important;
       line-height: 0.9em !important;

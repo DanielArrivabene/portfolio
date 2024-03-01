@@ -2,7 +2,8 @@
 @import '../mixins.scss';
 
 #clients {
-  background-color: $text_dark;
+  background-color: $bg_color;
+  box-shadow: 20px 20px 10px #ff0000;
   padding: 2em 2em;
 
   .cards_container {
@@ -10,7 +11,7 @@
       max-width: 400px;
 
       img {
-        width: 60%;
+        width: 30%;
         filter: grayscale(1) brightness(60%);
         transition: $transition_one;
 
@@ -21,7 +22,7 @@
     }
 
     .kateli img {
-      width: 50%;
+      width: 27%;
     }
   }
 }

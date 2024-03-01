@@ -4,33 +4,44 @@
 #services {
   .service {
     width: 30%;
+    border: 1px solid #0000002e;
 
     .service__data_container {
       width: 100%;
       transition: $transition_one;
 
+      p.service__icon {
+        font-family: $secondary_font;
+        font-size: 3em !important;
+        line-height: 0.9em !important;
+        font-weight: 600 !important;
+        -webkit-text-stroke: 1px #000;
+        color: transparent;
+        text-align: center;
+      }
+
       .service__title {
         font-size: 1em !important;
-        font-weight: 400 !important;
+        font-weight: 500 !important;
         font-family: $main_font !important;
         transition: $transition_one;
-        color: $text_dark;
+        color: #050505;
       }
 
       .service__description {
         font-weight: 400 !important;
         font-size: 0.9em !important;
-        color: $text_dark--secondary;
+        color: #050505c4;
         transition: $transition_one;
       }
 
       .service__link {
         font-size: 0.9em !important;
-        color: #0080d6;
+        color: #050505;
         transition: $transition_one;
 
         * {
-          color: #0082d9;
+          color: #050505;
           font-size: 1.5em !important;
         }
       }
