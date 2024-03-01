@@ -80,17 +80,6 @@
           transition: $transition_two;
         }
       }
-
-      .project__alert {
-        position: absolute;
-        bottom: 20px;
-        right: -30px;
-        transform: rotateZ(-45deg);
-        background-color: $terciary_color;
-        color: $text_light;
-        padding: 0.1em 2em;
-        font-size: 1em !important;
-      }
     }
 
     .kateli {

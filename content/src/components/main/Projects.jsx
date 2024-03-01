@@ -49,9 +49,6 @@ function Projects() {
                   <h3 className='project__title'>{project.name}</h3>
                 </a>
               </div>
-              {project.alert && (
-                <span className='project__alert'>{project.alert}</span>
-              )}
             </div>
           ))}
         </article>
