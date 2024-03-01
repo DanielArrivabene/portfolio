@@ -8,8 +8,7 @@
   background-size: cover;
   background-position: bottom center;
   background-attachment: fixed;
-  padding: 9em 0 4em 0;
-  transition: $transition_two;
+  padding: 10em 0 4em 0;
 
   .hero__title {
     margin-bottom: 1.3em;
@@ -18,20 +17,22 @@
       color: transparent;
       font-family: $secondary_font;
       font-size: 2.2em !important;
-      line-height: 0.9em !important;
+      line-height: 0.95em !important;
       letter-spacing: -6px !important;
       font-weight: 700 !important;
-      -webkit-text-stroke: 1px #000;
-      transition: $transition_two;
+      -webkit-text-stroke: 1px #040404;
     }
 
-    span.active {
-      background-image: url('../../assets/title_bg.jpg');
-      background-position: center center;
-      background-attachment: fixed;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
+    span.first {
+      color: $text_dark;
+    }
+
+    span.second {
+      font-size: 5em !important;
+    }
+
+    span.thirth {
+      font-size: 5em !important;
     }
   }
 }

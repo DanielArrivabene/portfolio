@@ -15,7 +15,8 @@
         font-size: 3em !important;
         line-height: 0.9em !important;
         font-weight: 600 !important;
-        -webkit-text-stroke: 1px #000;
+        mix-blend-mode: luminosity;
+        -webkit-text-stroke: 1px $text_dark--secondary;
         color: transparent;
         text-align: center;
       }

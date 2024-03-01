@@ -18,8 +18,11 @@ function Hero() {
       justify-content-center align-items-center'
       >
         <h1 className='text-center hero__title'>
-          <span className="active"> Webdesigner </span>
-          <br /> <span>& Developer</span>
+          <span className='first'> Webdesigner </span>
+          <br />
+          <span className="second">&</span>
+          <br />
+          <span className="thirth">Developer</span>
         </h1>
       </article>
       <Services />
