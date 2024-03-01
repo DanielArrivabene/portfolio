@@ -13,10 +13,10 @@ function About() {
           café.
         </p>
         <div className='about__links_container'>
-          <a className='description__link' href='#services'>
+          <a className='about__link--one' href='#services'>
             Entrar em Contato
           </a>
-          <a className='description__link' href='#services'>
+          <a className='about__link--two' href='#services'>
             Ver projetos
           </a>
         </div>

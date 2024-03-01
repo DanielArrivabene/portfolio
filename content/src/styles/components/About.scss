@@ -12,8 +12,16 @@
     font-family: $secondary_font;
   }
 
-  .description__link {
-    @include btn_default--primary;
-    width: fit-content;
+  .about__links_container {
+    display: flex;
+    gap: 1em;
+    
+    .about__link--one {
+      @include btn_default--primary;
+    }
+
+    .about__link--two {
+      @include btn_default--secondary;
+    }
   }
 }

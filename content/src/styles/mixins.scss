@@ -100,13 +100,12 @@
 
 @mixin btn_default--secondary {
   text-decoration: none;
-  color: $text_dark;
+  color: $text_light;
   text-align: center;
-  border: 2px solid $text_dark;
+  border: 2px solid $text_light--terciary;
   background-color: transparent;
-  padding: 0.5em 1.3em;
-  border-radius: 12px;
-  font-size: 1.25em;
+  padding: 0.5em 1.4em;
+  font-size: 1em !important;
   font-family: $main_font;
   transition: $transition_one;
 
