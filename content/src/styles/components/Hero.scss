@@ -2,59 +2,29 @@
 @import '../mixins.scss';
 
 #home {
-  background-image: url('../../assets/background.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: inset 0px 0px 50px #000;
-  background-attachment: fixed;
-  padding: 9em 1em 5em 1em;
-
-  .hero__message {
-    background-color: #ffffff1e;
-    color: $text_light--secondary;
-    font-size: 1em !important;
-    padding: 0.3em 1.3em;
-    border-radius: 10em;
-
-    span {
-      color: $secondary_color;
-    }
-  }
+  background-color: $bg_color--secondary;
 
   .hero__title {
-    margin-bottom: 0.3em;
-    color: $text_light;
-  }
+    margin-bottom: 0.5em;
 
-  .hero__description {
-    color: $text_light--secondary;
-    font-size: 1.15em !important;
-    font-weight: 300;
-    font-family: $main_font;
-    font-size: 20px;
-    line-height: 1.4em;
-    max-width: 580px;
-    margin-bottom: 2em;
-  }
-
-  .hero__buton {
-    @include btn--primary;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-
-    svg {
-      font-size: 1.6em;
-
-      * {
-        color: $text_dark;
-        transition-delay: 0.3s !important;
-      }
+    > span {
+      color: $bg_color--secondary;
+      font-family: $secondary_font;
+      font-size: 2.2em !important;
+      line-height: 0.9em !important;
+      letter-spacing: -6px !important;
+      font-weight: 700 !important;
+      -webkit-text-stroke: 1px #000;
+      transition: $transition_two;
     }
 
-    &:hover svg * {
-      color: $text_light;
+    span.active {
+      background-image: url('../../assets/title_bg.jpg');
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
     }
   }
 }

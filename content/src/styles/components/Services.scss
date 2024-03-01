@@ -2,13 +2,10 @@
 @import '../mixins.scss';
 
 #services {
-  margin-top: 5em;
-
   .service {
     width: 30%;
 
     .service__data_container {
-      text-shadow: 0px 0px 50px #000000;
       width: 100%;
       transition: $transition_one;
 
@@ -17,14 +14,25 @@
         font-weight: 400 !important;
         font-family: $main_font !important;
         transition: $transition_one;
-        color: $text_light;
+        color: $text_dark;
       }
 
       .service__description {
-        font-weight: 300 !important;
+        font-weight: 400 !important;
         font-size: 0.9em !important;
+        color: $text_dark--secondary;
         transition: $transition_one;
-        color: $text_light--terciary;
+      }
+
+      .service__link {
+        font-size: 0.9em !important;
+        color: #0080d6;
+        transition: $transition_one;
+
+        * {
+          color: #0082d9;
+          font-size: 1.5em !important;
+        }
       }
     }
   }

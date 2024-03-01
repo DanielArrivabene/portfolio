@@ -14,15 +14,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .logo {
-      color: $text_light;
-      font-size: 2em;
-      font-family: $terciary_font;
+      width: 5em !important;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .navbar__message {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $text_dark--secondary;
+      font-size: 1.15em !important;
 
       span {
-        color: $terciary_color;
-        mix-blend-mode: none;
+        color: $secondary_color--dark;
       }
     }
 
@@ -40,11 +50,11 @@ header {
         a {
           font-family: $main_font;
           padding: 0;
-          color: $text_light--secondary;
+          color: $text_dark;
           transition: $transition_one;
 
           &:hover {
-            color: $text_light--terciary;
+            color: $text_dark--terciary;
           }
         }
       }

@@ -84,9 +84,9 @@
 
 @mixin btn_default--primary {
   text-decoration: none;
-  color: $text_dark;
+  color: $text_light;
   text-align: center;
-  background-color: $primary_color;
+  background-color: $text_dark;
   padding: 0.5em 1.4em;
   font-size: 1em !important;
   font-family: $main_font;
@@ -94,7 +94,7 @@
 
   &:hover {
     color: $text_light;
-    background-color: $text_dark;
+    background-color: $text_dark--terciary;
   }
 }
 

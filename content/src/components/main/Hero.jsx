@@ -1,11 +1,27 @@
+import { useState } from 'react';
+
 import '../../styles/components/Hero.scss';
 
-import { motion } from 'framer-motion';
+//import { motion } from 'framer-motion';
 
-import { HiArrowLongRight } from 'react-icons/hi2';
 import Services from './Services';
 
 function Hero() {
+  const [topTitle, setTopTitle] = useState('active');
+  const [bottomTitle, setBottomTitle] = useState('');
+
+  const handleScroll = () => {
+    if (window.scrollY == 0) {
+      setTopTitle('active');
+      setBottomTitle('');
+    } else {
+      setTopTitle('');
+      setBottomTitle('active');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
   return (
     <section
       id='home'
@@ -36,20 +52,10 @@ function Hero() {
         >
           Inovação
         </motion.span>*/}
-        <p className='hero__message'>
-          <span>NEW</span> ✨ Free For Freelancer
-        </p>
         <h1 className='text-center hero__title'>
-          Web Development
-          <br /> & Design
+          <span className={`${topTitle}`}> Webdesigner </span>
+          <br /> <span className={`${bottomTitle}`}>& Developer</span>
         </h1>
-        <p className='text-center hero__description fw-light'>
-          Websites com sucesso nas buscas e adaptáveis a todos os dipositivos —
-          Desenvolvidos sob medida para o seu negócio.
-        </p>
-        <a href='#clients' className='hero__buton'>
-          Saiba mais <HiArrowLongRight />
-        </a>
       </article>
       <Services />
     </section>
