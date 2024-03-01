@@ -1,7 +1,5 @@
 import '../../styles/components/Projects.scss';
 
-import { motion } from 'framer-motion';
-
 const projectsList = [
   {
     name: 'Repara',
@@ -33,33 +31,6 @@ function Projects() {
       id='projects'
       className='min-vh-100 d-flex flex-column align-items-center section-area'
     >
-      <motion.div
-        className='scrollbar'
-        initial={{
-          rotateZ: '-10deg',
-        }}
-      >
-        <motion.p
-          className='mb-0'
-          initial={{
-            x: -100,
-          }}
-          animate={{
-            x: [-100, -3000, -100],
-          }}
-          transition={{
-            duration: 40,
-            repeat: 'infinite',
-            repeatType: 'loop',
-            repeatDelay: 0,
-          }}
-        >
-          Webdesign <span>development</span> Interfaces{' '}
-          <span>Optimizations</span> Webdesign <span>development</span>{' '}
-          Interfaces <span>Optimizations</span> Webdesign{' '}
-          <span>development</span> Interfaces <span>Optimizations</span>
-        </motion.p>
-      </motion.div>
       <div className='container'>
         <h2 className='text-center'>Portfólio</h2>
         <p className='text-center mb-5'>

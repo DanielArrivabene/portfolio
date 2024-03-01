@@ -2,34 +2,7 @@
 @import '../mixins.scss';
 
 #projects {
-  background-color: $bg_color;
-  padding-top: 32em;
-  position: relative;
-  overflow: hidden;
-
-  .scrollbar {
-    width: 130%;
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 10em;
-    z-index: 999;
-    box-shadow: -30px 5px 10px #00000052;
-
-    p {
-      background-color: #000;
-      font-size: 4em !important;
-      color: $text_light;
-      white-space: nowrap;
-      text-transform: uppercase;
-      animation: animate 40s linear infinite;
-
-      span {
-        display: inline-block;
-        margin: 0 0.1em;
-      }
-    }
-  }
+  background-color: #040404;
 
   p {
     font-size: 1.15em;
