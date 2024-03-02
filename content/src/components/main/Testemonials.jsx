@@ -10,7 +10,7 @@ function Testemonials() {
     {
       name: 'John Smith',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet, consect',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam',
     },
     {
       name: 'John Smith',
@@ -20,7 +20,22 @@ function Testemonials() {
     {
       name: 'John Smith',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet, consect',
+      text: 'O melhor do east eua coast O melhor do east eua coast',
+    },
+    {
+      name: 'John Smith',
+      photo: One,
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam  sed diam nonumy lorem, sed diam',
+    },
+    {
+      name: 'John Smith',
+      photo: One,
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem',
+    },
+    {
+      name: 'John Smith',
+      photo: One,
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum  sed diam nonumy lorem, sed diam ',
     },
   ];
 

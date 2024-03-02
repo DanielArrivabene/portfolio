@@ -9,13 +9,59 @@
   }
 
   .cards_container {
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 13em 3em 4em 13em;
+    gap: 1em;
 
     .testemonial {
+      background-color: #fff;
+      box-shadow: 0 10px 70px #0000001b;
+      border-radius: 7px;
+
+      &:nth-child(1) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      &:nth-child(2) {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+
+      &:nth-child(3) {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 3;
+      }
+
+      &:nth-child(4) {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      &:nth-child(5) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+
+      &:nth-child(6) {
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
       .person_data {
         .testemonial__photo {
           width: 3em;
@@ -26,7 +72,7 @@
 
         .testemonial__name {
           font-size: 1em !important;
-          font-weight: 600;
+          font-weight: 500;
           color: $text_dark;
         }
 
@@ -40,7 +86,7 @@
       }
 
       .testemonial__text {
-        color: $text_dark--secondary;
+        color: $text_dark--terciary;
       }
 
       .star_container svg {
