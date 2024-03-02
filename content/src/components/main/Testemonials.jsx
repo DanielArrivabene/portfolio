@@ -1,6 +1,5 @@
 import '../../styles/components/Testemonials.scss';
 
-import { BiSolidQuoteAltRight } from 'react-icons/bi';
 import { MdOutlineStar } from 'react-icons/md';
 
 import One from '../../assets/eu.jpg';
@@ -10,7 +9,7 @@ function Testemonials() {
     {
       name: 'John Smith',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam lorem, sed diam nonumy lorem, sed diam',
     },
     {
       name: 'John Smith',
@@ -25,7 +24,7 @@ function Testemonials() {
     {
       name: 'John Smith',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam  sed diam nonumy lorem, sed diam',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam sed diam nonumy lorem, sed diam',
     },
     {
       name: 'John Smith',
@@ -53,16 +52,13 @@ function Testemonials() {
         <div className='cards_container'>
           {testemonialsList.map((testemonial, index) => (
             <div key={index} className='testemonial p-4'>
-              <div className='d-flex justify-content-between align-items-center mb-3 person_data'>
-                <div className='d-flex align-items-center justify-content-center gap-2'>
-                  <img
-                    src={testemonial.photo}
-                    alt={testemonial.name}
-                    className='testemonial__photo'
-                  />
-                  <p className='testemonial__name m-0'>{testemonial.name}</p>
-                </div>
-                <BiSolidQuoteAltRight />
+              <div className='d-flex align-items-center gap-2 mb-3'>
+                <img
+                  src={testemonial.photo}
+                  alt={testemonial.name}
+                  className='testemonial__photo'
+                />
+                <p className='testemonial__name m-0'>{testemonial.name}</p>
               </div>
               <p className='testemonial__text mb-3'>{testemonial.text}</p>
               <span className='d-block w-100 text-center star_container'>

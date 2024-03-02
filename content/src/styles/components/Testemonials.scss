@@ -12,12 +12,14 @@
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 13em 3em 4em 13em;
+    grid-template-rows: 12em 2em 2em 12em;
     gap: 1em;
 
     .testemonial {
       background-color: #fff;
-      box-shadow: 0 10px 70px #0000001b;
+      box-shadow:
+        2px 2px 0px #00000031,
+        0px 20px 60px #00000015;
       border-radius: 7px;
 
       &:nth-child(1) {
@@ -62,39 +64,30 @@
         grid-column-end: 4;
       }
 
-      .person_data {
-        .testemonial__photo {
-          width: 3em;
-          height: 3em;
-          border-radius: 100%;
-          object-fit: cover;
-        }
+      .testemonial__photo {
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+        object-fit: cover;
+      }
 
-        .testemonial__name {
-          font-size: 1em !important;
-          font-weight: 500;
-          color: $text_dark;
-        }
-
-        svg {
-          font-size: 3.3em !important;
-
-          * {
-            color: $primary_color;
-          }
-        }
+      .testemonial__name {
+        font-weight: 600;
+        color: $text_dark;
+        font-family: $secondary_font;
+        font-size: 1.5em !important;
       }
 
       .testemonial__text {
         color: $text_dark--terciary;
+        font-size: 1em !important;
       }
 
       .star_container svg {
-        font-size: 1.3em;
+        font-size: 1.5em;
 
         * {
           color: $primary_color;
-          filter: drop-shadow(0 0 15px #00000053);
         }
       }
     }
