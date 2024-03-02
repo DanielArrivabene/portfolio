@@ -1,2 +1,59 @@
 @import '../variables.scss';
 @import '../mixins.scss';
+
+#testemonials {
+  .testemonials__title {
+    span {
+      font-family: $secondary_font;
+    }
+  }
+
+  .cards_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+
+    .testemonial {
+      border: 1px solid #00000025;
+      border-radius: 5px;
+      background-color: #fff;
+
+      .person_data {
+        .testemonial__photo {
+          width: 3em;
+          height: 3em;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+
+        .testemonial__name {
+          font-size: 1em !important;
+          font-weight: 600;
+          color: $text_dark;
+        }
+
+        svg {
+          font-size: 3.3em !important;
+
+          * {
+            color: $primary_color;
+          }
+        }
+      }
+
+      .testemonial__text {
+        color: $text_dark--secondary;
+      }
+
+      .star_container svg {
+        font-size: 1.3em;
+
+        * {
+          color: $primary_color;
+          filter: drop-shadow(0 0 15px #00000053);
+        }
+      }
+    }
+  }
+}

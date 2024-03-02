@@ -75,9 +75,15 @@ html::-webkit-scrollbar-thumb {
 .destaque--text {
   color: transparent !important;
   font-family: $secondary_font;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px $text_light;
 }
 
-.destaque--color {
+.destaque--text-dark {
+  color: transparent !important;
+  font-family: $secondary_font;
+  -webkit-text-stroke: 1px $text_dark;
+}
+
+.color--primary {
   color: $primary_color !important;
 }
