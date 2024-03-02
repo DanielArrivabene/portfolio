@@ -78,15 +78,14 @@
   color: $text_light;
   text-align: center;
   border-radius: 3px;
-  background-color: $text_dark !important;
-  background-color: transparent;
+  background-color: $text_dark;
   padding: 0.5em 1.4em;
   font-size: 1em !important;
   font-family: $main_font;
   transition: $transition_one;
 
   &:hover {
-    background-color: $text_dark;
+    background-color: transparent;
   }
 }
 

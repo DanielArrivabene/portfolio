@@ -10,8 +10,7 @@ function About() {
     >
       <article className='container d-flex flex-column align-items-center justify-content-center'>
         <p className='description__text mb-4 text-center'>
-          Me chamo <span className='destaque--text'>Daniel Goulart</span>, estou
-          a mais de 3 anos transformando ideias em realidade. Tudo através de
+          A mais de 3 anos transformando ideias em realidade. <br/> Tudo através de
           código e uma boa xícara de café.
         </p>
         <Atributes />

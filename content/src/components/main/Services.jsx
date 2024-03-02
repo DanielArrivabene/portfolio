@@ -5,21 +5,18 @@ import { HiArrowLongRight } from 'react-icons/hi2';
 function Services() {
   const servicesList = [
     {
-      title: 'UX / UI Design',
-      subitle: 'New',
-      description: 'Criação de interfaces digitais animações únicas.',
+      title: 'Web Development',
+      description: 'Desenvolvimento de sites sob medida e totalmente personalizados.',
       icon: '01',
     },
     {
-      title: 'Web Development',
-      subitle: 'Most popuplar',
-      description: 'Desenvolvimento de sites e sistemas customizados.',
+      title: 'Sob medida',
+      description: 'Cada site é desenvolvido unicamente para a solução que você precisa.',
       icon: '02',
     },
     {
-      title: 'Optimizations',
-      subitle: 'business',
-      description: 'Melhorias e soluções em websites já existentes.',
+      title: 'Com SEO',
+      description: 'Alta visibilidade e acessibilidade, fazendo mais pessoas virem até você.',
       icon: '03',
     },
   ];

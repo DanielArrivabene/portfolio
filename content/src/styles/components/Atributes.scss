@@ -10,17 +10,17 @@
       font-size: 2.8em;
 
       * {
-        color: #414141;
+        color: $text_light--secondary;
       }
     }
 
     .card__title {
-      color: #414141;
+      color: $text_light--secondary;
       font-weight: 600 !important;
     }
 
     .card__description {
-      color: #414141;
+      color: $text_light--terciary;
     }
   }
 }
