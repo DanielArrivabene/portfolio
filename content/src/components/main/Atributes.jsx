@@ -27,10 +27,7 @@ function Atributes() {
     <div className='w-100 row justify-content-around atributes_container'>
       {atributesData &&
         atributesData.map((atribute, index) => (
-          <div
-            key={index}
-            className='col-lg-4 text-center atribute__card p-2 my-4'
-          >
+          <div key={index} className='text-center atribute__card p-3 my-4'>
             {atribute.icon && atribute.icon}
             <h3 className='card__title mb-1 mt-2'>{atribute.title}</h3>
             <p className='card__description m-0'>{atribute.text}</p>

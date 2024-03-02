@@ -4,22 +4,23 @@
 .atributes_container {
   .atribute__card {
     max-width: 400px;
+    width: fit-content;
 
     svg {
-      font-size: 3em;
+      font-size: 2.8em;
 
       * {
-        color: $text_light;
+        color: #414141;
       }
     }
 
     .card__title {
-      color: $text_light;
+      color: #414141;
+      font-weight: 600 !important;
     }
 
     .card__description {
-      color: $text_light;
-      margin: 0;
+      color: #414141;
     }
   }
 }

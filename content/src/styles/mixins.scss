@@ -4,7 +4,8 @@
   text-decoration: none;
   color: $text_light;
   text-align: center;
-  background-color: $secondary_color--dark;
+  border-radius: 3px;
+  background-color: $primary_color;
   padding: 0.5em 1.4em;
   font-size: 1em !important;
   font-family: $main_font;
@@ -19,6 +20,7 @@
 @mixin btn--secondary {
   width: fit-content;
   text-decoration: none;
+  border-radius: 3px;
   color: $text_dark;
   border: 2px solid $text_dark;
   box-shadow: 3px 3px 0px $text_dark;
@@ -42,6 +44,7 @@
   text-decoration: none;
   color: $text_light;
   background-color: $text_dark;
+  border-radius: 3px;
   padding: 0.8em 1.5em;
   border-radius: 10em;
   font-family: $main_font;
@@ -55,9 +58,10 @@
 
 @mixin btn_default--primary {
   text-decoration: none;
-  color: $secondary_color--dark;
+  color: $text_light;
   text-align: center;
-  border: 1px solid $secondary_color--dark;
+  border-radius: 3px;
+  background-color: $primary_color;
   padding: 0.5em 1.4em;
   font-size: 1em !important;
   font-family: $main_font;
@@ -73,7 +77,8 @@
   text-decoration: none;
   color: $text_light;
   text-align: center;
-  border: 2px solid $text_light--terciary;
+  border-radius: 3px;
+  background-color: $text_dark !important;
   background-color: transparent;
   padding: 0.5em 1.4em;
   font-size: 1em !important;
