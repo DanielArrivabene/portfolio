@@ -60,7 +60,7 @@ header {
       }
 
       .navbar__btn {
-        @include btn_default--primary;
+        @include btn--primary;
         font-size: 1.1em;
       }
     }

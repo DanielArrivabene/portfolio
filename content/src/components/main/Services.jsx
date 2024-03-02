@@ -29,7 +29,7 @@ function Services() {
       {servicesList.map((service, index) => (
         <div key={index} className='service p-0'>
           <div className='service__data_container p-4'>
-            <p className='service__icon mb-5 mt-3'>{service.icon}</p>
+            <p className='service__icon mb-5 mt-4'>{service.icon}</p>
             <h3 className='service__title mb-2'>{service.title}</h3>
             <p className='service__description mb-5'>{service.description}</p>
             <a href='#contacts' className='service__link'>

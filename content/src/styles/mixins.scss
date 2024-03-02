@@ -1,47 +1,18 @@
 @import './variables.scss';
 
 @mixin btn--primary {
-  background: $primary_color;
-  box-shadow:
-    4px 4px #0000009e,
-    8px 8px #ffffff4e;
-  color: $text_dark;
-  font-weight: 700;
+  text-decoration: none;
+  color: $text_light;
   text-align: center;
-  padding: 0.8em 1.4em;
-  align-items: center;
-  font-size: 0.9em !important;
-  position: relative;
-  z-index: 1;
-  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  overflow: hidden;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px;
-  font-family: sans-serif;
-
-  &::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background: $text_dark;
-    z-index: -1;
-    transition: $transition_one;
-  }
-
-  &:hover::before {
-    width: 100%;
-    left: 0;
-    right: unset;
-  }
+  background-color: $secondary_color--dark;
+  padding: 0.5em 1.4em;
+  font-size: 1em !important;
+  font-family: $main_font;
+  transition: $transition_one;
 
   &:hover {
-    box-shadow:
-      0 0 #fff,
-      0 0 #151515;
-    color: white;
+    color: $text_light;
+    background-color: $text_dark--secondary;
   }
 }
 
@@ -84,9 +55,9 @@
 
 @mixin btn_default--primary {
   text-decoration: none;
-  color: $text_light;
+  color: $secondary_color--dark;
   text-align: center;
-  background-color: $secondary_color--dark;
+  border: 1px solid $secondary_color--dark;
   padding: 0.5em 1.4em;
   font-size: 1em !important;
   font-family: $main_font;
@@ -94,7 +65,7 @@
 
   &:hover {
     color: $text_light;
-    background-color: $text_dark--terciary;
+    background-color: $text_dark;
   }
 }
 
@@ -111,26 +82,50 @@
 
   &:hover {
     background-color: $text_dark;
-    color: $bg_color;
   }
 }
 
-@mixin btn_destaque--secondary {
-  text-decoration: none;
+@mixin btn_destaque {
+  background: $primary_color;
+  box-shadow:
+    4px 4px #0000009e,
+    8px 8px #ffffff4e;
+  color: $text_dark;
+  font-weight: 700;
   text-align: center;
-  background-color: #000000a3;
-  padding: 0.7em;
-  border-radius: 100%;
-  font-family: $main_font;
-  transition: $transition_two;
+  padding: 0.8em 1.4em;
+  align-items: center;
+  font-size: 0.9em !important;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  overflow: hidden;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
 
-  svg {
-    font-size: 1.6em;
-    transition: $transition_two;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: $text_dark;
+    z-index: -1;
+    transition: $transition_one;
+  }
 
-    * {
-      color: $text_light;
-      transition: $transition_two;
-    }
+  &:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+  }
+
+  &:hover {
+    box-shadow:
+      0 0 #fff,
+      0 0 #151515;
+    color: white;
   }
 }

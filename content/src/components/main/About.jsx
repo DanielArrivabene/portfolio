@@ -1,5 +1,7 @@
 import '../../styles/components/About.scss';
 
+import Atributes from './Atributes';
+
 function About() {
   return (
     <section
@@ -7,16 +9,17 @@ function About() {
       className='d-flex justify-content-around section-area min-vh-100'
     >
       <article className='container d-flex flex-column align-items-center justify-content-center'>
-        <p className='description__text mb-4'>
+        <p className='description__text mb-4 text-center'>
           Me chamo <span className='destaque--text'>Daniel Goulart</span>, estou
           a mais de 3 anos transformando ideias em realidade. Tudo através de
           código e uma boa xícara de café.
         </p>
-        <div className='about__links_container mt-1'>
-          <a className='about__link--one' href='#services'>
-            Entrar em Contato
+        <Atributes />
+        <div className='about__links_container mt-2'>
+          <a className='about__link--one' href='#contact'>
+            Ver Contatos
           </a>
-          <a className='about__link--two' href='#services'>
+          <a className='about__link--two' href='#projects'>
             Ver projetos
           </a>
         </div>

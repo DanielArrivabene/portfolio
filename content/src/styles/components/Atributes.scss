@@ -1,30 +1,25 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
-#atributes {
-  background-color: $text_dark;
-  padding: 3em 2em;
+.atributes_container {
+  .atribute__card {
+    max-width: 400px;
 
-  .cards_container {
-    .atribute__card {
-      max-width: 400px;
+    svg {
+      font-size: 3em;
 
-      svg {
-        font-size: 3em;
-
-        * {
-          color: $text_light;
-        }
-      }
-
-      .card__title {
+      * {
         color: $text_light;
       }
+    }
 
-      .card__description {
-        color: $text_light;
-        margin: 0;
-      }
+    .card__title {
+      color: $text_light;
+    }
+
+    .card__description {
+      color: $text_light;
+      margin: 0;
     }
   }
 }
