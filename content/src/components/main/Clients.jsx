@@ -28,7 +28,7 @@ function Clients() {
   return (
     <section
       id='clients'
-      className='d-flex justify-content-around section-area'
+      className='d-flex justify-content-around section-area mt-2 mb-2'
     >
       <article className='container d-flex align-items-center justify-content-center'>
         <div className='w-100 row justify-content-center align-items-center gap-1 cards_container'>
