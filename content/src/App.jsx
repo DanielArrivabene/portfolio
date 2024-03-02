@@ -10,6 +10,7 @@ import Projects from './components/main/Projects';
 import Contact from './components/main/Contact';
 import Footer from './components/footer/Footer';
 import ScrollBar from './components/main/ScrollBar';
+import Testemonials from './components/main/Testemonials';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <ScrollBar />
         <Projects />
         <Clients />
+        <Testemonials />
         <Contact />
       </main>
       <Footer />
