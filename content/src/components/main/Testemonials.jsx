@@ -1,7 +1,7 @@
 import '../../styles/components/Testemonials.scss';
 
 import { BiSolidQuoteAltRight } from 'react-icons/bi';
-import { MdStarBorder, MdOutlineStar } from "react-icons/md";
+import { MdOutlineStar } from 'react-icons/md';
 
 import One from '../../assets/eu.jpg';
 
@@ -50,7 +50,13 @@ function Testemonials() {
                 <BiSolidQuoteAltRight />
               </div>
               <p className='testemonial__text mb-3'>{testemonial.text}</p>
-              <span className='d-block w-100 text-center star_container'><MdOutlineStar /><MdOutlineStar /><MdOutlineStar /><MdOutlineStar /><MdOutlineStar /></span>
+              <span className='d-block w-100 text-center star_container'>
+                <MdOutlineStar />
+                <MdOutlineStar />
+                <MdOutlineStar />
+                <MdOutlineStar />
+                <MdOutlineStar />
+              </span>
             </div>
           ))}
         </div>
