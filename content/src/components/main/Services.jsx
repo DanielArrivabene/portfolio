@@ -6,17 +6,20 @@ function Services() {
   const servicesList = [
     {
       title: 'Web Development',
-      description: 'Desenvolvimento de sites sob medida e totalmente personalizados.',
+      description:
+        'Desenvolvimento de sites sob medida e totalmente personalizados.',
       icon: '01',
     },
     {
       title: 'Sob medida',
-      description: 'Cada site é desenvolvido unicamente para a solução que você precisa.',
+      description:
+        'Cada site é desenvolvido unicamente para a solução que você precisa.',
       icon: '02',
     },
     {
       title: 'Com SEO',
-      description: 'Alta visibilidade e acessibilidade, fazendo mais pessoas virem até você.',
+      description:
+        'Alta visibilidade e acessibilidade, fazendo mais pessoas virem até você.',
       icon: '03',
     },
   ];
@@ -29,7 +32,7 @@ function Services() {
             <p className='service__icon mb-5 mt-4'>{service.icon}</p>
             <h3 className='service__title mb-2'>{service.title}</h3>
             <p className='service__description mb-5'>{service.description}</p>
-            <a href='#contacts' className='service__link'>
+            <a href='#contact' className='service__link'>
               Saiba mais <HiArrowLongRight />
             </a>
           </div>
