@@ -25,20 +25,21 @@ function Services() {
   ];
 
   return (
-    <article id='services' className='row justify-content-between container'>
-      {servicesList.map((service, index) => (
-        <div key={index} className='service p-0'>
-          <div className='service__data_container p-4'>
-            <p className='service__icon mb-5 mt-4'>{service.icon}</p>
-            <h3 className='service__title mb-2'>{service.title}</h3>
-            <p className='service__description mb-5'>{service.description}</p>
-            <a href='#contact' className='service__link'>
-              Saiba mais <HiArrowLongRight />
-            </a>
+    <section id='services' className='d-flex flex-column align-items-center'>
+      <article className='container row justify-content-between'>
+        {servicesList.map((service, index) => (
+          <div key={index} className='service p-0'>
+            <div className='service__data_container'>
+              <h3 className='service__title mb-2'>{service.title}</h3>
+              <p className='service__description mb-4'>{service.description}</p>
+              <a href='#contact' className='service__link'>
+                Saiba mais <HiArrowLongRight />
+              </a>
+            </div>
           </div>
-        </div>
-      ))}
-    </article>
+        ))}
+      </article>
+    </section>
   );
 }
 

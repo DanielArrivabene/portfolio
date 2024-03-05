@@ -2,6 +2,7 @@ import './styles/mediaQuery.scss';
 
 import Navbar from './components/header/Navbar';
 import Hero from './components/main/Hero';
+import Services from './components/main/Services';
 //import HeroBar from './components/main/HeroBar';
 import About from './components/main/About';
 import Technologies from './components/main/Technologies';
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Services />
         {/*<HeroBar />*/}
         <About />
         <Technologies />

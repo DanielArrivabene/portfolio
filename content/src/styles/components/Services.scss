@@ -2,24 +2,15 @@
 @import '../mixins.scss';
 
 #services {
+  padding: 2rem 2rem;
+  background-color: $bg_color--secondary;
+
   .service {
     width: 30%;
-    border: 1px solid #0000002e;
 
     .service__data_container {
       width: 100%;
       transition: $transition_one;
-
-      p.service__icon {
-        font-family: $secondary_font;
-        font-size: 3em !important;
-        line-height: 0.9em !important;
-        font-weight: 600 !important;
-        mix-blend-mode: luminosity;
-        -webkit-text-stroke: 1px $text_dark--secondary;
-        color: transparent;
-        text-align: center;
-      }
 
       .service__title {
         font-size: 1em !important;

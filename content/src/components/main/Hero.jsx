@@ -16,7 +16,7 @@ function Hero() {
         <h1 className='text-center hero__title mb-3'>
           Websites feitos <br /> sob Medida
         </h1>
-        <p className='mb-4'>
+        <p className='mb-4 hero__text'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
           necessitatibus.
         </p>

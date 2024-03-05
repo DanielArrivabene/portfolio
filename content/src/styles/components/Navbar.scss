@@ -50,6 +50,7 @@ header {
           padding: 0;
           color: $text_dark;
           transition: $transition_one;
+          font-size: 1em;
 
           &:hover {
             color: $text_dark--terciary;
@@ -59,7 +60,6 @@ header {
 
       .navbar__btn {
         @include btn--primary;
-        font-size: 1.1em;
       }
     }
 
