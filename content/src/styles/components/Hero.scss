@@ -3,29 +3,30 @@
 
 #home {
   background-color: $bg_color--secondary;
-  background-image: url('../../assets/forrest.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  background-attachment: fixed;
-  padding: 10em 0 15em 0;
+  padding: 3rem 2rem;
 
   .hero__title {
-    margin-bottom: 1.3em;
+    font-size: 10rem !important;
+    line-height: 0.8em !important;
+  }
 
-    > span {
-      color: transparent;
-      font-family: $secondary_font;
-      line-height: 0.95em !important;
-      letter-spacing: -6px !important;
-      font-weight: 700 !important;
-      -webkit-text-stroke: 1px #040404;
-      font-size: 4.5em !important;
+  .hero__links_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .hero__link {
+      @include btn--primary;
     }
 
-    span.first {
-      color: $text_dark;
-      font-size: 2.2em !important;
+    .hero__clients {
+      font-size: 1em !important;
+      line-height: 1.3em !important;
+
+      span {
+        color: $primary_color;
+        font-size: 1.2em !important;
+      }
     }
   }
 }
