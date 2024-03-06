@@ -3,8 +3,12 @@
 
 #atributes {
   background-color: $bg_color--secondary;
+  padding-bottom: 0rem;
 
   .atributes__data {
+    border-radius: 10px;
+    height: 100%;
+
     .atributes__text {
       color: $text_dark--secondary;
     }
@@ -27,11 +31,49 @@
     }
   }
 
-  .atributes__image {
-    height: 140%;
-    background-image: url('../../assets/websitebuild-3.png');
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  .atributes__container {
+    height: 100%;
+    border-radius: 200px 0 0 10px;
+
+    .atribute {
+      width: calc(50% - 1rem);
+      border-radius: 10px;
+
+      .atribute__service {
+        text-align: center;
+        font-family: $secondary_font;
+        font-size: 29px !important;
+        line-height: 2rem !important;
+
+        span {
+          display: block;
+          font-family: $secondary_font;
+        }
+      }
+
+      p {
+        font-size: 1em !important;
+        color: $text_dark--secondary;
+      }
+
+      .atribute_author {
+        font-weight: 500;
+      }
+
+      .atribute__link {
+        color: $primary_color;
+        font-size: 1.15em !important;
+        text-decoration: underline !important;
+      }
+    }
+
+    .one {
+      width: 100%;
+      background-color: $primary_color;
+    }
+
+    .two {
+      background-color: #ffffff;
+    }
   }
 }

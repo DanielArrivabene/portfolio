@@ -48,49 +48,46 @@ function Technologies() {
       id='technologies'
       className='d-flex align-items-center justify-content-around section-area'
     >
-      <div className='container d-flex align-items-center'>
-        <div className='row justify-content-between w-100'>
-          <article className='col-lg-6 tech__items' ref={ref}>
-            <ul className='list-group tech__list'>
-              {technologiesList.map((tech, index) => (
-                <motion.li
-                  key={tech.name}
-                  className={`list-group-item d-flex flex-column
+      <div className='container d-flex flex-column align-items-center'>
+        <article className='mb-5 text-center tech__description'>
+          <h2>Tecnologias que utilizo</h2>
+          <p>
+            Desenvolvo interfaces intuitivas e responsivas. <br /> Melhorando a
+            experiência do usuário com as tecnologias a seguir:
+          </p>
+        </article>
+        <article className='tech__items' ref={ref}>
+          <ul className='list-group tech__list'>
+            {technologiesList.map((tech, index) => (
+              <motion.li
+                key={tech.name}
+                className={`list-group-item d-flex flex-column
                  justify-content-center align-items-center ${tech.name}`}
-                  initial={{
-                    opacity: 0,
-                  }}
-                  animate={animation}
-                  transition={{ duration: 1.2, delay: index / 3 }}
-                  whileHover={{
-                    rotateZ: [
-                      '0deg',
-                      '15deg',
-                      '-15deg',
-                      '15deg',
-                      '-15deg',
-                      '15deg',
-                      '-15deg',
-                      '0deg',
-                    ],
-                    transition: { duration: 0.4 },
-                  }}
-                >
-                  {tech.icon}
-                  <p className='tech__name m-0'>{tech.name}</p>
-                </motion.li>
-              ))}
-            </ul>
-          </article>
-          <article className='col-lg-6 mb-5 px-4 tech__description'>
-            <h2>Tecnologias que utilizo</h2>
-            <p>
-              Desenvolvo interfaces intuitivas e responsivas. Melhorando a
-              experiência do usuário com as tecnologias a seguir:
-            </p>
-            <a href='#projects'>Projetos</a>
-          </article>
-        </div>
+                initial={{
+                  opacity: 0,
+                }}
+                animate={animation}
+                transition={{ duration: 1.2, delay: index / 3 }}
+                whileHover={{
+                  rotateZ: [
+                    '0deg',
+                    '15deg',
+                    '-15deg',
+                    '15deg',
+                    '-15deg',
+                    '15deg',
+                    '-15deg',
+                    '0deg',
+                  ],
+                  transition: { duration: 0.4 },
+                }}
+              >
+                {tech.icon}
+                <p className='tech__name m-0'>{tech.name}</p>
+              </motion.li>
+            ))}
+          </ul>
+        </article>
       </div>
     </section>
   );

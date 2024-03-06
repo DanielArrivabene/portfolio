@@ -16,12 +16,7 @@
 
       p {
         font-size: 1.15em;
-        color: $text_dark--secondary
-      }
-
-      a {
-        @include btn--secondary;
-        font-size: 1.15em;
+        color: $text_dark--secondary;
       }
     }
 
@@ -35,10 +30,11 @@
 
         li {
           border: none;
-          width: 7.5em;
+          width: 6em;
           aspect-ratio: 5 / 4;
           background-color: $card_color;
           box-shadow: 0 0 40px #0000000c;
+          border-radius: 10px;
           gap: 0.1em;
 
           .tech__name {
