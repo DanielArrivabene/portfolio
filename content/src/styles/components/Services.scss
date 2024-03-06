@@ -29,8 +29,8 @@
 
       .service__link {
         width: 100%;
-        font-size: 0.9em !important;
-        color: $text_dark--secondary;
+        font-weight: 500;
+        color: $text_dark;
         transition: $transition_one;
 
         &:hover {
