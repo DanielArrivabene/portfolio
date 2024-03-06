@@ -41,13 +41,16 @@
       border-radius: 10px;
 
       .atribute__service {
-        text-align: center;
         font-family: $secondary_font;
         font-size: 29px !important;
-        line-height: 2rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        span {
-          display: block;
+        svg {
+          display: inline-block;
+          text-align: center;
           font-family: $secondary_font;
         }
       }

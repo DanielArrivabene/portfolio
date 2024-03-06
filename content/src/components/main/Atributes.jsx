@@ -1,27 +1,9 @@
 import '../../styles/components/Atributes.scss';
-/*
-import { GiCoffeeBeans } from 'react-icons/gi';
-import { HiComputerDesktop } from 'react-icons/hi2';
-import { PiCrownFill } from 'react-icons/pi';*/
+
+import { BsGraphUpArrow, BsArrowsAngleExpand } from "react-icons/bs";
+import { PiClockCountdown } from "react-icons/pi";
 
 function Atributes() {
-  /*const atributesData = [
-    {
-      title: '612+',
-      text: 'Xícaras de café.',
-      icon: <GiCoffeeBeans />,
-    },
-    {
-      title: '50+',
-      text: 'Clientes satisfeitos.',
-      icon: <PiCrownFill />,
-    },
-    {
-      title: '1000+',
-      text: 'Horas codando.',
-      icon: <HiComputerDesktop />,
-    },
-  ];*/
 
   return (
     <section
@@ -32,13 +14,13 @@ function Atributes() {
         <div className='col-lg-6 atributes__container px-4 d-flex flex-wrap gap-4'>
           <div className='atribute one p-4 d-flex justify-content-between align-items-center'>
             <p className='atribute__service m-0'>
-              <span>50+</span> Clients satisfeitos
+            <BsGraphUpArrow /> Escalável
             </p>
             <p className='atribute__service m-0'>
-              <span>1000+</span> Horas codando
+            <BsArrowsAngleExpand /> Responsivo
             </p>
             <p className='atribute__service m-0'>
-              <span>650+</span> Xícaras de café
+            <PiClockCountdown /> Rápido
             </p>
           </div>
           <div className='atribute two p-4'>
