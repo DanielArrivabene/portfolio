@@ -50,18 +50,7 @@ function Technologies() {
     >
       <div className='container d-flex align-items-center'>
         <div className='row justify-content-between'>
-          <article className='col-md-5 mb-5 tech__description'>
-            <h2>
-              Quais são as tecnologias que utilizo
-              <span className='destaque--color'>:</span>
-            </h2>
-            <p>
-              Desenvolvo interfaces intuitivas e responsivas. Melhorando a
-              experiência do usuário com as tecnologias a seguir:
-            </p>
-            <a href='#projects'>Projetos</a>
-          </article>
-          <article className='col-md-6 tech__items' ref={ref}>
+          <article className='col-lg-6 tech__items' ref={ref}>
             <ul className='list-group tech__list'>
               {technologiesList.map((tech, index) => (
                 <motion.li
@@ -92,6 +81,14 @@ function Technologies() {
                 </motion.li>
               ))}
             </ul>
+          </article>
+          <article className='col-lg-6 mb-5 px-4 tech__description'>
+            <h2>Tecnologias que utilizo</h2>
+            <p>
+              Desenvolvo interfaces intuitivas e responsivas. Melhorando a
+              experiência do usuário com as tecnologias a seguir:
+            </p>
+            <a href='#projects'>Projetos</a>
           </article>
         </div>
       </div>

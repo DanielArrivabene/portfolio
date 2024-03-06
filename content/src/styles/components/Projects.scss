@@ -2,16 +2,16 @@
 @import '../mixins.scss';
 
 #projects {
-  background-color: #040404;
+  background-color: $secondary_color;
   padding-bottom: 0em;
 
   h2 {
-    color: $text_light;
+    color: $text_dark;
   }
 
   p {
     font-size: 1.15em;
-    color: $text_light--terciary;
+    color: $text_dark--terciary;
   }
 
   .projects__container {

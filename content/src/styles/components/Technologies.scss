@@ -16,10 +16,12 @@
 
       p {
         font-size: 1.15em;
+        color: $text_dark--secondary
       }
 
       a {
         @include btn--secondary;
+        font-size: 1.15em;
       }
     }
 
