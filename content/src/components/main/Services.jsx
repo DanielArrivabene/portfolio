@@ -30,8 +30,8 @@ function Services() {
         {servicesList.map((service, index) => (
           <div key={index} className='service p-0'>
             <div className='service__data_container'>
-              <h3 className='service__title mb-2'>{service.title}</h3>
-              <p className='service__description mb-4'>{service.description}</p>
+              <h3 className='service__title mb-4'>{service.title}</h3>
+              <p className='service__description mb-2'>{service.description}</p>
               <a href='#contact' className='service__link'>
                 Saiba mais <HiArrowLongRight />
               </a>
