@@ -5,6 +5,7 @@ import Hero from './components/main/Hero';
 import Services from './components/main/Services';
 //import HeroBar from './components/main/HeroBar';
 import About from './components/main/About';
+import Atributes from './components/main/Atributes';
 import Technologies from './components/main/Technologies';
 import Projects from './components/main/Projects';
 import Contact from './components/main/Contact';
@@ -21,6 +22,7 @@ function App() {
         <Services />
         {/*<HeroBar />*/}
         <About />
+        <Atributes />
         <Technologies />
         {/*<ScrollBar />*/}
         <Projects />

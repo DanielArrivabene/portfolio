@@ -1,11 +1,11 @@
 import '../../styles/components/Atributes.scss';
-
+/*
 import { GiCoffeeBeans } from 'react-icons/gi';
 import { HiComputerDesktop } from 'react-icons/hi2';
-import { PiCrownFill } from 'react-icons/pi';
+import { PiCrownFill } from 'react-icons/pi';*/
 
 function Atributes() {
-  const atributesData = [
+  /*const atributesData = [
     {
       title: '612+',
       text: 'Xícaras de café.',
@@ -21,19 +21,29 @@ function Atributes() {
       text: 'Horas codando.',
       icon: <HiComputerDesktop />,
     },
-  ];
+  ];*/
 
   return (
-    <div className='w-100 row justify-content-around atributes_container'>
-      {atributesData &&
-        atributesData.map((atribute, index) => (
-          <div key={index} className='text-center atribute__card p-3 my-4'>
-            {atribute.icon && atribute.icon}
-            <h3 className='card__title mb-1 mt-2'>{atribute.title}</h3>
-            <p className='card__description m-0'>{atribute.text}</p>
-          </div>
-        ))}
-    </div>
+    <section
+      id='atributes'
+      className='d-flex justify-content-around section-area min-vh-100'
+    >
+      <article className='container row justify-content-between align-items-center'>
+        <div className='col-lg-6 atributes__image'></div>
+        <div className='col-lg-6 atributes__data'>
+          <h2>Um pouco sobre o que faço</h2>
+          <p className='atributes__text mb-3'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            accusamus deserunt aperiam quas, iste eaque nulla praesentium nihil
+            quod, libero porro. Consectetur fuga saepe dignissimos molestias
+            accusamus similique voluptatum suscipit.
+          </p>
+          <a href='#' className='atributes__link mb-5'>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+    </section>
   );
 }
 

@@ -1,26 +1,37 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
-.atributes_container {
-  .atribute__card {
-    max-width: 400px;
-    width: fit-content;
+#atributes {
+  background-color: $bg_color--secondary;
 
-    svg {
-      font-size: 2.8em;
+  .atributes__data {
+    .atributes__text {
+      color: $text_dark--secondary;
+    }
 
-      * {
-        color: $text_light--secondary;
+    .atributes__link {
+      @include btn--primary;
+      font-size: 1.15em !important;
+    }
+
+    .atributes__list {
+      list-style: none;
+
+      li {
+        color: $text_dark--secondary;
+
+        svg {
+          font-size: 1.3rem;
+        }
       }
     }
+  }
 
-    .card__title {
-      color: $text_light--secondary;
-      font-weight: 600 !important;
-    }
-
-    .card__description {
-      color: $text_light--terciary;
-    }
+  .atributes__image {
+    height: 140%;
+    background-image: url('../../assets/websitebuild-3.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
