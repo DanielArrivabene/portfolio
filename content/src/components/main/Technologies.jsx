@@ -49,7 +49,7 @@ function Technologies() {
       className='d-flex align-items-center justify-content-around section-area'
     >
       <div className='container d-flex align-items-center'>
-        <div className='row justify-content-between'>
+        <div className='row justify-content-between w-100'>
           <article className='col-lg-6 tech__items' ref={ref}>
             <ul className='list-group tech__list'>
               {technologiesList.map((tech, index) => (

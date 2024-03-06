@@ -3,7 +3,6 @@
 
 #projects {
   background-color: $secondary_color;
-  padding-bottom: 0em;
 
   h2 {
     color: $text_dark;
@@ -18,41 +17,27 @@
     width: 100%;
 
     .project {
-      background-position: bottom right;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
       transition: $transition_two;
 
+      .project__image {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
       .project__data_container {
         width: 100%;
-        height: 100%;
-        padding: 1em;
-        backdrop-filter: grayscale(1) brightness(40%);
         transition: linear 0.3s;
 
-        &:hover {
-          background-color: #00000062;
-          backdrop-filter: grayscale(50%) !important;
-        }
-
         .project__title {
-          color: $text_light;
+          color: $text_dark--secondary;
           transition: $transition_two;
         }
       }
-    }
-
-    .kateli {
-      background-image: url('../../assets/Kateli.png');
-    }
-
-    .repara {
-      background-image: url('../../assets/Repara.png');
-    }
-
-    .your {
-      background-image: url('../../assets/your.jpg');
-      width: 100%;
     }
   }
 }
