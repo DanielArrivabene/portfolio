@@ -3,7 +3,7 @@
 
 #services {
   padding: 2rem 2rem;
-  background-color: $bg_color--secondary;
+  background-color: $secondary_color;
 
   .service {
     width: 30%;
@@ -13,7 +13,7 @@
       transition: $transition_one;
 
       .service__title {
-        font-size: 1em !important;
+        font-size: 1.15em !important;
         font-weight: 500 !important;
         font-family: $main_font !important;
         transition: $transition_one;
@@ -22,7 +22,7 @@
 
       .service__description {
         font-weight: 400 !important;
-        font-size: 0.9em !important;
+        font-size: 1em !important;
         color: #050505c4;
         transition: $transition_one;
       }

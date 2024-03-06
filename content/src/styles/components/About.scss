@@ -2,25 +2,36 @@
 @import '../mixins.scss';
 
 #about {
-  background-color: $bg_color--dark;
+  background-color: $bg_color--secondary;
 
-  .description__text {
-    width: 100%;
-    font-size: 3.2em !important;
-    color: $text_light;
-    font-family: $secondary_font;
+  .about__data {
+    .about__text {
+      color: $text_dark--secondary;
+    }
+
+    .about__link {
+      @include btn--primary;
+      font-size: 1.15em !important;
+    }
+
+    .about__list {
+      list-style: none;
+
+      li {
+        color: $text_dark--secondary;
+
+        svg {
+          font-size: 1.3rem;
+        }
+      }
+    }
   }
 
-  .about__links_container {
-    display: flex;
-    gap: 1em;
-
-    .about__link--one {
-      @include btn_default--secondary;
-    }
-
-    .about__link--two {
-      @include btn--terciary;
-    }
+  .about__image {
+    height: 140%;
+    background-image: url('../../assets/website_build-2.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

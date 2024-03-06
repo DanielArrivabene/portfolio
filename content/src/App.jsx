@@ -9,7 +9,7 @@ import Technologies from './components/main/Technologies';
 import Projects from './components/main/Projects';
 import Contact from './components/main/Contact';
 import Footer from './components/footer/Footer';
-import ScrollBar from './components/main/ScrollBar';
+//import ScrollBar from './components/main/ScrollBar';
 import Testemonials from './components/main/Testemonials';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         {/*<HeroBar />*/}
         <About />
         <Technologies />
-        <ScrollBar />
+        {/*<ScrollBar />*/}
         <Projects />
         <Testemonials />
         <Contact />
