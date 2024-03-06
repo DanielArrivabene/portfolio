@@ -8,6 +8,7 @@
   .atributes__data {
     border-radius: 10px;
     height: 100%;
+    background-image: linear-gradient(to bottom, $secondary_color, transparent);
 
     .atributes__text {
       color: $text_dark--secondary;
@@ -70,10 +71,12 @@
     .one {
       width: 100%;
       background-color: $primary_color;
+      box-shadow: 0px 15px 20px #00000010;
     }
 
     .two {
       background-color: #ffffff;
+      box-shadow: 0px 15px 20px #00000008;
     }
   }
 }

@@ -58,13 +58,15 @@ function Atributes() {
             </a>
           </div>
         </div>
-        <div className='col-lg-6 atributes__data px-4'>
+        <div className='col-lg-6 atributes__data p-4'>
+          <p className='atributes__text mb-0'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            accusamus deserunt aperiam quas
+          </p>
           <h2>Um pouco sobre o que faço</h2>
           <p className='atributes__text mb-3'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            accusamus deserunt aperiam quas, iste eaque nulla praesentium nihil
-            quod, libero porro. Consectetur fuga saepe dignissimos molestias
-            accusamus similique voluptatum suscipit.
+            accusamus deserunt aperiam quas
           </p>
           <a href='#' className='atributes__link mb-5'>
             Saiba mais
