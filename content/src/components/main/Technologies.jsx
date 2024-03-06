@@ -49,9 +49,9 @@ function Technologies() {
       className='d-flex align-items-center justify-content-around section-area'
     >
       <div className='container d-flex flex-column align-items-center'>
-        <article className='mb-5 text-center tech__description'>
+        <article className='mb-1 text-center tech__description'>
           <h2>Tecnologias que utilizo</h2>
-          <p>
+          <p className="tech__subtitle">
             Desenvolvo interfaces intuitivas e responsivas. <br /> Melhorando a
             experiência do usuário com as tecnologias a seguir:
           </p>

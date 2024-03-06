@@ -3,12 +3,11 @@
 
 #atributes {
   background-color: $bg_color--secondary;
-  padding-bottom: 0rem;
 
   .atributes__data {
     border-radius: 10px;
     height: 100%;
-    background-image: linear-gradient(to bottom, $secondary_color, transparent);
+    background-color: #fff;
 
     .atributes__text {
       color: $text_dark--secondary;
@@ -73,13 +72,17 @@
 
     .one {
       width: 100%;
-      background-color: $primary_color;
-      box-shadow: 0px 15px 20px #00000010;
+      background-color: $text_dark;
+      box-shadow: 0px 15px 20px #00000020;
+
+      * {
+        color: $text_light !important;
+      }
     }
 
     .two {
-      background-color: #ffffff;
-      box-shadow: 0px 15px 20px #00000008;
+      background-color: $primary_color;
+      box-shadow: 0px 15px 20px #00000010;
     }
   }
 }
