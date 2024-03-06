@@ -26,12 +26,12 @@ function Services() {
 
   return (
     <section id='services' className='d-flex flex-column align-items-center'>
-      <article className='container row justify-content-between'>
+      <article className='container row justify-content-between w-75'>
         {servicesList.map((service, index) => (
-          <div key={index} className='service p-0'>
+          <div key={index} className='service p-4'>
             <div className='service__data_container'>
               <h3 className='service__title mb-4'>{service.title}</h3>
-              <p className='service__description mb-2'>{service.description}</p>
+              <p className='service__description mb-4'>{service.description}</p>
               <a href='#contact' className='service__link'>
                 Saiba mais <HiArrowLongRight />
               </a>

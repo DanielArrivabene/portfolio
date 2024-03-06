@@ -2,11 +2,11 @@
 @import '../mixins.scss';
 
 #services {
-  padding: 2rem 2rem;
   background-color: $secondary_color;
 
   .service {
-    width: 30%;
+    width: 33%;
+    border-radius: 10px;
 
     .service__data_container {
       width: 100%;
@@ -17,20 +17,20 @@
         font-weight: 500 !important;
         font-family: $secondary_font !important;
         transition: $transition_one;
-        color: #050505;
+        color: $text_dark;
       }
 
       .service__description {
         font-weight: 400 !important;
         font-size: 1em !important;
-        color: #050505c4;
+        color: $text_dark--terciary;
         transition: $transition_one;
       }
 
       .service__link {
         width: 100%;
         font-size: 0.9em !important;
-        color: #050505;
+        color: $text_dark--secondary;
         transition: $transition_one;
 
         &:hover {
