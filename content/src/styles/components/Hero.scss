@@ -3,16 +3,27 @@
 
 #home {
   background-color: $bg_color--secondary;
-  padding: 3rem 2rem;
+  padding: 14rem;
 
   .hero__title {
-    font-size: 10rem !important;
+    font-size: 6rem !important;
     letter-spacing: -1.5px !important;
-    line-height: 0.8em !important;
+    line-height: 6rem !important;
+    color: $text_light;
+    font-weight: 600 !important;
+
+    span {
+      color: $text_light;
+      background: -webkit-linear-gradient(45deg, $primary_color, $bg_color--secondary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   .hero__text {
-    color: $text_dark--terciary;
+    color: $text_light--secondary;
+    max-width: 45rem;
   }
 
   .hero__links_container {
@@ -22,15 +33,16 @@
 
     .hero__link {
       @include btn--primary;
-      font-size: 1.15em;
+      font-size: 1.05em;
     }
 
     .hero__clients {
-      font-size: 1em !important;
+      font-size: 0.9em !important;
       line-height: 1.3em !important;
+      color: $text_light--terciary;
 
       span {
-        color: $primary_color;
+        color: $text_light--secondary !important;
         font-size: 1.2em !important;
       }
     }

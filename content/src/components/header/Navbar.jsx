@@ -3,6 +3,8 @@ import { useState } from 'react';
 import '../../styles/components/Navbar.scss';
 
 import { AiOutlineMenu } from 'react-icons/ai';
+import { BsStars } from "react-icons/bs";
+<BsStars />
 
 import Logo from '../../assets/Daniel Goulart.png';
 
@@ -30,7 +32,7 @@ function Navbar() {
           <img src={Logo} alt='Daniel Goulart Arrivabene' />
         </a>
         <p className='navbar__message mb-0'>
-          <span>Olá</span> ✨ sou Daniel Goulart
+           Free For Freelancer <BsStars />
         </p>
         <ul className='navbar_nav mb-0'>
           {navLinks.map((link, index) => (

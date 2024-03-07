@@ -6,7 +6,9 @@ header {
   z-index: 999;
   padding: 0.8em 2em;
   transition: $transition_two;
-  background-color: $bg_color--secondary;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   #navbar {
     display: flex;
@@ -26,11 +28,15 @@ header {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      color: $text_dark--secondary;
+      color: $text_light--secondary;
       font-size: 1.15em !important;
 
-      span {
-        color: $primary_color;
+      svg {
+        font-size: 1.6rem;
+
+        * {
+          color: $secondary_color;
+        }
       }
     }
 
@@ -48,12 +54,12 @@ header {
         a {
           font-family: $main_font;
           padding: 0;
-          color: $text_dark;
+          color: $text_light--secondary;
           transition: $transition_one;
           font-size: 1em;
 
           &:hover {
-            color: $text_dark--terciary;
+            color: $text_light--terciary;
           }
         }
       }
