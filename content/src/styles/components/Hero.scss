@@ -8,17 +8,13 @@
   .hero__title {
     font-size: 6rem !important;
     letter-spacing: -1.5px !important;
-    line-height: 6rem !important;
+    line-height: 5rem !important;
     color: $text_light;
     font-weight: 600 !important;
-
-    span {
-      color: $text_light;
-      background: -webkit-linear-gradient(45deg, $primary_color, $bg_color--secondary);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    background: -webkit-linear-gradient(45deg, transparent, $text_light, transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .hero__text {

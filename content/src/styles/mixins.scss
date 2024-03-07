@@ -16,9 +16,10 @@
   border-radius: 20px;
   border: 3px solid transparent;
   transition: $transition_one;
-
+  
   &:hover {
-    background-color: $secondary_color;
+    background: linear-gradient(45deg, $primary_color, $secondary_color)
+      border-box;
   }
 }
 
@@ -26,16 +27,22 @@
   text-decoration: none;
   display: block;
   width: fit-content;
-  color: $text_dark--secondary;
+  color: $text_light;
+  font-weight: 600;
   text-align: center;
   border-radius: 10em;
-  border: 2px solid $primary_color;
   padding: 0.7em 1.4em;
   font-family: $main_font;
+  background:
+    linear-gradient($bg_color--secondary, $bg_color--secondary) padding-box,
+    linear-gradient(45deg, $primary_color, $secondary_color) border-box;
+  border-radius: 20px;
+  border: 3px solid transparent;
   transition: $transition_one;
 
   &:hover {
-    background-color: $primary_color;
+    background: linear-gradient(45deg, $primary_color, $secondary_color)
+      border-box;
   }
 }
 

@@ -13,12 +13,13 @@ function Hero() {
       flex-column
       justify-content-center align-items-center'
       >
+        <h1 className='text-center hero__title mb-4'>Websites feitos</h1>
         <h1 className='text-center hero__title mb-4'>
-          Websites feitos <br /> sob <span>medida</span>
+          sob <span>medida</span>
         </h1>
         <p className='mb-4 text-center hero__text'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit cupiditate
-          <br/>
+          <br />
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
         <div className='hero__links_container'>

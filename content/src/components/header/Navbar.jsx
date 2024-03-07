@@ -6,7 +6,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { BsStars } from "react-icons/bs";
 <BsStars />
 
-import Logo from '../../assets/Daniel Goulart.png';
+import Logo from '../../assets/logo.png';
 
 import Menu from './Menu';
 
