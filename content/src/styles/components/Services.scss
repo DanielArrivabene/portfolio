@@ -2,47 +2,56 @@
 @import '../mixins.scss';
 
 #services {
-  background-color: $bg_color--secondary;
+  .services__title {
+    color: $text_light--terciary;
+  }
 
-  .service {
-    width: 33%;
-    border-radius: 10px;
+  .services__container {
+    max-width: 1000px !important;
 
-    .service__data_container {
-      width: 100%;
-      transition: $transition_one;
+    .service {
+      width: calc(33% - .8rem);
+      border-radius: 10px;
+      background-color: $bg_color--secondary;
+      -webkit-box-reflect: below 1.5rem
+        linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.4));
 
-      .service__title {
-        font-size: 31px !important;
-        font-weight: 500 !important;
-        font-family: $secondary_font !important;
-        transition: $transition_one;
-        color: $text_dark;
-      }
-
-      .service__description {
-        font-weight: 400 !important;
-        font-size: 1em !important;
-        color: $text_dark--terciary;
-        transition: $transition_one;
-      }
-
-      .service__link {
+      .service__data_container {
         width: 100%;
-        font-weight: 500;
-        color: $text_dark;
         transition: $transition_one;
 
-        &:hover {
-          svg {
-            transform: translateX(100%);
-          }
+        .service__title {
+          font-size: 31px !important;
+          font-weight: 500 !important;
+          font-family: $main_font !important;
+          transition: $transition_one;
+          color: $text_light--secondary;
         }
 
-        * {
-          color: #050505;
-          font-size: 1.5em !important;
+        .service__description {
+          font-weight: 400 !important;
+          font-size: 1em !important;
+          color: $text_light--terciary;
           transition: $transition_one;
+        }
+
+        .service__link {
+          width: 100%;
+          font-weight: 500;
+          color: $text_light;
+          transition: $transition_one;
+
+          &:hover {
+            svg {
+              transform: translateX(100%);
+            }
+          }
+
+          * {
+          color: $text_light;
+            font-size: 1.5em !important;
+            transition: $transition_one;
+          }
         }
       }
     }

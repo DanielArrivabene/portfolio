@@ -2,7 +2,7 @@
 @import '../mixins.scss';
 
 #atributes {
-  background-color: $bg_color--secondary;
+  background-color: $bg_color;
 
   .atributes__data {
     border-radius: 10px;
@@ -40,7 +40,7 @@
       border-radius: 10px;
 
       .atribute__service {
-        font-family: $secondary_font;
+        font-family: $main_font;
         font-size: 29px !important;
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@
         svg {
           display: inline-block;
           text-align: center;
-          font-family: $secondary_font;
+          font-family: $main_font;
         }
       }
 

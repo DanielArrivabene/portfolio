@@ -2,7 +2,7 @@
 @import '../mixins.scss';
 
 #contact {
-  background-color: $bg_color--secondary;
+  background-color: $bg_color;
 
   .contacts__container {
     justify-content: space-between;
@@ -14,7 +14,7 @@
 
     .contact_label {
       > strong {
-        font-family: $secondary_font;
+        font-family: $main_font;
         font-weight: bold;
 
         &::after {

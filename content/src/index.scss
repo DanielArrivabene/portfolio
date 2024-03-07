@@ -19,14 +19,16 @@ body {
 
 h2 {
   font-size: 3.2em !important;
-  font-family: $secondary_font;
+  font-family: $main_font;
   font-weight: 500 !important;
+  letter-spacing: -2.3px !important;
 }
 
 h3 {
   font-size: 29px !important;
-  font-family: $secondary_font;
+  font-family: $main_font;
   font-weight: 200 !important;
+  letter-spacing: -1.8px !important;
 }
 
 p {
@@ -66,17 +68,17 @@ html::-webkit-scrollbar-thumb {
 
 .destaque--text {
   color: transparent !important;
-  font-family: $secondary_font;
+  font-family: $main_font;
   -webkit-text-stroke: 1px $text_light;
 }
 
 .destaque--text-dark {
   color: transparent !important;
-  font-family: $secondary_font;
+  font-family: $main_font;
   -webkit-text-stroke: 1px $text_dark;
 }
 
 .color--primary {
   color: $primary_color !important;
-  font-family: $secondary_font;
+  font-family: $main_font;
 }

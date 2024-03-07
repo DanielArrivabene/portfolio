@@ -5,7 +5,7 @@ import { HiArrowLongRight } from 'react-icons/hi2';
 function Services() {
   const servicesList = [
     {
-      title: 'Web Development',
+      title: 'Web Dev',
       description:
         'Desenvolvimento de sites sob medida e totalmente personalizados.',
       icon: '01',
@@ -26,7 +26,8 @@ function Services() {
 
   return (
     <section id='services' className='d-flex flex-column align-items-center'>
-      <article className='container row justify-content-between w-75'>
+      <p className="mb-4 services__title">LOREM IPSULUM DOLOR</p>
+      <article className='services__container container d-flex justify-content-between'>
         {servicesList.map((service, index) => (
           <div key={index} className='service p-4'>
             <div className='service__data_container'>

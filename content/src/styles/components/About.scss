@@ -2,7 +2,7 @@
 @import '../mixins.scss';
 
 #about {
-  background-color: $bg_color--secondary;
+  padding-top: 17rem !important;
 
   .about__data {
     .about__text {
