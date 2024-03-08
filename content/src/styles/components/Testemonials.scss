@@ -2,9 +2,11 @@
 @import '../mixins.scss';
 
 #testemonials {
-  background-color: $bg_color;
+  background-color: $bg_color--light;
 
   .testemonials__title {
+    color: $text_dark !important;
+
     span {
       font-family: $main_font;
     }
@@ -18,7 +20,6 @@
     gap: 1em;
 
     .testemonial {
-      background-color: #fff;
       box-shadow:
         2px 2px 0px #0000000e,
         0px 20px 50px #0000000f;
