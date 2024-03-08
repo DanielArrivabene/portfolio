@@ -20,7 +20,7 @@
 
       p {
         font-size: 1.15em;
-        color: $text_dark--secondary;
+        color: $text_light--secondary;
       }
     }
 
@@ -36,13 +36,14 @@
           border: none;
           width: 15%;
           aspect-ratio: 5 / 4;
-          background-color: $secondary_color;
-          border-radius: 10px;
+          background-color: $bg_color--secondary;
+          border-radius: 20px 0;
           gap: 0.1em;
 
           .tech__name {
             text-wrap: nowrap;
             font-size: 1em !important;
+            color: $text_light--secondary;
           }
 
           svg {
