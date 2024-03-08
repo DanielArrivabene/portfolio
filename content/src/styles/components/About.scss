@@ -5,23 +5,29 @@
   padding-top: 17rem !important;
 
   .about__data {
-    .about__text {
-      color: $text_dark--secondary;
-    }
+    .about__text_container {
+      .about__text {
+        color: $text_light--terciary;
+      }
 
-    .about__link {
-      @include btn--primary;
-      font-size: 1.15em !important;
+      .about__link {
+        @include btn--primary;
+        font-size: 1.15em !important;
+      }
     }
 
     .about__list {
       list-style: none;
 
       li {
-        color: $text_dark--secondary;
+        color: $text_light--secondary;
 
         svg {
           font-size: 1.3rem;
+
+          * {
+            color: $secondary_color;
+          }
         }
       }
     }
