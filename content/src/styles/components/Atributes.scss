@@ -2,61 +2,23 @@
 @import '../mixins.scss';
 
 #atributes {
-  background-color: $bg_color;
-
-  .atributes__data {
-    border-radius: 10px;
-    height: 100%;
-    background-color: #fff;
-
-    .atributes__text {
-      color: $text_dark--secondary;
-    }
-
-    .atributes__link {
-      @include btn--primary;
-      font-size: 1.15em !important;
-    }
-
-    .atributes__list {
-      list-style: none;
-
-      li {
-        color: $text_dark--secondary;
-
-        svg {
-          font-size: 1.3rem;
-        }
-      }
-    }
-  }
-
   .atributes__container {
-    height: 100%;
-    border-radius: 200px 0 0 10px;
-
     .atribute {
       width: calc(50% - 1rem);
       border-radius: 10px;
 
       .atribute__service {
         font-family: $main_font;
-        font-size: 29px !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        svg {
-          display: inline-block;
-          text-align: center;
-          font-family: $main_font;
-        }
+        color: $text_light--secondary !important;
       }
 
       p {
         font-size: 1em !important;
-        color: $text_dark--secondary;
+        color: $text_light--secondary;
       }
 
       .atribute_author {
@@ -67,13 +29,15 @@
         color: $primary_color;
         font-size: 1.15em !important;
         text-decoration: underline !important;
+
+        &:hover {
+          color: #a900dcc5;
+        }
       }
     }
 
     .one {
       width: 100%;
-      background-color: $text_dark;
-      box-shadow: 0px 15px 20px #00000020;
 
       * {
         color: $text_light !important;
@@ -81,8 +45,30 @@
     }
 
     .two {
-      background-color: $primary_color;
-      box-shadow: 0px 15px 20px #00000010;
+      color: $primary_color;
+    }
+
+    .tree {
+      background-color: $bg_color--secondary;
+    }
+  }
+
+  .atributes__data {
+    border-radius: 10px;
+    height: 100%;
+
+    .atributes__text {
+      color: $text_light--secondary;
+    }
+
+    .atributes__link {
+      @include btn--secondary;
+      font-size: 1.15em !important;
+    }
+    
+    .atributes_call {
+      color: $text_light--terciary;
+      font-size: .9em !important;
     }
   }
 }
