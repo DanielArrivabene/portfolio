@@ -1,0 +1,35 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#faq {
+  .faq__image {
+    height: 100%;
+    background-image: url('../../assets/website_build-2.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .faq__data {
+    .faq_container {
+      .faq_question {
+        color: $text_light--secondary;
+        font-size: 1.2em !important;
+      }
+
+      .faq_answer {
+        font-size: 1em !important;
+        color: $text_light--terciary;
+      }
+    }
+
+    .faq__text {
+      color: $text_light--terciary;
+      font-size: 1em !important;
+    }
+
+    .faq__link {
+      @include btn--primary;
+    }
+  }
+}

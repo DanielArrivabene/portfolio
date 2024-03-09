@@ -35,4 +35,18 @@
       }
     }
   }
+
+  .projects__links_container {
+    .projects__link--one {
+      @include btn--secondary;
+    }
+
+    .projects__link--two {
+      color: $text_light--secondary;
+
+      &:hover {
+        color: $text_light--terciary;
+      }
+    }
+  }
 }

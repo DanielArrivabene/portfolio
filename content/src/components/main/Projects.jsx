@@ -55,11 +55,11 @@ function Projects() {
       className='min-vh-100 d-flex flex-column align-items-center section-area px-0'
     >
       <article className='container'>
-        <h2>Portfólio</h2>
-        <p className=' mb-4'>
+        <h2 className='text-center'>Portfólio</h2>
+        <p className='text-center mb-4'>
           Confira alguns dos projetos já realizados.
         </p>
-        <div className='projects__container row flex-wrap'>
+        <div className='projects__container row flex-wrap mb-4'>
           {projectsList.map((project) => (
             <div className='project col-lg-4 px-4 mb-4' key={project.name}>
               <img
@@ -79,6 +79,14 @@ function Projects() {
               </div>
             </div>
           ))}
+        </div>
+        <div className='projects__links_container d-flex justify-content-center gap-4 align-items-center'>
+          <a href='#' className='projects__link--one'>
+            Chamada de atenção
+          </a>
+          <a href='#' className='projects__link--two'>
+            Chamada de algo
+          </a>
         </div>
       </article>
     </section>

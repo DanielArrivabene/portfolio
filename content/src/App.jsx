@@ -12,6 +12,7 @@ import Contact from './components/main/Contact';
 import Footer from './components/footer/Footer';
 //import ScrollBar from './components/main/ScrollBar';
 import Testemonials from './components/main/Testemonials';
+import Faq from './components/main/Faq';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Technologies />
         {/*<ScrollBar />*/}
         <Projects />
+        <Faq />
         <Testemonials />
         <Contact />
       </main>
