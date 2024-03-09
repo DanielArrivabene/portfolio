@@ -14,7 +14,7 @@ function Testemonials() {
     {
       name: 'John Smith',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet, consect',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect',
     },
     {
       name: 'John Smith',

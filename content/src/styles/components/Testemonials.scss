@@ -2,10 +2,9 @@
 @import '../mixins.scss';
 
 #testemonials {
-  background-color: $bg_color--light;
 
   .testemonials__title {
-    color: $text_dark !important;
+    color: $text_light !important;
 
     span {
       font-family: $main_font;
@@ -20,9 +19,7 @@
     gap: 1em;
 
     .testemonial {
-      box-shadow:
-        2px 2px 0px #0000000e,
-        0px 20px 50px #0000000f;
+      background-color: $bg_color--secondary;
       border-radius: 7px;
 
       &:nth-child(1) {
@@ -75,14 +72,14 @@
       }
 
       .testemonial__name {
-        font-weight: 600;
-        color: $text_dark;
+        font-weight: 200;
+        color: $text_light;
         font-family: $main_font;
-        font-size: 1.5em !important;
+        font-size: 1.2em !important;
       }
 
       .testemonial__text {
-        color: $text_dark--terciary;
+        color: $text_light--terciary;
         font-size: 1em !important;
       }
 

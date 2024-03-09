@@ -2,14 +2,12 @@
 @import '../mixins.scss';
 
 #contact {
-  background-color: $bg_color;
-
   .contacts__container {
     justify-content: space-between;
     gap: 1.2em;
 
     p {
-      font-size: 1.15em;
+      color: $text_light--secondary;
     }
 
     .contact_label {
@@ -27,7 +25,7 @@
       gap: 1em;
 
       li {
-        background-color: $text_dark;
+        background-color: $bg_color--secondary;
         padding: 7px;
         border-radius: 50%;
 
@@ -65,7 +63,7 @@
 
   .form__container {
     form {
-      background-color: $card_color;
+      background-color: $bg_color--secondary;
       border: 2px solid black;
       box-shadow: 3px 3px 0px #000000;
       border-radius: 10px;
@@ -85,16 +83,15 @@
         input,
         textarea {
           border: none;
-          background-color: $card_color--secondary;
+          background-color: $bg_color;
           border-radius: 10px;
           color: $text_dark;
-          border: 1px solid $card_color--secondary;
           box-shadow: inset 2px 2px 0px #44444427;
         }
       }
 
       #send {
-        @include btn--primary;
+        @include btn--secondary;
         width: 100%;
       }
     }
