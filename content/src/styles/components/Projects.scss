@@ -4,13 +4,8 @@
 #projects {
   background-color: $bg_color;
 
-  h2 {
-    color: $text_dark;
-  }
-
   p {
-    font-size: 1.15em;
-    color: $text_dark--terciary;
+    color: $text_light--secondary;
   }
 
   .projects__container {
@@ -34,7 +29,7 @@
         transition: linear 0.3s;
 
         .project__title {
-          color: $text_dark--secondary;
+          color: $text_light--secondary;
           transition: $transition_two;
         }
       }

@@ -32,6 +32,20 @@ const projectsList = [
     target: '_self',
     image: Your,
   },
+  {
+    name: 'Seu Projeto',
+    class: 'your',
+    urlSite: '#contact',
+    target: '_self',
+    image: Your,
+  },
+  {
+    name: 'Seu Projeto',
+    class: 'your',
+    urlSite: '#contact',
+    target: '_self',
+    image: Your,
+  },
 ];
 
 function Projects() {
@@ -41,13 +55,13 @@ function Projects() {
       className='min-vh-100 d-flex flex-column align-items-center section-area px-0'
     >
       <article className='container'>
-        <h2 className='text-center'>Portfólio</h2>
-        <p className='text-center mb-5'>
+        <h2>Portfólio</h2>
+        <p className=' mb-4'>
           Confira alguns dos projetos já realizados.
         </p>
         <div className='projects__container row flex-wrap'>
           {projectsList.map((project) => (
-            <div className='project col-lg-6 px-4 mb-4' key={project.name}>
+            <div className='project col-lg-4 px-4 mb-4' key={project.name}>
               <img
                 src={project.image}
                 alt={project.name}
