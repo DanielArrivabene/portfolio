@@ -7,8 +7,8 @@
   font-family: $main_font;
 
   &::selection {
-    color: $card_color !important;
-    background-color: $text_dark !important;
+    color: $text_light !important;
+    background-color: $secondary_color !important;
   }
 }
 
