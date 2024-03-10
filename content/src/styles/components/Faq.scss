@@ -12,14 +12,20 @@
 
   .faq__data {
     .faq_container {
-      .faq_question {
-        color: $text_light--secondary;
-        font-size: 1.2em !important;
-      }
+      .faq {
+        padding: 2rem;
+        background-color: $bg_color--secondary;
+        border-radius: 10px;
 
-      .faq_answer {
-        font-size: 1em !important;
-        color: $text_light--terciary;
+        .faq_question {
+          color: $text_light--secondary;
+          font-size: 1.2em !important;
+        }
+  
+        .faq_answer {
+          font-size: 1em !important;
+          color: $text_light--terciary;
+        }
       }
     }
 

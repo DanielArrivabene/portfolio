@@ -38,15 +38,15 @@ function Faq() {
         <div className='col-lg-6 faq__image'></div>
         <div className='col-lg-6 faq__data'>
           <h2 className='faq_title mb-3'>Perguntas frequentes</h2>
-          <div className='faq_container mb-3'>
+          <div className='faq_container mb-4'>
             {faqList.map((item, index) => (
               <details
                 key={index}
-                className='mb-3'
+                className='mb-3 p-3 faq'
                 open={index == 0 ? true : false}
               >
                 <summary className='faq_question'>{item.title}</summary>
-                <p className='faq_answer'>{item.answer}</p>
+                <p className='mt-4 faq_answer'>{item.answer}</p>
               </details>
             ))}
           </div>
