@@ -5,7 +5,6 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import { MdEmail } from 'react-icons/md';
 import { BiLogoLinkedin, BiLogoWhatsapp, BiLogoGithub } from 'react-icons/bi';
 
 import Form from './Form';
@@ -49,11 +48,8 @@ function Contact() {
       <div className='container'>
         <div className='row justify-content-center flex-wrap gap-5'>
           <article className='col-md-5 contacts__container d-flex flex-column '>
-            <h2>
-              Você tem algum projeto em mente
-              <span className='destaque--color'>?</span>
-            </h2>
-            <p>
+            <h2 className='mb-3'>Você tem algum projeto em mente?</h2>
+            <p className="mb-5">
               Entre em contato comigo preenchendo o formulário, para iniciarmos
               o desenvolvimento de algo <strong>incrível</strong>!
             </p>
@@ -61,13 +57,7 @@ function Contact() {
               <p className='contact_label'>
                 <BsFillTelephoneFill /> <strong>Telefone</strong>
               </p>
-              <p>+55 (27) 99654-4482</p>
-            </div>
-            <div>
-              <p className='contact_label'>
-                <MdEmail /> <strong>E-mail</strong>
-              </p>
-              <p>danielg.arrivabene@gmail.com</p>
+              <p className="mb-5">+55 (27) 99654-4482</p>
             </div>
             <ul ref={ref} className='list-group contacts_list d-flex flex-row'>
               {contactsList &&

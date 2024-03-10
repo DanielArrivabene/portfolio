@@ -16,16 +16,11 @@ function Form() {
   }, [inView, animation]);
 
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
   const [message, setMessage] = useState('');
 
   const handleNameChange = (e) => {
     setName(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
   };
 
   const handleNumberChange = (e) => {
@@ -39,7 +34,7 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!name || !email || !number || !message) {
+    if (!name || !number || !message) {
       alert('Por favor, preencha todos os campos.');
       return;
     } else {
@@ -62,20 +57,6 @@ function Form() {
           id='InputName'
           onChange={handleNameChange}
           value={name}
-        />
-      </div>
-      <div className='form-group'>
-        <label htmlFor="InputEmail">E-mail</label>
-        <motion.input
-          required
-          initial={{ width: 0, opacity: 0 }}
-          animate={animation}
-          transition={{ duration: 1, delay: 0.5 }}
-          type='email'
-          className='form-control'
-          id='InputEmail'
-          onChange={handleEmailChange}
-          value={email}
         />
       </div>
       <div className='form-group'>
@@ -105,11 +86,7 @@ function Form() {
           value={message}
         ></motion.textarea>
       </div>
-      <a
-        className='btn'
-        id='send'
-        onClick={handleSubmit}
-      >
+      <a className='btn' id='send' onClick={handleSubmit}>
         Enviar
       </a>
     </form>

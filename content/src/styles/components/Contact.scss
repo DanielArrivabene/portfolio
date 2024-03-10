@@ -3,12 +3,7 @@
 
 #contact {
   .contacts__container {
-    justify-content: space-between;
-    gap: 1.2em;
-
-    p {
-      color: $text_light--secondary;
-    }
+    color: $text_light--secondary;
 
     .contact_label {
       > strong {
@@ -50,6 +45,14 @@
           }
         }
 
+        a.Github svg {
+          font-size: 1.6em;
+
+          * {
+            color: $text_light;
+          }
+        }
+
         a.LinkedIn svg {
           font-size: 1.6em;
 
@@ -63,11 +66,7 @@
 
   .form__container {
     form {
-      background-color: $bg_color--secondary;
-      border: 2px solid black;
-      box-shadow: 3px 3px 0px #000000;
       border-radius: 10px;
-      padding: 1.3em;
       display: flex;
       flex-direction: column;
       gap: 1em;
@@ -78,14 +77,15 @@
           margin-bottom: 5px;
           font-family: $main_font;
           font-weight: bold;
+          color: $text_light--secondary;
         }
 
         input,
         textarea {
           border: none;
-          background-color: $bg_color;
+          background-color: $bg_color--secondary;
           border-radius: 10px;
-          color: $text_dark;
+          color: $text_light--terciary;
           box-shadow: inset 2px 2px 0px #44444427;
         }
       }
