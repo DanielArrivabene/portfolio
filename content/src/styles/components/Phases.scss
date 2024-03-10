@@ -2,10 +2,22 @@
 @import '../mixins.scss';
 
 #phases {
+  .phases__title {
+    background: -webkit-linear-gradient(
+      45deg,
+      transparent,
+      $text_light,
+      transparent
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .phases__subtitle {
     color: $text_light--secondary;
   }
-  
+
   .phases_container {
     .phase {
       border-bottom: 1px solid $text_dark--terciary;
@@ -26,17 +38,16 @@
       }
 
       .phase__number {
-        color: transparent;
+        font-weight: 700;
         font-size: 2.5rem;
-        font-weight: 600;
-        font-weight: 700 !important;
-        -webkit-text-stroke: 1px $primary_color;
         transition: $transition_one;
       }
 
       .phase_title {
-        color: $text_light;
+        color: $text_light--secondary;
         font-size: 2.5rem !important;
+        font-weight: 200 !important;
+        text-transform: uppercase;
       }
 
       .phase_text {
