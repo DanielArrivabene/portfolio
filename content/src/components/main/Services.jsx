@@ -26,7 +26,7 @@ function Services() {
 
   return (
     <section id='services' className='d-flex flex-column align-items-center'>
-      <p className="mb-4 services__title">LOREM IPSULUM DOLOR</p>
+      <p className='mb-4 services__title'>A VISIBILIDADE QUE VOCÊ MERECE</p>
       <article className='services__container container d-flex justify-content-between'>
         {servicesList.map((service, index) => (
           <div key={index} className='service p-4'>
