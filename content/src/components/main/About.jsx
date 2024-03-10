@@ -5,13 +5,13 @@ import { MdCheckBox } from 'react-icons/md';
 function About() {
   const aboutAtributesList = [
     {
-      atribute: 'Total disponibilidade',
+      atribute: 'Total suporte 24hr.',
     },
     {
-      atribute: 'Total disponibilidade',
+      atribute: 'Web Design incluso.',
     },
     {
-      atribute: 'Total disponibilidade',
+      atribute: 'Livre para personalizar.',
     },
   ];
 
@@ -23,15 +23,22 @@ function About() {
       <article className='container row'>
         <div className='col-lg-6 d-flex flex-column justify-content-between about__data'>
           <div className='about__text_container'>
-            <h2 className="mb-3">Um pouco sobre o que faço</h2>
+            <h2 className='mb-3'>Seu site ideal</h2>
             <p className='about__text mb-4'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              accusamus deserunt aperiam quas, iste eaque nulla praesentium
-              nihil quod, libero porro. Consectetur fuga saepe dignissimos
-              molestias accusamus similique voluptatum suscipit.
+              Sem um site profissional sua empresa é <strong>invisível</strong>{' '}
+              para milhares de pessoas que buscam pelo seu serviço todos os dias
+              na internet.
             </p>
-            <a href='#' className='about__link mb-5'>
-              Fale comigo
+            <p className='about__text mb-4'>
+              Ter um site permite que <strong>clientes em potencial</strong>{' '}
+              encontrem sua empresa facilmente ao procurar por serviços
+              relacionados, além de passar uma imagem de{' '}
+              <strong>credibilidade</strong> para sua empresa. Os clientes
+              tendem a confiar mais em empresas que têm uma presença online
+              estabelecida.
+            </p>
+            <a href='#atributes' className='about__link mb-5'>
+              Veja as vantagens
             </a>
           </div>
           <ul className='about__list p-0'>

@@ -19,7 +19,7 @@ function Services() {
     {
       title: 'Com SEO',
       description:
-        'Alta visibilidade e acessibilidade, fazendo mais pessoas virem até você.',
+        'Alta visibilidade e rankeamento no Google, fazendo mais pessoas virem até você.',
       icon: '03',
     },
   ];
