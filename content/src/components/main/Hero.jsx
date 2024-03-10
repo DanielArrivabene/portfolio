@@ -18,9 +18,8 @@ function Hero() {
           sob medida
         </h1>
         <p className='mb-4 text-center hero__text'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit cupiditate
-          <br />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Desenvolvimento de websites profissionais para destacar a sua empresa,
+          especializados em visibilidade, responsividade e SEO.
         </p>
         <div className='hero__links_container'>
           <a href='#' className='hero__link'>
