@@ -66,6 +66,14 @@ html::-webkit-scrollbar-thumb {
   padding: 9em 1em;
 }
 
+.logo {
+  width: 5em !important;
+
+  img {
+    width: 100%;
+  }
+}
+
 .destaque--text {
   color: transparent !important;
   font-family: $main_font;

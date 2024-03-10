@@ -1,51 +1,35 @@
 @import '../variables.scss';
 
 #footer {
-  background-color: $bg_color;
   padding: 5em 2em;
 
-  * {
+  .footer_text {
     color: $text_light--terciary;
   }
 
-  .footer__container {
-    width: fit-content;
+  .footer__link_top {
+    border: 2px solid transparent;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background:
+      linear-gradient($bg_color, $bg_color) padding-box,
+      linear-gradient(45deg, $primary_color, $secondary_color) border-box;
 
-    h3 {
-      text-align: start;
-      font-size: 1.3em;
-      color: $card_color;
+    &:hover {
+      svg * {
+        color: $text_light;
+      }
     }
 
     svg {
-      font-size: 1.4em;
-    }
+      font-size: 1.5rem;
 
-    .footer__contacts_list {
-      display: flex;
-      gap: 1.5em;
-      justify-content: start;
-    }
-
-    ul {
-      list-style: none;
-
-      li {
-        text-align: start;
-
-        a {
-          text-decoration: none;
-          color: $text_light--terciary;
-          transition: $transition_one;
-
-          &:hover {
-            color: $card_color;
-
-            svg * {
-              color: $card_color;
-            }
-          }
-        }
+      * {
+        color: $text_light--terciary;
       }
     }
   }
