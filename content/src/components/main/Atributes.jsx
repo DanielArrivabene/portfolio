@@ -40,14 +40,14 @@ function Atributes() {
       className='d-flex justify-content-around section-area'
     >
       <article className='container row justify-content-between align-items-center'>
-        <ul className='col-lg-6 atributes__container d-flex flex-wrap gap-4'>
+        <ul className='col-lg-6 atributes__container d-flex flex-wrap gap-4 p-3'>
           {atributesList.map((item, index) => (
-            <li className='atribute' key={index}>
-              <p>{item.name}</p>
+            <li className='atribute p-3' key={index}>
+              <p className="m-0">{item.name}</p>
             </li>
           ))}
         </ul>
-        <div className='col-lg-6 atributes__data'>
+        <div className='col-lg-6 px-4 atributes__data'>
           <h2 className='mb-3'>Vantagens de ter um site</h2>
           <p className='atributes__text mb-3'>
             Ao iniciar o processo você não recebe apenas um site, também fica

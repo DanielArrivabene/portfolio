@@ -3,36 +3,17 @@
 
 #atributes {
   .atributes__container {
-    .atribute {
-      width: calc(50% - 1rem);
-      border-radius: 10px;
+    list-style: none !important;
+    border-radius: 20px;
 
-      .atribute__service {
-        font-family: $main_font;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: $text_light--secondary !important;
-      }
+    .atribute {
+      border-radius: 50em;
+      background-image: linear-gradient(40deg, #00000000, $bg_color--secondary);
 
       p {
         font-size: 1em !important;
         color: $text_light--secondary;
-      }
-
-      .atribute_author {
-        font-weight: 500;
-      }
-
-      .atribute__link {
-        color: $primary_color;
-        font-size: 1.15em !important;
-        text-decoration: underline !important;
-
-        &:hover {
-          color: #a900dcc5;
-        }
+        font-weight: 400;
       }
     }
 
@@ -65,10 +46,10 @@
       @include btn--secondary;
       font-size: 1.15em !important;
     }
-    
+
     .atributes_call {
       color: $text_light--terciary;
-      font-size: .9em !important;
+      font-size: 0.9em !important;
     }
   }
 }

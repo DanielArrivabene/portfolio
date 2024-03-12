@@ -43,7 +43,6 @@ function Faq() {
               <details
                 key={index}
                 className='mb-3 p-3 faq'
-                open={index == 0 ? true : false}
               >
                 <summary className='faq_question'>{item.title}</summary>
                 <p className='mt-4 faq_answer'>{item.answer}</p>
