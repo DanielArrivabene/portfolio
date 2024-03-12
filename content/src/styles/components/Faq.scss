@@ -14,17 +14,22 @@
     .faq_container {
       .faq {
         padding: 2rem;
-        background-color: $bg_color--secondary;
         border-radius: 10px;
+        transition: $transition_one;
+        border: 1px solid $bg_color--secondary;
 
         .faq_question {
           color: $text_light--secondary;
           font-size: 1.2em !important;
         }
-  
+
         .faq_answer {
           font-size: 1em !important;
           color: $text_light--terciary;
+        }
+
+        &:hover {
+          background-color: $bg_color--secondary;
         }
       }
     }
