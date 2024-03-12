@@ -23,8 +23,8 @@ function Technologies() {
   return (
     <section id='phases' className='section-area px-0'>
       <article className='d-flex flex-column align-items-center w-100'>
-        <h2 className='phases__title'>Etapas de Desenvolvimento</h2>
-        <p className='phases__subtitle mb-4'>
+        <h2 className='phases__title w-100 container'>Etapas de Desenvolvimento</h2>
+        <p className='phases__subtitle w-100 container mb-4'>
           Conheça um pouco do fluxo geral por trás dos nossos projetos.
         </p>
         <div className='phases_container w-100'>
