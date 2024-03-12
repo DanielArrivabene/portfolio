@@ -15,7 +15,7 @@
   }
 
   .phases__subtitle {
-    color: $text_light--secondary;
+    color: $text_light--terciary;
   }
 
   .phases_container {
@@ -28,16 +28,21 @@
       }
 
       &:hover {
+        .phase__number {
+          color: $primary_color;
+        }
 
         .phase_text {
-          opacity: 1;
+          color: $text_light--secondary;
         }
       }
 
       .phase__number {
         font-weight: 700;
         font-size: 2.5rem;
+        color: transparent;
         transition: $transition_one;
+        -webkit-text-stroke: 1px $primary_color;
       }
 
       .phase_title {
@@ -50,8 +55,8 @@
       .phase_text {
         max-width: 450px;
         font-size: 1em !important;
-        color: $text_light--secondary;
-        opacity: 0;
+        color: $text_light--terciary;
+        opacity: 1;
         transition: $transition_one;
       }
     }
