@@ -23,6 +23,7 @@ function About() {
       <article className='container row'>
         <div className='col-lg-6 d-flex flex-column justify-content-between about__data'>
           <div className='about__text_container'>
+            <p className="color--primary">LOREM YPSULUM DOLOR</p>
             <h2 className='mb-3'>Seu site ideal</h2>
             <p className='about__text mb-4'>
               Sem um site profissional sua empresa é <strong>invisível</strong>{' '}

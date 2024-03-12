@@ -82,7 +82,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .color--primary {
-  background: -webkit-linear-gradient(45deg, $primary_color, $secondary_color);
+  background: -webkit-linear-gradient(10deg, $primary_color, $secondary_color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
