@@ -31,7 +31,7 @@ function Technologies() {
         <div className='phases_container w-100'>
           {phasesList.map((item, index) => (
             <div key={index} className='phase'>
-              <div className='container d-flex justify-content-between align-items-center flex-wrap p-5'>
+              <div className='container d-flex justify-content-between align-items-center flex-wrap py-5'>
                 <div className='d-flex gap-5 align-items-center'>
                   <span className='phase__number '>{'0' + (index + 1)}</span>
                   <h3 className='m-0 phase_title'>{item.name}</h3>

@@ -5,6 +5,15 @@
   .responsiveness_container {
     .responsiveness__text {
       color: $text_light--terciary;
+
+      strong {
+        color: $text_light;
+        font-weight: 400;
+      }
+
+      a {
+        color: $secondary_color;
+      }
     }
   }
 }
