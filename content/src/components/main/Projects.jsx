@@ -50,13 +50,10 @@ const projectsList = [
 
 function Projects() {
   return (
-    <section
-      id='projects'
-      className='min-vh-100 d-flex flex-column align-items-center section-area px-0'
-    >
-      <article className='container'>
-        <h2 className='text-center'>Portfólio</h2>
-        <p className='text-center mb-4'>
+    <section id='projects' className='min-vh-100 section-area px-0'>
+      <article className='container d-flex flex-column justify-content-center align-items-center'>
+        <h2 className='text-center mb-2 projects__title'>Portfólio</h2>
+        <p className='text-center mb-5'>
           Confira alguns dos projetos já realizados.
         </p>
         <div className='projects__container row flex-wrap mb-4'>

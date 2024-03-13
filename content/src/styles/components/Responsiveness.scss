@@ -1,0 +1,10 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#responsiveness {
+  .responsiveness_container {
+    .responsiveness__text {
+      color: $text_light--terciary;
+    }
+  }
+}

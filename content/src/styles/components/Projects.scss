@@ -4,6 +4,10 @@
 #projects {
   background-color: $bg_color;
 
+  .projects__title {
+    color: $text_light;
+  }
+
   p {
     color: $text_light--secondary;
   }

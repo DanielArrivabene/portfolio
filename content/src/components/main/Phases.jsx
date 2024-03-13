@@ -22,8 +22,9 @@ function Technologies() {
 
   return (
     <section id='phases' className='section-area px-0'>
-      <article className='d-flex flex-column align-items-center w-100'>
-        <h2 className='phases__title w-100 container'>Etapas de Desenvolvimento</h2>
+      <article className='d-flex flex-column w-100'>
+        <p className='color--primary mb-2 container'>ETAPAS DE DESENVOLVIMENTO</p>
+        <h2 className='phases__title container'>Não é magia, é código</h2>
         <p className='phases__subtitle w-100 container mb-4'>
           Conheça um pouco do fluxo geral por trás dos nossos projetos.
         </p>
@@ -32,12 +33,10 @@ function Technologies() {
             <div key={index} className='phase'>
               <div className='container d-flex justify-content-between align-items-center flex-wrap p-5'>
                 <div className='d-flex gap-5 align-items-center'>
-                  <span className='phase__number '>
-                    {'0' + (index + 1)}
-                  </span>
+                  <span className='phase__number '>{'0' + (index + 1)}</span>
                   <h3 className='m-0 phase_title'>{item.name}</h3>
                 </div>
-                <p className="phase_text">{item.text}</p>
+                <p className='phase_text'>{item.text}</p>
               </div>
             </div>
           ))}

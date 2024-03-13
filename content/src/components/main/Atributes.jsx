@@ -48,13 +48,14 @@ function Atributes() {
           ))}
         </ul>
         <div className='col-lg-6 px-4 atributes__data'>
-          <h2 className='mb-3'>Vantagens de ter um site</h2>
+          <p className="color--primary mb-2">LOREM IPSULUM DOLOR</p>
+          <h2 className='mb-4'>Vantagens de ter um site</h2>
           <p className='atributes__text mb-3'>
             Ao iniciar o processo você não recebe apenas um site, também fica
             por dentro de estratégias para atrair mais visitantes, dicas sobre
             como vender mais e um treinamento sobre como gerenciar seu website.
           </p>
-          <p className='atributes__text mb-3'>
+          <p className='atributes__text mb-4'>
             Está na hora de dar o próximo passo nessa jornada!
           </p>
           <a href='#contact' className='atributes__link mb-2'>

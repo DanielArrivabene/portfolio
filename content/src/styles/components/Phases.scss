@@ -4,15 +4,6 @@
 #phases {
   .phases__title {
     color: $text_light;
-    background: -webkit-linear-gradient(
-      45deg,
-      transparent,
-      $text_light,
-      transparent
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .phases__subtitle {

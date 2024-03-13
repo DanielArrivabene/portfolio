@@ -23,9 +23,9 @@ function About() {
       <article className='container row'>
         <div className='col-lg-6 d-flex flex-column justify-content-between about__data'>
           <div className='about__text_container'>
-            <p className="color--primary">LOREM YPSULUM DOLOR</p>
-            <h2 className='mb-3'>Seu site ideal</h2>
-            <p className='about__text mb-4'>
+            <p className="color--primary mb-2">LOREM YPSULUM DOLOR</p>
+            <h2 className='mb-4'>Seu site ideal</h2>
+            <p className='about__text  mb-3'>
               Sem um site profissional sua empresa é <strong>invisível</strong>{' '}
               para milhares de pessoas que buscam pelo seu serviço todos os dias
               na internet.
@@ -38,7 +38,7 @@ function About() {
               tendem a confiar mais em empresas que têm uma presença online
               estabelecida.
             </p>
-            <a href='#atributes' className='about__link mb-5'>
+            <a href='#atributes' className='about__link mb-4'>
               Veja as vantagens
             </a>
           </div>
