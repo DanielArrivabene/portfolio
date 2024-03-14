@@ -28,12 +28,19 @@ h3 {
 }
 
 p {
-  font-size: 1.2em !important;
+  font-size: 1.18em !important;
 }
 
 a {
   color: $text_dark;
   text-decoration: none !important;
+}
+
+
+
+strong {
+  color: $text_light;
+  font-weight: 400 !important;
 }
 
 html,

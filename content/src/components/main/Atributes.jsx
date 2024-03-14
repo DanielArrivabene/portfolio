@@ -43,20 +43,26 @@ function Atributes() {
         <ul className='col-lg-6 atributes__container d-flex flex-wrap gap-4 p-3'>
           {atributesList.map((item, index) => (
             <li className='atribute p-3' key={index}>
-              <p className="m-0">{item.name}</p>
+              <p className='m-0'>{item.name}</p>
             </li>
           ))}
         </ul>
         <div className='col-lg-6 px-4 atributes__data'>
-          <p className="color--primary mb-2">LOREM IPSULUM DOLOR</p>
+          <p className='color--primary mb-2'>A VISIBILIDADE QUE VOCÊ MERECE</p>
           <h2 className='mb-4'>Vantagens de ter um site</h2>
           <p className='atributes__text mb-3'>
-            Ao iniciar o processo você não recebe apenas um site, também fica
-            por dentro de estratégias para atrair mais visitantes, dicas sobre
-            como vender mais e um treinamento sobre como gerenciar seu website.
+            Sem um site profissional sua empresa é <strong>invisível</strong>{' '}
+            para milhares de pessoas que buscam pelo seu serviço todos os dias
+            na internet.
+          </p>
+          <p className='atributes__text mb-3'>
+            Ter um site permite que clientes em potencial{' '}
+            <strong>encontrem sua empresa</strong> facilmente ao procurar por
+            serviços relacionados, além de passar uma imagem de <strong>credibilidade</strong>. Os clientes tendem a confiar mais em empresas que
+            têm uma presença online estabelecida.
           </p>
           <p className='atributes__text mb-4'>
-            Está na hora de dar o próximo passo nessa jornada!
+            <strong>Está na hora de dar o próximo passo nessa jornada!</strong>
           </p>
           <a href='#contact' className='atributes__link mb-2'>
             Começar agora
