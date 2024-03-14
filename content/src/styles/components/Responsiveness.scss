@@ -15,5 +15,10 @@
         color: $secondary_color;
       }
     }
+
+    .responsiveness__image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    }
   }
 }
