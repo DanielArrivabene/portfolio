@@ -11,7 +11,7 @@ function Footer() {
         <div className='logo'>
           <img src={Logo} alt='Daniel Goulart Arrivabene' />
         </div>
-        <p className='footer_text'>
+        <p className='footer_text mb-0'>
           &copy; 2023 <span>DanielGoulart</span>.
         </p>
         <a href='#home' className='footer__link_top'>

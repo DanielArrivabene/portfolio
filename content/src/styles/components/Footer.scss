@@ -1,7 +1,8 @@
 @import '../variables.scss';
 
 #footer {
-  padding: 5em 2em;
+  padding: 4em 2em;
+  border-top: 1px solid $bg_color--secondary;
 
   .footer_text {
     color: $text_light--terciary;
