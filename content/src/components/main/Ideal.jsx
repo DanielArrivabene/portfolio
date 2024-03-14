@@ -15,7 +15,7 @@ function Ideal() {
               para milhares de pessoas que buscam pelo seu serviço todos os dias
               na internet.
             </p>
-            <p className='ideal__text mb-4'>
+            <p className='ideal__text mb-5'>
               Ter um site permite que <strong>clientes em potencial</strong>{' '}
               encontrem sua empresa facilmente ao procurar por serviços
               relacionados, além de passar uma imagem de{' '}
@@ -23,9 +23,6 @@ function Ideal() {
               tendem a confiar mais em empresas que têm uma presença online
               estabelecida.
             </p>
-            <a href='#atributes' className='ideal__link mb-4'>
-              Veja as vantagens
-            </a>
             <h3 className='mb-3'>O que você ganha com isso?</h3>
             <p className='ideal__text'>
               De acordo com os dados da <a href='#'>Target Group Index</a> , os
@@ -48,10 +45,9 @@ function Ideal() {
               propensos a se envolver com uma empresa caso a experiência com seu
               website não fosse boa.
             </p>
-            <p className='color--primary'>
-              Dessa forma fica evidente a importância da Responsividade no seu
-              Website.
-            </p>
+            <a href='#atributes' className='ideal__link mb-4'>
+              Veja as vantagens
+            </a>
           </div>
           <div className='ideal__image_container col-lg-6 p-4'>
             <img className='ideal__image' src={Image} alt='' />

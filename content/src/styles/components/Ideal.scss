@@ -16,6 +16,10 @@
       }
     }
 
+    .ideal__link {
+      @include btn--primary;
+    }
+
     .ideal__image {
       width: 100%;
       aspect-ratio: 1 / 1;
