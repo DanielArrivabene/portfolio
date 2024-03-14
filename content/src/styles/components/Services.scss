@@ -12,9 +12,11 @@
     .service {
       width: calc(33% - .8rem);
       border-radius: 10px;
-      background-color: $bg_color--secondary;
-      -webkit-box-reflect: below 1.5rem
-        linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.4));
+      //-webkit-box-reflect: below 1.5rem linear-gradient(to bottom, transparent 70%, #00000066);
+
+        &:nth-child(2) {
+          background-image: linear-gradient(45deg, $bg_color--secondary, transparent);
+        }
 
       .service__data_container {
         width: 100%;
@@ -22,7 +24,18 @@
 
         .service__title {
           transition: $transition_one;
-          color: $text_light--secondary;
+          display: flex;
+          gap: .5rem;
+          align-items: center;
+          justify-content: space-between;
+
+            svg {
+              font-size: 1.8rem;
+  
+              * {
+                color: $text_light;
+              }
+            }
         }
 
         .service__description {
