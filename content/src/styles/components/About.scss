@@ -7,11 +7,16 @@
   .about__data {
     .about__text_container {
       .about__text {
-        color: $text_light--secondary;
+        color: $text_light--terciary;
+
+        strong {
+          color: $text_light;
+          font-weight: 400;
+        }
       }
 
       .about__link {
-        @include btn--primary;
+        @include btn--secondary;
         font-size: 1.15em !important;
       }
     }

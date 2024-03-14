@@ -12,7 +12,7 @@ import Contact from './components/main/Contact';
 import Footer from './components/footer/Footer';
 //import ScrollBar from './components/main/ScrollBar';
 import Testemonials from './components/main/Testemonials';
-import Responsiveness from './components/main/Responsiveness';
+import Ideal from './components/main/Ideal';
 
 function App() {
   return (
@@ -23,10 +23,10 @@ function App() {
         <Services />
         {/*<HeroBar />*/}
         <About />
+        <Ideal />
         <Atributes />
         <Phases />
         {/*<ScrollBar />*/}
-        <Responsiveness />
         <Projects />
         <Testemonials />
         <Contact />

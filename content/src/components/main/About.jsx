@@ -23,12 +23,10 @@ function About() {
       <article className='container row'>
         <div className='col-lg-6 d-flex flex-column justify-content-between about__data'>
           <div className='about__text_container'>
-            <p className="color--primary mb-2">LOREM YPSULUM DOLOR</p>
-            <h2 className='mb-4'>Seu site ideal</h2>
+            <p className="color--primary mb-2">QUEM SOU?</p>
+            <h2 className='mb-4'>A mente por trás da máscara</h2>
             <p className='about__text  mb-3'>
-              Sem um site profissional sua empresa é <strong>invisível</strong>{' '}
-              para milhares de pessoas que buscam pelo seu serviço todos os dias
-              na internet.
+              Sou um desenvolvedor Web, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi beatae nobis eligendi quam odit, dolore labore perferendis vel deserunt dolorem accusamus aperiam reprehenderit id sunt ad incidunt! Saepe, ut quaerat.
             </p>
             <p className='about__text mb-4'>
               Ter um site permite que <strong>clientes em potencial</strong>{' '}

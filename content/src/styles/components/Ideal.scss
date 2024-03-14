@@ -1,9 +1,9 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
-#responsiveness {
-  .responsiveness_container {
-    .responsiveness__text {
+#ideal {
+  .ideal_container {
+    .ideal__text {
       color: $text_light--terciary;
 
       strong {
@@ -16,7 +16,7 @@
       }
     }
 
-    .responsiveness__image {
+    .ideal__image {
       width: 100%;
       aspect-ratio: 1 / 1;
     }
