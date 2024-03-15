@@ -13,7 +13,7 @@ import Menu from './Menu';
 function Navbar() {
   const navLinks = [
     { text: 'Portfólio', href: '#projects', class: 'nav-link ' },
-    { text: 'Contatos', href: '#contact', class: 'navbar__btn' },
+    { text: 'Faça um orçamento', href: '#contact', class: 'navbar__btn' },
   ];
 
   const [showMenu, setShowMenu] = useState(false);
