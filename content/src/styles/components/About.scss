@@ -33,11 +33,14 @@
     }
   }
 
-  .about__image {
+  .about__image_container {
     height: 100%;
-    background-image: url('../../assets/eu.jpg');
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    text-align: end;
+    
+    .about__image {
+      width: 73%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
   }
 }
