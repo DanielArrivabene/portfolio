@@ -36,11 +36,13 @@
   .about__image_container {
     height: 100%;
     text-align: end;
-    
+
     .about__image {
       width: 73%;
       aspect-ratio: 3 / 4;
       object-fit: cover;
+      -webkit-filter: drop-shadow(5px 5px 5px #ffffff);
+      filter: drop-shadow(5px -5px 0px #ffffff);
     }
   }
 }

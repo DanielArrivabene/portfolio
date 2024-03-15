@@ -2,7 +2,7 @@ import '../../styles/components/About.scss';
 
 import { MdCheckBox } from 'react-icons/md';
 
-import Avatar from '../../assets/eu.jpg';
+import Avatar from '../../assets/eu.png';
 
 function About() {
   const aboutAtributesList = [
@@ -28,18 +28,11 @@ function About() {
             <p className='color--primary mb-2'>QUEM SOU?</p>
             <h2 className='mb-4'>A mente por trás da máscara</h2>
             <p className='about__text  mb-3'>
-              Sou um desenvolvedor Web, Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Sequi beatae nobis eligendi quam odit, dolore
-              labore perferendis vel deserunt dolorem accusamus aperiam
-              reprehenderit id sunt ad incidunt! Saepe, ut quaerat.
+              Satisfação! Me chamo <strong>Daniel Goulart Arrivabene</strong>, eu
+              atuo como Web Developer e Designer a mais de 4 anos; além de ter uma forte paixão por música e milkshake.
             </p>
             <p className='about__text mb-4'>
-              Ter um site permite que <strong>clientes em potencial</strong>{' '}
-              encontrem sua empresa facilmente ao procurar por serviços
-              relacionados, além de passar uma imagem de{' '}
-              <strong>credibilidade</strong> para sua empresa. Os clientes
-              tendem a confiar mais em empresas que têm uma presença online
-              estabelecida.
+             Durante esses anos desenvolvi websites dos mais diversos tipos, com diversos clientes satisfeitos e tudo mais, Total satisfação garantida, agilidade, o processo de desenvolvimento é um conjunto entre mim e você para obter o resultado desejado, faça um orçamento gratuito ou continue navegando pelo site para saber mais. 
             </p>
             <a href='#atributes' className='about__link mb-4'>
               Veja as vantagens
