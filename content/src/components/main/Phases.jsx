@@ -25,7 +25,7 @@ function Technologies() {
       <article className='d-flex flex-column w-100'>
         <h2 className='phases__title container'>Não é magia, é<span className="color--primary"> código</span></h2>
         <p className='phases__subtitle w-100 container mb-4'>
-          Conheça um pouco do fluxo geral por trás de cada projetos.
+          Conheça um pouco do fluxo geral por trás de cada projeto.
         </p>
         <div className='phases_container w-100'>
           {phasesList.map((item, index) => (
