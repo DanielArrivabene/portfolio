@@ -20,8 +20,10 @@
       }
 
       &:hover {
-        .phase__number {
-          color: $primary_color;
+        .number__container {
+          .phase__number {
+            color: $primary_color;
+          }
         }
 
         .phase_text {
