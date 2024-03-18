@@ -22,7 +22,7 @@ function About() {
       id='about'
       className='d-flex justify-content-around section-area min-vh-100'
     >
-      <article className='container row'>
+      <article className='container row flex-wrap-reverse'>
         <div className='col-lg-6 d-flex flex-column justify-content-between about__data'>
           <div className='about__text_container'>
             <p className='color--primary mb-2'>QUEM SOU?</p>
@@ -51,7 +51,7 @@ function About() {
           <img
             src={Avatar}
             alt='Daniel Goulart Arrivabene'
-            className='about__image'
+            className='about__image mb-5'
           />
         </div>
       </article>
