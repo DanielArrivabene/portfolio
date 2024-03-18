@@ -39,7 +39,7 @@ function Atributes() {
       id='atributes'
       className='d-flex justify-content-around section-area'
     >
-      <article className='container row justify-content-between align-items-center'>
+      <article className='container row flex-wrap-reverse justify-content-between align-items-center'>
         <ul className='col-lg-6 atributes__container d-flex flex-wrap gap-4 p-3'>
           {atributesList.map((item, index) => (
             <li className='atribute p-3' key={index}>
