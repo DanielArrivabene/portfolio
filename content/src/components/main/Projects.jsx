@@ -58,7 +58,7 @@ function Projects() {
         </p>
         <div className='projects__container row flex-wrap mb-4'>
           {projectsList.map((project) => (
-            <div className='project col-lg-4 px-4 mb-4' key={project.name}>
+            <div className='project col-lg-4 px-4 mb-5' key={project.name}>
               <img
                 src={project.image}
                 alt={project.name}
