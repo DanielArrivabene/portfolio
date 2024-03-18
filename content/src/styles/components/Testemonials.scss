@@ -2,7 +2,6 @@
 @import '../mixins.scss';
 
 #testemonials {
-
   .testemonials__title {
     color: $text_light !important;
 
@@ -11,85 +10,130 @@
     }
   }
 
-  .cards_container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 12em 2em 2em 12em;
-    gap: 1em;
+  .carousel {
+    position: relative;
+    text-align: center;
 
-    .testemonial {
-      background-color: $bg_color--secondary;
-      border-radius: 7px;
+    > input {
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
 
-      &:nth-child(1) {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
+      &:nth-of-type(4):checked
+        ~ .carousel__slides
+        .carousel__slide:first-of-type {
+        margin-left: -300%;
+      }
+      &:nth-of-type(3):checked
+        ~ .carousel__slides
+        .carousel__slide:first-of-type {
+        margin-left: -200%;
+      }
+      &:nth-of-type(2):checked
+        ~ .carousel__slides
+        .carousel__slide:first-of-type {
+        margin-left: -100%;
+      }
+      &:nth-of-type(1):checked
+        ~ .carousel__slides
+        .carousel__slide:first-of-type {
+        margin-left: 0%;
       }
 
-      &:nth-child(2) {
-        grid-row-start: 1;
-        grid-row-end: 4;
-        grid-column-start: 2;
-        grid-column-end: 3;
+      &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) img,
+      &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) img,
+      &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) img,
+      &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) img {
+        opacity: 1;
       }
+    }
+  }
 
-      &:nth-child(3) {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 4;
-        grid-column-end: 3;
-      }
+  .carousel__slides {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: flex;
 
-      &:nth-child(4) {
-        grid-row-start: 3;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 2;
-      }
+    .carousel__slide {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 100%;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transition: all 300ms ease-out;
+      box-sizing: border-box;
+      white-space: normal;
 
-      &:nth-child(5) {
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-      }
-
-      &:nth-child(6) {
-        grid-row-start: 2;
-        grid-row-end: 5;
-        grid-column-start: 3;
-        grid-column-end: 4;
-      }
-
-      .testemonial__photo {
-        width: 3em;
-        height: 3em;
-        border-radius: 100%;
-        object-fit: cover;
-      }
-
-      .testemonial__name {
-        font-weight: 200;
-        color: $text_light;
-        font-family: $main_font;
-        font-size: 1.2em !important;
-      }
-
-      .testemonial__text {
-        color: $text_light--terciary;
-        font-size: 1em !important;
-      }
-
-      .star_container svg {
-        font-size: 1.5em;
-
-        * {
-          color: $primary_color;
+      .upper_data__container {
+        p {
+          font-size: 1em !important;
+          color: $text_light--terciary;
         }
       }
+
+      p {
+        max-width: 800px;
+        color: $text_light--secondary;
+      }
+
+      .stars_container {
+        svg {
+          font-size: 1.2rem;
+
+          * {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel__thumbnails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    .carousel__slides + & {
+      margin-top: 20px;
+    }
+
+    li {
+      flex: 1 1 auto;
+      max-width: 5rem !important;
+      margin: 0 1rem;
+      transition: all 300ms ease-in-out;
+    }
+
+    label {
+      &:hover,
+      &:focus {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+      opacity: 0.3;
     }
   }
 }

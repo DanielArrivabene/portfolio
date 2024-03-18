@@ -7,69 +7,90 @@ import One from '../../assets/eu.jpg';
 function Testemonials() {
   const testemonialsList = [
     {
-      name: 'John Smith',
+      name: 'John Smith 1',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam lorem, sed diam nonumy lorem, sed diam',
+      class: 'panel_a',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet.',
     },
     {
-      name: 'John Smith',
+      name: 'John Smith 2',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect',
+      class: 'panel_b',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet.',
     },
     {
-      name: 'John Smith',
+      name: 'John Smith 3',
       photo: One,
-      text: 'O melhor do east eua coast O melhor do east eua coast',
+      class: 'panel_c',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet.',
     },
     {
-      name: 'John Smith',
+      name: 'John Smith 4',
       photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam sed diam nonumy lorem, sed diam',
-    },
-    {
-      name: 'John Smith',
-      photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem',
-    },
-    {
-      name: 'John Smith',
-      photo: One,
-      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum  sed diam nonumy lorem, sed diam ',
+      class: 'panel_c',
+      text: 'lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumy lorem, sed diam nonumylorem ipsum dolor sit amet.',
     },
   ];
 
   return (
-    <section
-      id='testemonials'
-      className='min-vh-100 d-flex flex-column align-items-center section-area'
-    >
-      <article className='container'>
+    <section id='testemonials' className='section-area'>
+      <article className='container h-100'>
         <h2 className='text-center testemonials__title mb-5'>
           O que as pessoas estão{' '}
           <span className='color--primary'>dizendo?</span>
         </h2>
-
-        <div className='cards_container'>
-          {testemonialsList.map((testemonial, index) => (
-            <div key={index} className='testemonial p-4'>
-              <div className='d-flex align-items-center gap-2 mb-3'>
-                <img
-                  src={testemonial.photo}
-                  alt={testemonial.name}
-                  className='testemonial__photo'
-                />
-                <p className='testemonial__name m-0'>{testemonial.name}</p>
-              </div>
-              <p className='testemonial__text mb-3'>{testemonial.text}</p>
-              <span className='d-block w-100 text-center star_container'>
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-                <MdOutlineStar />
-              </span>
-            </div>
-          ))}
+        <div className='container'>
+          <div className='carousel'>
+            <input
+              type='radio'
+              name='slides'
+              checked='checked'
+              id='slide-1'
+            ></input>
+            <input type='radio' name='slides' id='slide-2'></input>
+            <input type='radio' name='slides' id='slide-3'></input>
+            <input type='radio' name='slides' id='slide-4'></input>
+            <ul className='carousel__slides mb-5'>
+              {testemonialsList.map((item, index) => (
+                <li className='carousel__slide' key={index}>
+                  <div className='upper_data__container mb-4'>
+                    <h3 className='m-0'>{item.name}</h3>
+                    <p className='m-0'>Fundador da fundação</p>
+                  </div>
+                  <p>{item.text}</p>
+                  <div className='stars_container'>
+                    <MdOutlineStar />
+                    <MdOutlineStar />
+                    <MdOutlineStar />
+                    <MdOutlineStar />
+                    <MdOutlineStar />
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <ul className='carousel__thumbnails'>
+              <li>
+                <label htmlFor='slide-1'>
+                  <img src='https://picsum.photos/id/1041/150/150' alt=''></img>
+                </label>
+              </li>
+              <li>
+                <label htmlFor='slide-2'>
+                  <img src='https://picsum.photos/id/1043/150/150' alt=''></img>
+                </label>
+              </li>
+              <li>
+                <label htmlFor='slide-3'>
+                  <img src='https://picsum.photos/id/1044/150/150' alt=''></img>
+                </label>
+              </li>
+              <li>
+                <label htmlFor='slide-4'>
+                  <img src='https://picsum.photos/id/1045/150/150' alt=''></img>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
     </section>
