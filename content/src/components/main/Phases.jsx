@@ -23,15 +23,15 @@ function Technologies() {
   return (
     <section id='phases' className='section-area px-0'>
       <article className='d-flex flex-column w-100'>
-        <h2 className='phases__title container'>Não é magia, é<span className="color--primary"> código</span></h2>
-        <p className='phases__subtitle w-100 container mb-4'>
+        <h2 className='phases__title container px-5'>Não é magia, é<span className="color--primary"> código</span></h2>
+        <p className='phases__subtitle w-100 container mb-4 px-5'>
           Conheça um pouco do fluxo geral por trás de cada projeto.
         </p>
         <div className='phases_container w-100'>
           {phasesList.map((item, index) => (
             <div key={index} className='phase'>
-              <div className='container d-flex justify-content-between align-items-center flex-wrap py-5'>
-                <div className='d-flex gap-5 align-items-center'>
+              <div className='container d-flex justify-content-between align-items-center flex-wrap gap-4 p-5'>
+                <div className='d-flex gap-5 w-100 number__container align-items-center'>
                   <span className='phase__number '>{'0' + (index + 1)}</span>
                   <h3 className='m-0 phase_title'>{item.name}</h3>
                 </div>

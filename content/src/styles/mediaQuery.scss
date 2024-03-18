@@ -13,17 +13,25 @@
     }
   }
 
-  #projects {
-    .project__image_container {
-      aspect-ratio: 10 / 6;
-      height: fit-content !important;
-      width: 100% !important;
-      margin-bottom: 1em;
-      order: 0 !important;
+  #phases .phases_container {
+    .phase {
+      .container {
+        justify-content: center !important;
+      }
     }
 
-    .project__text_container {
-      width: 100% !important;
+    #projects {
+      .project__image_container {
+        aspect-ratio: 10 / 6;
+        height: fit-content !important;
+        width: 100% !important;
+        margin-bottom: 1em;
+        order: 0 !important;
+      }
+
+      .project__text_container {
+        width: 100% !important;
+      }
     }
   }
 
