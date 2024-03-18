@@ -11,6 +11,7 @@
 
     .service {
       width: calc(33% - .8rem);
+      min-width: 250px;
       border-radius: 10px;
       //-webkit-box-reflect: below 1.5rem linear-gradient(to bottom, transparent 70%, #00000066);
 

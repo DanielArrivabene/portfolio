@@ -28,7 +28,7 @@ function Services() {
 
   return (
     <section id='services' className='d-flex flex-column align-items-center'>
-      <article className='services__container container d-flex justify-content-between'>
+      <article className='services__container container d-flex justify-content-between flex-wrap'>
         {servicesList.map((service, index) => (
           <div key={index} className='service p-4'>
             <div className='service__data_container'>
