@@ -48,7 +48,7 @@ function Projects() {
                   alt={project.name}
                   className='project__image mb-3'
                 />
-                  <p className='project__name m-0'>{project.name}</p>
+                  <h3 className='project__name m-0'>{project.name}</h3>
               </a>
             </div>
           ))}
