@@ -73,7 +73,7 @@ function Form() {
           value={number}
         />
       </div>
-      <div className='form-group'>
+      <div className='form-group mb-4'>
         <label htmlFor='InputMessage'>Mensagem</label>
         <motion.textarea
           initial={{ width: 0, opacity: 0 }}
