@@ -29,7 +29,7 @@ const projectsList = [
 function Projects() {
   return (
     <section id='projects' className='min-vh-100 section-area px-0'>
-      <article className='container d-flex flex-column justify-content-center align-items-center'>
+      <article className='d-flex flex-column justify-content-center align-items-center'>
         <h2 className='text-center mb-2 projects__title'>Portfólio</h2>
         <p className='text-center mb-5'>
           Confira alguns dos projetos já realizados.
