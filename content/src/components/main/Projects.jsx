@@ -24,12 +24,6 @@ const projectsList = [
     urlSite: 'https://repara-tec.vercel.app/',
     image: Repara,
   },
-  {
-    name: 'Repara 3',
-    class: 'repara',
-    urlSite: 'https://repara-tec.vercel.app/',
-    image: Repara,
-  },
 ];
 
 function Projects() {
@@ -40,9 +34,9 @@ function Projects() {
         <p className='text-center mb-5'>
           Confira alguns dos projetos já realizados.
         </p>
-        <div className='projects__container d-flex mb-4'>
+        <div className='projects__container d-flex justify-content-between flex-wrap mb-4'>
           {projectsList.map((project) => (
-            <div className='project mb-4 p-0' key={project.name}>
+            <div className={`project mb-4 ${project.class}`} key={project.name}>
               <a
                 href={project.urlSite}
                 target={project.target ? project.target : '_blank'}
@@ -54,7 +48,7 @@ function Projects() {
                   alt={project.name}
                   className='project__image mb-3'
                 />
-                <p className='project__title m-0'>{project.name}</p>
+                  <p className='project__name m-0'>{project.name}</p>
               </a>
             </div>
           ))}
