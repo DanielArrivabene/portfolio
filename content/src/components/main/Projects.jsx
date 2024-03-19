@@ -4,7 +4,6 @@ import '../../styles/components/Projects.scss';
 
 import Kateli from '../../assets/Kateli.png';
 import Repara from '../../assets/Repara.png';
-import Your from '../../assets/your.jpg';
 
 const projectsList = [
   {
@@ -25,27 +24,6 @@ const projectsList = [
     urlSite: 'https://repara-tec.vercel.app/',
     image: Repara,
   },
-  {
-    name: 'Seu Projeto 1',
-    class: 'your',
-    urlSite: '#contact',
-    target: '_self',
-    image: Your,
-  },
-  {
-    name: 'Seu Projeto 2',
-    class: 'your',
-    urlSite: '#contact',
-    target: '_self',
-    image: Your,
-  },
-  {
-    name: 'Seu Projeto 3',
-    class: 'your',
-    urlSite: '#contact',
-    target: '_self',
-    image: Your,
-  },
 ];
 
 function Projects() {
@@ -56,24 +34,22 @@ function Projects() {
         <p className='text-center mb-5'>
           Confira alguns dos projetos já realizados.
         </p>
-        <div className='projects__container row flex-wrap mb-4'>
+        <div className='projects__container d-flex mb-4'>
           {projectsList.map((project) => (
-            <div className='project col-lg-4 px-4 mb-5' key={project.name}>
-              <img
-                src={project.image}
-                alt={project.name}
-                className='project__image mb-2'
-              />
-              <div className='project__data_container'>
-                <a
-                  href={project.urlSite}
-                  target={project.target ? project.target : '_blank'}
-                  rel='noreferrer'
-                  className='project__link'
-                >
-                  <h3 className='project__title'>{project.name}</h3>
-                </a>
-              </div>
+            <div className='project mb-4 p-0' key={project.name}>
+              <a
+                href={project.urlSite}
+                target={project.target ? project.target : '_blank'}
+                rel='noreferrer'
+                className='project__link'
+              >
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className='project__image mb-3'
+                />
+                <p className='project__title m-0'>{project.name}</p>
+              </a>
             </div>
           ))}
         </div>
