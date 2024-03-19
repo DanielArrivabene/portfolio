@@ -24,6 +24,12 @@ const projectsList = [
     urlSite: 'https://repara-tec.vercel.app/',
     image: Repara,
   },
+  {
+    name: 'Repara 3',
+    class: 'repara',
+    urlSite: 'https://repara-tec.vercel.app/',
+    image: Repara,
+  },
 ];
 
 function Projects() {

@@ -22,6 +22,7 @@
       width: 0;
       height: 100%;
       flex: 1;
+      background-color: $bg_color--secondary;
       transition: $transition_two;
 
       &:nth-child(1) .project__image {
@@ -37,10 +38,11 @@
 
         .project__image {
           filter: brightness(85%);
+          opacity: 1;
         }
 
         .project__title {
-          opacity: 1;
+          transform: rotate(270deg);
         }
       }
 
@@ -50,16 +52,20 @@
         object-fit: cover;
         filter: brightness(75%);
         transition: $transition_two;
+        opacity: 0;
       }
 
       .project__title {
         position: absolute;
-        left: 4rem;
+        left: 50%;
         bottom: 4rem;
         color: $text_light;
         font-weight: 200;
         font-size: 1.4rem !important;
-        opacity: 0;
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        transform: rotate(180deg);
         transition: $transition_two;
       }
     }
