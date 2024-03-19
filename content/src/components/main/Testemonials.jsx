@@ -41,15 +41,15 @@ function Testemonials() {
         </h2>
         <div className='container'>
           <div className='carousel'>
-            <input
-              type='radio'
-              name='slides'
-              checked='checked'
-              id='slide-1'
-            ></input>
-            <input type='radio' name='slides' id='slide-2'></input>
-            <input type='radio' name='slides' id='slide-3'></input>
-            <input type='radio' name='slides' id='slide-4'></input>
+            {testemonialsList.map((item, index) => (
+              <input
+                key={index}
+                type='radio'
+                name='slides'
+                id={`slide-${index + 1}`}
+                checked='cheked'
+              ></input>
+            ))}
             <ul className='carousel__slides mb-5'>
               {testemonialsList.map((item, index) => (
                 <li className='carousel__slide' key={index}>
