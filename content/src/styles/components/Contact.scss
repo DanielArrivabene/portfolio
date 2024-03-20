@@ -16,52 +16,6 @@
         }
       }
     }
-    .contacts_list {
-      gap: 1em;
-
-      li {
-        background-color: $bg_color--secondary;
-        padding: 7px;
-        border-radius: 50%;
-
-        &:hover {
-          transition: $transition_one;
-          scale: 1.1;
-        }
-
-        svg {
-          font-size: 1.6em;
-
-          * {
-            color: $bg_color;
-          }
-        }
-
-        a.Whatsapp svg {
-          font-size: 1.6em;
-
-          * {
-            color: #00ff00;
-          }
-        }
-
-        a.Github svg {
-          font-size: 1.6em;
-
-          * {
-            color: $text_light;
-          }
-        }
-
-        a.LinkedIn svg {
-          font-size: 1.6em;
-
-          * {
-            color: #3e7dfd;
-          }
-        }
-      }
-    }
   }
 
   .form__container {

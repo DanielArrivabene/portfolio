@@ -1,37 +1,93 @@
 @import '../variables.scss';
 
 #footer {
-  padding: 4em 2em;
-  border-top: 1px solid $bg_color--secondary;
+  .footer__links_container {
+    .footer__links_list {
+      &::after {
+        content: '';
+        height: 2.2rem;
+        width: 1px;
+        background-color: $text_light--terciary;
+      }
 
-  .footer_text {
-    color: $text_light--terciary;
+      li {
+        background-color: $bg_color--secondary;
+        padding: 7px;
+        border-radius: 50%;
+        transition: $transition_one;
+
+        &:hover {
+          scale: 1.1;
+        }
+
+        svg {
+          font-size: 1.6em;
+
+          * {
+            color: $bg_color;
+          }
+        }
+
+        a.Whatsapp svg {
+          font-size: 1.6em;
+
+          * {
+            color: #00ff00;
+          }
+        }
+
+        a.Github svg {
+          font-size: 1.6em;
+
+          * {
+            color: $text_light;
+          }
+        }
+
+        a.LinkedIn svg {
+          font-size: 1.6em;
+
+          * {
+            color: #3e7dfd;
+          }
+        }
+      }
+    }
+
+    .footer__link_top {
+      width: 2.4rem;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      background-color: $bg_color--secondary;
+      transition: $transition_one;
+
+      &:hover {
+        background: linear-gradient(45deg, $primary_color, $secondary_color);
+
+        svg * {
+          color: $text_light;
+        }
+      }
+
+      svg {
+        font-size: 1.3rem;
+
+        * {
+          color: $text_light--terciary;
+        }
+      }
+    }
   }
 
-  .footer__link_top {
-    border: 2px solid transparent;
-    width: 3rem;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background:
-      linear-gradient($bg_color, $bg_color) padding-box,
-      linear-gradient(45deg, $primary_color, $secondary_color) border-box;
+  hr {
+    border-color: $text_light--terciary;
+  }
 
-    &:hover {
-      svg * {
-        color: $text_light;
-      }
-    }
-
-    svg {
-      font-size: 1.5rem;
-
-      * {
-        color: $text_light--terciary;
-      }
-    }
+  .footer_copy {
+    color: $text_light--terciary;
+    font-size: 1em !important;
   }
 }
