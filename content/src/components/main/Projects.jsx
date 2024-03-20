@@ -46,11 +46,8 @@ function Projects() {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className='project__image mb-3'
+                  className='project__image'
                 />
-                <div className='project__name_container'>
-                  <h3 className='project__name m-0'>{project.name}</h3>
-                </div>
               </a>
             </div>
           ))}

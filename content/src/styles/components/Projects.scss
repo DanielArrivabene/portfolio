@@ -22,19 +22,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 16 / 9;
       overflow: hidden;
+      border-radius: 5px;
       transition: $transition_one;
 
       &:hover {
-        transform: scale(.98);
 
-        .project__name_container {
+        .project__image {
+          transform: scale(1.1);
           opacity: 1;
-
-          .project__name {
-            left: 50%;
-          }
         }
       }
 
@@ -42,41 +39,15 @@
         text-align: center;
 
         .project__image {
-          width: calc(100% - 4rem);
-          aspect-ratio: 15 / 9;
+          opacity: .7;
+          width: 100%;
+          aspect-ratio: 16 / 9;
           object-fit: cover;
           box-shadow: 0px 2rem 3rem #0000005a;
           border-radius: 5px;
           transition: $transition_one;
         }
       }
-
-      .project__name_container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000000af;
-        opacity: 0;
-        transition: $transition_one;
-
-        .project__name {
-          position: absolute;
-          top: 50%;
-          left: 40%;
-          transform: translate(-50%, -50%);
-          transition: $transition_one;
-        }
-      }
-    }
-
-    .repara {
-      background-color: #1b7e9990;
-    }
-
-    .kateli {
-      background-color: #ad726990;
     }
   }
 
