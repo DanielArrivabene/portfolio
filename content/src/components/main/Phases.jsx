@@ -23,10 +23,8 @@ function Technologies() {
   return (
     <section id='phases' className='section-area px-0'>
       <article className='d-flex flex-column w-100'>
-        <h2 className='phases__title container px-5'>Não é magia, é<span className="color--primary"> código</span></h2>
-        <p className='phases__subtitle w-100 container mb-4 px-5'>
-          Conheça um pouco do fluxo geral por trás de cada projeto.
-        </p>
+        <p className='container color--primary mb-1 px-5'>ETAPAS DE DESENVOLVIMENTO</p>
+        <h2 className='phases__title container mb-5 px-5'>Não é magia, é código</h2>
         <div className='phases_container w-100'>
           {phasesList.map((item, index) => (
             <div key={index} className='phase'>

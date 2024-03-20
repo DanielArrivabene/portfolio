@@ -6,8 +6,7 @@ function Ideal() {
   return (
     <section id='ideal' className='section-area'>
       <article className='container d-flex flex-column align-items-center'>
-        <p className='color--primary mb-1'>EM BUSCA DO</p>
-        <h2 className='ideal_title mb-4'>Seu site ideal</h2>
+        <h2 className='ideal_title mb-4'>Seu site <span className="color--primary">ideal</span></h2>
         <div className='ideal_container row flex-wrap-reverse w-100'>
           <div className='col-lg-6 p-4'>
             <p className='ideal__text mb-3'>
