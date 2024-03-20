@@ -23,8 +23,8 @@ function App() {
         <Services />
         {/*<HeroBar />*/}
         <About />
-        <Ideal />
         <Atributes />
+        <Ideal />
         <Phases />
         {/*<ScrollBar />*/}
         <Projects />
