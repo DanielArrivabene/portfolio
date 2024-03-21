@@ -10,10 +10,22 @@
     line-height: 5.3rem !important;
     color: $text_light;
     font-weight: 600 !important;
-    background: -webkit-linear-gradient(45deg, transparent, $text_light, transparent);
+    background: -webkit-linear-gradient(
+      45deg,
+      transparent,
+      $text_light,
+      transparent
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    .one {
+      background: -webkit-linear-gradient(45deg, #d79beb, #d79beb);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   .hero__text {
@@ -26,9 +38,12 @@
     align-items: center;
     gap: 1rem;
 
-    .hero__link {
-      @include btn--primary;
-      font-size: 1.05em;
+    .btn__primary {
+      gap: 4px;
+
+      svg {
+        width: 2rem !important;
+      }
     }
 
     .hero__clients {

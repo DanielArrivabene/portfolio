@@ -16,8 +16,8 @@ function Hero() {
       justify-content-center align-items-center'
       >
         <h1 className='text-center hero__title mb-4'>
-          Websites feitos <br />
-          sob medida
+          <span className="one">Websites</span> feitos <br />
+          sob <span className="two">medida</span>
         </h1>
         <p className='mb-4 text-center hero__text'>
           Desenvolvimento de websites profissionais para elevar sua presença,
