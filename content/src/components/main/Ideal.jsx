@@ -1,12 +1,16 @@
 import '../../styles/components/Ideal.scss';
 
+import BtnPrimary from '../Buttons/BtnPrimary';
+
 import Image from '../../assets/responsiviness.png';
 
 function Ideal() {
   return (
     <section id='ideal' className='section-area'>
       <article className='container d-flex flex-column align-items-center'>
-        <h2 className='ideal_title mb-4'>Seu site <span className="color--primary">ideal</span></h2>
+        <h2 className='ideal_title mb-4'>
+          Seu site <span className='color--primary'>ideal</span>
+        </h2>
         <div className='ideal_container row flex-wrap-reverse w-100'>
           <div className='col-lg-6 p-4'>
             <p className='ideal__text mb-3'>
@@ -40,9 +44,7 @@ function Ideal() {
               sendo assim, para alcançar o resultado esperado é essencial a
               colaboração e
             </p>
-            <a href='#atributes' className='ideal__link'>
-              Veja as vantagens
-            </a>
+            <BtnPrimary text={'Ver vantagens'} target={'#atributes'} />
           </div>
           <div className='ideal__image_container col-lg-6 p-4'>
             <img className='ideal__image mb-5' src={Image} alt='' />

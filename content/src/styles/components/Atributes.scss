@@ -41,11 +41,6 @@
       color: $text_light--terciary;
     }
 
-    .atributes__link {
-      @include btn--secondary;
-      font-size: 1.15em !important;
-    }
-
     .atributes_call {
       color: $text_light--terciary;
       font-size: 0.9em !important;

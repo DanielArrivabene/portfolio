@@ -1,5 +1,7 @@
 import '../../styles/components/Atributes.scss';
 
+import BtnPrimary from '../Buttons/BtnPrimary';
+
 function Atributes() {
   const atributesList = [
     {
@@ -58,16 +60,15 @@ function Atributes() {
           <p className='atributes__text mb-3'>
             Ter um site permite que clientes em potencial{' '}
             <strong>encontrem sua empresa</strong> facilmente ao procurar por
-            serviços relacionados, além de passar uma imagem de <strong>credibilidade</strong>. Os clientes tendem a confiar mais em empresas que
-            têm uma presença online estabelecida.
+            serviços relacionados, além de passar uma imagem de{' '}
+            <strong>credibilidade</strong>. Os clientes tendem a confiar mais em
+            empresas que têm uma presença online estabelecida.
           </p>
           <p className='atributes__text mb-4'>
             <strong>Está na hora de dar o próximo passo nessa jornada!</strong>
           </p>
-          <a href='#contact' className='atributes__link mb-2'>
-            Começar agora
-          </a>
-          <p className='atributes_call'>*Faça um orçamento, é grátis!</p>
+          <BtnPrimary text={'Começar agora'} target={'#contact'} />
+          <p className='atributes_call mt-2'>*Faça um orçamento, é grátis!</p>
         </div>
       </article>
     </section>

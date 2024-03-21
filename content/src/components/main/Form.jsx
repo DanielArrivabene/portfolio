@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+import { PiStarFour } from 'react-icons/pi';
+
 function Form() {
   const { ref, inView } = useInView(false);
   const animation = useAnimation();
@@ -87,7 +89,7 @@ function Form() {
         ></motion.textarea>
       </div>
       <a className='btn' id='send' onClick={handleSubmit}>
-        Enviar
+        Enviar <PiStarFour />
       </a>
     </form>
   );

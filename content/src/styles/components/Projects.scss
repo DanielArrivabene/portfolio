@@ -53,7 +53,7 @@
 
   .projects__links_container {
     .projects__link--one {
-      @include btn--primary;
+      @include btn--secondary;
     }
 
     .projects__link--two {

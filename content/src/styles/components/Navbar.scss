@@ -32,32 +32,22 @@ header {
       }
     }
 
-    .navbar_nav {
+    .navbar__links_container {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 2.5em;
 
-      li {
-        display: flex;
-        flex-direction: column-reverse;
-        width: fit-content;
+      .navbar__link {
+        font-family: $main_font;
+        padding: 0;
+        color: $text_light--secondary;
+        transition: $transition_one;
+        font-size: 1em;
 
-        a {
-          font-family: $main_font;
-          padding: 0;
-          color: $text_light--secondary;
-          transition: $transition_one;
-          font-size: 1em;
-
-          &:hover:not(.navbar__btn) {
-            color: $text_light--terciary;
-          }
+        &:hover:not(.navbar__btn) {
+          color: $text_light--terciary;
         }
-      }
-
-      .navbar__btn {
-        @include btn--primary;
       }
     }
 

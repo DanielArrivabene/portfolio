@@ -1,5 +1,7 @@
 import '../../styles/components/About.scss';
 
+import BtnSecondary from '../Buttons/btnSecondary'
+
 import Avatar from '../../assets/eu.png';
 
 function About() {
@@ -29,9 +31,7 @@ function About() {
               trabalharemos para alcançar o <strong>resultado desejad</strong>o. Por que não  solicita um <strong>orçamento gratuito agora mesmo</strong>? Estou ansioso para
               iniciar nosso próximo projeto!
             </p>
-            <a href='#atributes' className='about__link'>
-              Veja as vantagens
-            </a>
+            <BtnSecondary text={'Ver vantagens'} target={'#atributes'} />
           </div>
         </div>
         <div className='col-lg-6 about__image_container'>

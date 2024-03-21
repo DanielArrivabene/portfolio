@@ -1,6 +1,6 @@
 import '../../styles/components/Projects.scss';
 
-//import Clients from './Clients';
+import BtnPrimary from '../Buttons/BtnPrimary';
 
 import Kateli from '../../assets/Kateli.png';
 import Repara from '../../assets/Repara.png';
@@ -53,9 +53,7 @@ function Projects() {
           ))}
         </div>
         <div className='projects__links_container d-flex justify-content-center gap-4 align-items-center'>
-          <a href='#' className='projects__link--one'>
-            Chamada de atenção
-          </a>
+          <BtnPrimary text={'Inicie seu projeto'} target={'#contact'} />
           <a href='#' className='projects__link--two'>
             Chamada de algo
           </a>

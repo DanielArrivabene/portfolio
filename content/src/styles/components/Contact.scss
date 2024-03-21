@@ -45,7 +45,8 @@
       }
 
       #send {
-        @include btn--secondary;
+        @include btn--primary;
+        justify-content: center;
         width: 100%;
       }
     }

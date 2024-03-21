@@ -1,0 +1,9 @@
+@import '../mixins.scss';
+
+.btn__primary {
+    @include btn--primary;
+}
+
+.btn__secondary {
+    @include btn--secondary;
+}

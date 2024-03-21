@@ -1,4 +1,6 @@
 import '../../styles/components/Hero.scss';
+import BtnPrimary from '../Buttons/BtnPrimary';
+
 
 function Hero() {
   return (
@@ -22,9 +24,7 @@ function Hero() {
           especializados em produtividade responsividade e SEO.
         </p>
         <div className='hero__links_container'>
-          <a href='#' className='hero__link'>
-            Começar agora
-          </a>
+          <BtnPrimary text={'Iniciar Desenvolvimento'} target={'#contact'} />
           <p className='hero__clients m-0'>
             <span>+50</span> <br />
             Clientes satisfeitos
